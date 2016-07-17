@@ -17,7 +17,7 @@ This repository will eventually be used as the release repository once the ANE i
 ## Beta testing
 
 If you are interested in beta testing the ANE(s) please get in contact with us (airnativeextensions@distriqt.com). 
-Active beta testers will be given a full license for the final ANE as thanks.
+Active beta testers will be given a license for the ANE as thanks.
 
 
 # Firebase
