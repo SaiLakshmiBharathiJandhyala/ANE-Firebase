@@ -15,11 +15,17 @@ This repository will eventually be used as the release repository once the ANE i
 > While this ANE is in development links to documentation and licenses may not be available.
 
 
+
 ## Beta testing
 
-If you are interested in beta testing the ANE(s) please get in contact with us (airnativeextensions@distriqt.com). 
+If you are interested in beta testing the Firebase ANE(s) simply make sure you are watching this repository for updates
+and let us know of any issues you encounter. 
 
-As an incentive, beta testers will be rewarded for active participation in the beta. So make sure you get involved and watch the repository for updates.
+If you wish to be contacted about major updates send us an email at airnativeextensions@distriqt.com 
+and we will make sure you get on our email list.  
+
+As an incentive, beta testers will be rewarded for active participation in the beta. 
+So make sure you get involved and watch the repository for updates.
 
 
 
@@ -27,11 +33,12 @@ As an incentive, beta testers will be rewarded for active participation in the b
 
 If you would like to help us be able to spend more time on this ANE we would really welcome any donations that 
 you can make to our development time. Any donations over $50 will be given a license for the extension once completed
-but any donations are welcome. 
+but any donations made will be referenced on our site as a contributor. 
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SUTDJB94ZJN4W)
 
-
+We are always looking for the best ways to be able to continue supporting the AIR community so feel free to
+drop us a line and let us know how we're going.
 
 ---
 
@@ -41,8 +48,10 @@ but any donations are welcome.
 
 This extension enables the use of the Google Firebase platform.
 
-Identical code base can be used across all platforms without any platform specific code, allowing you to develop once and deploy everywhere! 
-It comes with detailed AS docs, and a complete example application.
+Identical code base can be used across all platforms without any platform specific code, 
+allowing you to develop once and deploy everywhere! 
+
+It comes with detailed guides, AS docs, and a complete example application.
 
 
 Features
