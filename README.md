@@ -1,4 +1,5 @@
-This extension was built by [distriqt //](http://airnativeextensions.com) 
+built by [distriqt //](http://airnativeextensions.com) 
+
 
 
 # Development
@@ -32,6 +33,9 @@ but any donations are welcome.
 
 
 
+---
+
+![Firebase](images/Firebase-promo.png)
 
 # Firebase
 
