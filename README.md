@@ -32,8 +32,8 @@ So make sure you get involved and watch the repository for updates.
 ## Funding
 
 If you would like to help us be able to spend more time on this ANE we would really welcome any donations that 
-you can make to our development time. Any donations over $50 will be given a license for the extension once completed
-but any donations made will be referenced on our site as a contributor. 
+you can make to our development time. Any donations over $50 will be given a license for the extension once completed 
+and any donors will be referenced on our site as a contributor. 
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SUTDJB94ZJN4W)
 
