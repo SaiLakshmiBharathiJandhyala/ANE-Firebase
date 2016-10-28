@@ -1,0 +1,23 @@
+<extension xmlns="http://ns.adobe.com/air/extension/4.0">
+	<id>com.distriqt.firebase.Config</id>
+	<versionNumber>@VERSION@</versionNumber>
+	<platforms>
+		<platform name="Android-ARM">
+			<applicationDeployment>
+				<nativeLibrary>distriqt.extension.firebase.config.android.jar</nativeLibrary>
+				<initializer>com.distriqt.extension.firebase.config.ConfigExtension</initializer>
+				<finalizer>com.distriqt.extension.firebase.config.ConfigExtension</finalizer>
+			</applicationDeployment>
+		</platform>
+		<platform name="Android-x86">
+			<applicationDeployment>
+				<nativeLibrary>distriqt.extension.firebase.config.android.jar</nativeLibrary>
+				<initializer>com.distriqt.extension.firebase.config.ConfigExtension</initializer>
+				<finalizer>com.distriqt.extension.firebase.config.ConfigExtension</finalizer>
+			</applicationDeployment>
+		</platform>
+		<platform name="default"> 
+			<applicationDeployment /> 
+		</platform>
+	</platforms>
+</extension>

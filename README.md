@@ -42,7 +42,7 @@ drop us a line and let us know how we're going.
 
 ---
 
-![Firebase](images/Firebase-promo.png)
+![Firebase](images/promo.png)
 
 # Firebase
 
