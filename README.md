@@ -54,7 +54,7 @@ allowing you to develop once and deploy everywhere!
 It comes with detailed guides, AS docs, and a complete example application.
 
 
-Features
+### Features:
 
 - Analytics
 - Develop
@@ -70,15 +70,25 @@ Features
 
 ## Documentation
 
-Latest documentation:
+Latest documentation can be found in the [wiki](https://github.com/distriqt/ANE-Firebase/wiki)
+
+Quick Example: 
+
+```as3
+Firebase.initialiseApp();
+
+// Log an event to analytics
+var event:EventObject = new EventObject();
+event.name = EventObject.ADD_TO_CART;
+event.params[Params.PRICE] = 1.99;
+
+	Firebase.service.analytics.logEvent( event );
+```
+
+More information here:
 
 http://airnativeextensions.com/extension/com.distriqt.Firebase
 
-- Getting started guide: http://airnativeextensions.com/extension/com.distriqt.Firebase#get-started
-
-```actionscript
-Firebase.comingsoon();
-```
 
 
 
