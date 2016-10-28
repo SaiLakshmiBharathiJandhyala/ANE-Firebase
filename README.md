@@ -82,7 +82,7 @@ var event:EventObject = new EventObject();
 event.name = EventObject.ADD_TO_CART;
 event.params[Params.PRICE] = 1.99;
 
-	Firebase.service.analytics.logEvent( event );
+Firebase.service.analytics.logEvent( event );
 ```
 
 More information here:
