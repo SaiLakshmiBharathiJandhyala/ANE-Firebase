@@ -40,7 +40,7 @@
       <libraryPathEntry kind="5" linkType="2" path="${DOCUMENTS}/supportextensions/core/source/build/com.distriqt.Core.ane"/>
       <libraryPathEntry kind="5" linkType="2" path="${DOCUMENTS}/supportextensions/googleplayservices/source/build/com.distriqt.playservices.Base.ane"/>
       <libraryPathEntry kind="5" linkType="2" path="${DOCUMENTS}/supportextensions/androidsupport/source/build/com.distriqt.androidsupport.V4.ane"/>
-      <libraryPathEntry kind="5" linkType="2" path="${DOCUMENTS}/extensions/firebase/source/extensions/config/build/com.distriqt.firebase.Config.ane"/>
+      <libraryPathEntry kind="5" linkType="2" path="${DOCUMENTS}/extensions/firebase/_distriqt/com.distriqt.firebase.Config.ane"/>
     </libraryPath>
     <sourceAttachmentPath/>
   </compiler>
@@ -79,7 +79,7 @@
           <anePathEntry path="${DOCUMENTS}/supportextensions/core/source/build/com.distriqt.Core.ane"/>
           <anePathEntry path="${DOCUMENTS}/supportextensions/googleplayservices/source/build/com.distriqt.playservices.Base.ane"/>
           <anePathEntry path="${DOCUMENTS}/supportextensions/androidsupport/source/build/com.distriqt.androidsupport.V4.ane"/>
-          <anePathEntry path="${DOCUMENTS}/extensions/firebase/source/extensions/config/build/com.distriqt.firebase.Config.ane"/>
+          <anePathEntry path="${DOCUMENTS}/extensions/firebase/_distriqt/com.distriqt.firebase.Config.ane"/>
         </anePaths>
         <newLaunchParams/>
         <modifiedLaunchParams/>

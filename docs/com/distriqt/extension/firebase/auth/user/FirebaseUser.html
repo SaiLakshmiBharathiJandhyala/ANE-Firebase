@@ -1,0 +1,189 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../../../override.css" type="text/css"><meta name="keywords" content="FirebaseUser,com.distriqt.extension.firebase.auth.user.FirebaseUser,displayName,displayName,displayName,email,email,identifier,identifier,isEmailVerified,photoUri,photoUrl,photoUrl,providerId,providers,deleteUser,fromObject,getToken,isAnonymous,linkWithCredential,reauthenticate,sendEmailVerification,unlink,updateEmail,updatePassword,updateProfile"><title>com.distriqt.extension.firebase.auth.user.FirebaseUser</title></head><body><script language="javascript" type="text/javascript" src="../../../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'FirebaseUser - distriqt // Firebase';
+				var baseRef = '../../../../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">distriqt // Firebase Native Extension Documentation</td><td class="titleTableTopNav" align="right"><a href="../../../../../../package-summary.html" onclick="loadClassListFrame('../../../../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../../../../class-summary.html" onclick="loadClassListFrame('../../../../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../../../../all-index-A.html" onclick="loadClassListFrame('../../../../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../../../../index.html?com/distriqt/extension/firebase/auth/user/FirebaseUser.html&amp;com/distriqt/extension/firebase/auth/user/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">FirebaseUser</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("FirebaseUser"); titleBar_setSubNav(false,true,false,false,false,false,false,false,true,false,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.distriqt.extension.firebase.auth.user</a></td></tr><tr><td class="classHeaderTableLabel">Interface</td><td class="classSignature">public  interface  FirebaseUser extends  flash.events.IEventDispatcher</td></tr></table><p></p><p></p><p></p>
+	              <p>
+	 Represents a user's profile information in your Firebase project's user database. 
+	 It also contains helper methods to change or retrieve profile information, as well as to manage that user's authentication state.
+	 </p>
+	           <p></p><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#displayName" class="signatureLink">displayName</a> : String<div class="summaryTableDescription">[read-only] 
+		 The main display name of this user from the Firebase project's user database.</div></td><td class="summaryTableOwnerCol">FirebaseUser</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#email" class="signatureLink">email</a> : String<div class="summaryTableDescription">[read-only] 
+		 The main email address of the user, as stored in the Firebase project's user database.</div></td><td class="summaryTableOwnerCol">FirebaseUser</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#identifier" class="signatureLink">identifier</a> : String<div class="summaryTableDescription">[read-only] 
+		 
+		 Returns a string used to uniquely identify your user in your Firebase project's user database.</div></td><td class="summaryTableOwnerCol">FirebaseUser</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#photoUrl" class="signatureLink">photoUrl</a> : String<div class="summaryTableDescription">[read-only] 
+		 The URL of this user's main profile picture, as stored in the Firebase project's user database.</div></td><td class="summaryTableOwnerCol">FirebaseUser</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#providers" class="signatureLink">providers</a> : Vector.&lt;<a href="../../../../../../com/distriqt/extension/firebase/auth/user/UserInfo.html">UserInfo</a>&gt;<div class="summaryTableDescription">[read-only] 
+		 
+		 An array of UserInfo objects that represents the linked identities 
+		 of the user using different authentication providers that may be linked to their account  
+		 
+		 
+		 
+		 Use this to access, for example, your user's basic profile information retrieved 
+		 from Facebook whether or not the user used Facebook Login to sign in to the current session.</div></td><td class="summaryTableOwnerCol">FirebaseUser</td></tr></table></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#deleteUser()" class="signatureLink">deleteUser</a>():void</div><div class="summaryTableDescription">
+		 
+		 Deletes the user record from your Firebase project's database.</div></td><td class="summaryTableOwnerCol">FirebaseUser</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getToken()" class="signatureLink">getToken</a>(forceRefresh:Boolean):Boolean</div><div class="summaryTableDescription">
+		 
+		 Fetches a Firebase Auth ID Token for the user; useful when authenticating against your own backend.</div></td><td class="summaryTableOwnerCol">FirebaseUser</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#isAnonymous()" class="signatureLink">isAnonymous</a>():Boolean</div><div class="summaryTableDescription">
+		 
+		 Returns true if the user is anonymous; that is, the user account was created with signInAnonymously() 
+		 and has not been linked to another account with linkWithCredential(AuthCredential).</div></td><td class="summaryTableOwnerCol">FirebaseUser</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#linkWithCredential()" class="signatureLink">linkWithCredential</a>(credential:<a href="../../../../../../com/distriqt/extension/firebase/auth/AuthCredential.html">AuthCredential</a>):void</div><div class="summaryTableDescription">
+		 
+		 Attaches the given AuthCredential to the user.</div></td><td class="summaryTableOwnerCol">FirebaseUser</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#reauthenticate()" class="signatureLink">reauthenticate</a>(credential:<a href="../../../../../../com/distriqt/extension/firebase/auth/AuthCredential.html">AuthCredential</a>):void</div><div class="summaryTableDescription">
+		 
+		 Reauthenticates the user with the given credential.</div></td><td class="summaryTableOwnerCol">FirebaseUser</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#sendEmailVerification()" class="signatureLink">sendEmailVerification</a>():void</div><div class="summaryTableDescription">
+		 
+		 Initiates email verification for the user.</div></td><td class="summaryTableOwnerCol">FirebaseUser</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#unlink()" class="signatureLink">unlink</a>(providerId:String):void</div><div class="summaryTableDescription">
+		 
+		 Detaches credentials from a given provider type from this user.</div></td><td class="summaryTableOwnerCol">FirebaseUser</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#updateEmail()" class="signatureLink">updateEmail</a>(email:String):void</div><div class="summaryTableDescription">
+		 
+		 Updates the email address of the user.</div></td><td class="summaryTableOwnerCol">FirebaseUser</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#updatePassword()" class="signatureLink">updatePassword</a>(password:String):void</div><div class="summaryTableDescription">
+		 
+		 Updates the password of the user.</div></td><td class="summaryTableOwnerCol">FirebaseUser</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#updateProfile()" class="signatureLink">updateProfile</a>(request:<a href="../../../../../../com/distriqt/extension/firebase/auth/user/UserProfileChangeRequest.html">UserProfileChangeRequest</a>):void</div><div class="summaryTableDescription">
+		 
+		 Updates the user profile information.</div></td><td class="summaryTableOwnerCol">FirebaseUser</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="displayName"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">displayName</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>displayName:String</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 The main display name of this user from the Firebase project's user database.
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get displayName():String</code><br/></div><a name="propertyDetail"></a><a name="email"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">email</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>email:String</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 The main email address of the user, as stored in the Firebase project's user database.
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get email():String</code><br/></div><a name="propertyDetail"></a><a name="identifier"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">identifier</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>identifier:String</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 <p>
+		 Returns a string used to uniquely identify your user in your Firebase project's user database. 
+		 Use it when storing information in Firebase Database or Storage, or even in your own backend.
+		 </p>
+		 <p>
+		 This identifier is opaque and does not correspond necessarily to the user's email address or any other field.
+		 </p>
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get identifier():String</code><br/></div><a name="propertyDetail"></a><a name="photoUrl"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">photoUrl</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>photoUrl:String</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 The URL of this user's main profile picture, as stored in the Firebase project's user database.
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get photoUrl():String</code><br/></div><a name="propertyDetail"></a><a name="providers"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">providers</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>providers:Vector.&lt;<a href="../../../../../../com/distriqt/extension/firebase/auth/user/UserInfo.html">UserInfo</a>&gt;</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 <p>
+		 An array of <code>UserInfo</code> objects that represents the linked identities 
+		 of the user using different authentication providers that may be linked to their account  
+		 </p>
+		 
+		 <p>
+		 Use this to access, for example, your user's basic profile information retrieved 
+		 from Facebook whether or not the user used Facebook Login to sign in to the current session.
+		 </p>
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get providers():Vector.&lt;<a href="../../../../../../com/distriqt/extension/firebase/auth/user/UserInfo.html">UserInfo</a>&gt;</code><br/></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="deleteUser()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">deleteUser</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function deleteUser():void</code><p></p><p></p><p>
+		 <p>
+		 Deletes the user record from your Firebase project's database. If the operation is successful, the user will be signed out.
+		 </p>
+		 <p>
+		 Important: this is a security sensitive operation that requires 
+		 the user to have recently signed in. If this requirement isn't met, 
+		 ask the user to authenticate again and later call 
+		 <code>reauthenticate(AuthCredential)</code>.
+		 </p>
+		 <p>
+		 Will dispatch a <code>FirebaseUserEvent.DELETE_USER_COMPLETE</code> when this completes.
+		 </p>
+		 </p></div><a name="getToken()"></a><a name="getToken(Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getToken</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getToken(forceRefresh:Boolean):Boolean</code><p></p><p></p><p>
+		 <p>
+		 Fetches a Firebase Auth ID Token for the user; useful when authenticating against your own backend. 
+		 Use the server SDKs or follow the official documentation to securely verify the integrity and validity of this token.
+		 </p>
+		 
+		 <p>
+		 Will dispatch a <code>FirebaseUserEvent.GET_TOKEN_COMPLETE</code> when this completes with the token in the event
+		 if successful.
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">forceRefresh</span>:Boolean</code> &mdash; force refreshes the token. Should only be set to true if the token is invalidated out of band.
+		 
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; true if the fetch was started successfully and false otherwise, most likely that there was an error with the user authentication.
+		 
+		 </td></tr></table></div><a name="isAnonymous()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">isAnonymous</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function isAnonymous():Boolean</code><p></p><p></p><p>
+		 <p>
+		 Returns <code>true</code> if the user is anonymous; that is, the user account was created with <code>signInAnonymously()</code> 
+		 and has not been linked to another account with <code>linkWithCredential(AuthCredential)</code>.
+		 </p>
+		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code></td></tr></table></div><a name="linkWithCredential()"></a><a name="linkWithCredential(com.distriqt.extension.firebase.auth.AuthCredential)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">linkWithCredential</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function linkWithCredential(credential:<a href="../../../../../../com/distriqt/extension/firebase/auth/AuthCredential.html">AuthCredential</a>):void</code><p></p><p></p><p>
+		 <p>
+		 Attaches the given AuthCredential to the user. 
+		 This allows the user to sign in to this account in the future with credentials for such provider.
+		 </p>
+		 <p>
+		 Will dispatch a <code>FirebaseUserEvent.LINK_WITH_CREDENTIAL_COMPLETE</code> when this completes.
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">credential</span>:<a href="../../../../../../com/distriqt/extension/firebase/auth/AuthCredential.html">AuthCredential</a></code></td></tr></table></p></div><a name="reauthenticate()"></a><a name="reauthenticate(com.distriqt.extension.firebase.auth.AuthCredential)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">reauthenticate</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function reauthenticate(credential:<a href="../../../../../../com/distriqt/extension/firebase/auth/AuthCredential.html">AuthCredential</a>):void</code><p></p><p></p><p>
+		 <p>
+		 Reauthenticates the user with the given credential. This is useful for operations that require a recent sign-in
+		 </p>
+		 <p>
+		 Will dispatch a <code>FirebaseUserEvent.REAUTHENTICATE_COMPLETE</code> when this completes.
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">credential</span>:<a href="../../../../../../com/distriqt/extension/firebase/auth/AuthCredential.html">AuthCredential</a></code></td></tr></table></p></div><a name="sendEmailVerification()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">sendEmailVerification</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function sendEmailVerification():void</code><p></p><p></p><p>
+		 <p>
+		 Initiates email verification for the user.
+		 </p>
+		 <p>
+		 Will dispatch a <code>FirebaseUserEvent.SEND_EMAIL_VERIFICATION_COMPLETE</code> when this completes.
+		 </p>
+		 </p></div><a name="unlink()"></a><a name="unlink(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">unlink</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function unlink(providerId:String):void</code><p></p><p></p><p>
+		 <p>
+		 Detaches credentials from a given provider type from this user. This prevents the user from signing in to this account in the future with credentials from such provider.
+		 </p>
+		 <p>
+		 Will dispatch a <code>FirebaseUserEvent.UNLINK_COMPLETE</code> when this completes.
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">providerId</span>:String</code></td></tr></table></p></div><a name="updateEmail()"></a><a name="updateEmail(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">updateEmail</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function updateEmail(email:String):void</code><p></p><p></p><p>
+		 <p>
+		 Updates the email address of the user.
+		 </p>
+		 <p>
+		 Important: this is a security sensitive operation that requires 
+		 the user to have recently signed in. If this requirement isn't met,
+		  ask the user to authenticate again and later call 
+		 <code>reauthenticate(AuthCredential)</code>.
+		 </p>
+		 <p>
+		 In addition, note that the original email address recipient will 
+		 receive an email that allows them to revoke the email address 
+		 change, in order to protect them from account hijacking.
+		 </p>
+		 <p>
+		 Will dispatch a <code>FirebaseUserEvent.UPDATE_EMAIL_COMPLETE</code> when this completes.
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">email</span>:String</code> &mdash; New email address of the user
+		 
+		 </td></tr></table></p></div><a name="updatePassword()"></a><a name="updatePassword(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">updatePassword</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function updatePassword(password:String):void</code><p></p><p></p><p>
+		 <p>
+		 Updates the password of the user.
+		 </p>
+		 <p>
+		 Important: this is a security sensitive operation that requires 
+		 the user to have recently signed in. If this requirement isn't met, 
+		 ask the user to authenticate again and later call 
+		 <code>reauthenticate(AuthCredential)</code>.
+		 </p>
+		 <p>
+		 Will dispatch a <code>FirebaseUserEvent.UPDATE_PASSWORD_COMPLETE</code> when this completes.
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">password</span>:String</code> &mdash; New password of the user
+		 
+		 </td></tr></table></p></div><a name="updateProfile()"></a><a name="updateProfile(com.distriqt.extension.firebase.auth.user.UserProfileChangeRequest)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">updateProfile</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function updateProfile(request:<a href="../../../../../../com/distriqt/extension/firebase/auth/user/UserProfileChangeRequest.html">UserProfileChangeRequest</a>):void</code><p></p><p></p><p>
+		 <p>
+		 Updates the user profile information. 
+		 Use <code>UserProfileChangeRequestBuilder</code> to construct the request.
+		 </p>
+		 <p>
+		 Will dispatch a <code>FirebaseUserEvent.UPDATE_PROFILE_COMPLETE</code> when this completes.
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">request</span>:<a href="../../../../../../com/distriqt/extension/firebase/auth/user/UserProfileChangeRequest.html">UserProfileChangeRequest</a></code></td></tr></table></p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>Copyright <a href="http://distriqt.com" target="_top">distriqt</a> 2016</footer><br/>Tue Nov 22 2016, 09:44 PM +10:00  </center></div></body></html><!--Copyright distriqt 2016<br/>Tue Nov 22 2016, 09:44 PM +10:00  -->
