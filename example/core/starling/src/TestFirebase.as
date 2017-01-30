@@ -27,7 +27,7 @@ package
 	
 	
 	/**	
-	 * Sample application for using the CloudStorage Native Extension
+	 * Sample application for using the Firebase Native Extension
 	 */
 	public class TestFirebase extends Sprite
 	{
