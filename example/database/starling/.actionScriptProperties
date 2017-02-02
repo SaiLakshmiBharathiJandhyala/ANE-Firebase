@@ -64,6 +64,7 @@
           <anePathEntry path="${DOCUMENTS}/supportextensions/core/source/build/com.distriqt.Core.ane"/>
           <anePathEntry path="${DOCUMENTS}/supportextensions/googleplayservices/source/build/com.distriqt.playservices.Base.ane"/>
           <anePathEntry path="${DOCUMENTS}/supportextensions/androidsupport/source/build/com.distriqt.androidsupport.V4.ane"/>
+          <anePathEntry path="${DOCUMENTS}/extensions/firebase/source/extensions/database/build/com.distriqt.firebase.Database.ane"/>
         </anePaths>
         <newLaunchParams/>
         <modifiedLaunchParams/>

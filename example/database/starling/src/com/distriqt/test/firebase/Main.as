@@ -94,6 +94,7 @@ package com.distriqt.test.firebase
 			layout.verticalAlign = VerticalLayout.VERTICAL_ALIGN_BOTTOM;
 			layout.gap = 5;
 			var container:ScrollContainer = new ScrollContainer();
+			container.y = 50;
 			container.layout = layout;
 			container.width = stage.stageWidth;
 			container.height = stage.stageHeight-50;

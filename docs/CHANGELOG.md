@@ -1,5 +1,10 @@
 
 
+###### 2017.02.03 [v1.0.0]
+
+Realtime Databases complete implementation (resolves #1)
+
+
 ###### 2017.01.30 [v..]
 
 Realtime Databases for Android release + update to v10.0.1

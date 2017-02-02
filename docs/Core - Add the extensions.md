@@ -24,7 +24,7 @@ The Core ANE is required by this ANE. You must include and package this extensio
 The Core ANE doesn't provide any functionality in itself but provides support libraries and frameworks used by our extensions.
 It also includes some centralised code for some common actions that can cause issues if they are implemented in each individual extension.
 
-You can access this extension here: https://github.com/distriqt/ANE-Core.
+You can access this extension here: [https://github.com/distriqt/ANE-Core](https://github.com/distriqt/ANE-Core).
 
 ---
 
@@ -43,7 +43,7 @@ This ANE requires the following Android Support extensions:
 
 - [com.distriqt.androidsupport.V4.ane](https://github.com/distriqt/ANE-AndroidSupport/raw/master/lib/com.distriqt.androidsupport.V4.ane)
 
-You can access these extensions here: https://github.com/distriqt/ANE-AndroidSupport.
+You can access these extensions here: [https://github.com/distriqt/ANE-AndroidSupport](https://github.com/distriqt/ANE-AndroidSupport).
 
 >
 > **Note**: if you have been using the older `com.distriqt.AndroidSupport.ane` you should remove that
@@ -68,7 +68,7 @@ This ANE requires the following Google Play Services:
 You must include the above native extensions in your application along with this extension, 
 and you need to ensure they are packaged with your application.
 
-You can access the Google Play Services client library extensions here: https://github.com/distriqt/ANE-GooglePlayServices.
+You can access the Google Play Services client library extensions here: [https://github.com/distriqt/ANE-GooglePlayServices](https://github.com/distriqt/ANE-GooglePlayServices).
 
 ---
 
@@ -76,7 +76,7 @@ You can access the Google Play Services client library extensions here: https://
 
 Finally the all important Firebase extension:
 
-- `com.distriqt.Firebase` : https://github.com/distriqt/ANE-Firebase
+- `com.distriqt.Firebase` : [https://github.com/distriqt/ANE-Firebase](https://github.com/distriqt/ANE-Firebase)
 
 
 If you are building for Android using the Android resources configuration you should also make sure you 

@@ -497,7 +497,7 @@ package com.distriqt.test.firebase
 			try
 			{
 				clearQuery();
-				_query = FirebaseDatabase.service.getReference( "list" ).orderByChild("count").equalTo( 629, "count" ).limitToFirst(5);
+				_query = FirebaseDatabase.service.getReference( "list" ).orderByChild("count").startAt(400, "count").limitToFirst(5);
 				_query.addEventListener( DatabaseReferenceChildEvent.CHILD_ADDED, query_childAddedHandler );
 				_query.addEventListener( DatabaseReferenceEvent.VALUE_CHANGED, query_valueChangedHandler );
 			}
