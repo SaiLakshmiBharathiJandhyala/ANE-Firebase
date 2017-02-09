@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../../../override.css" type="text/css"><meta name="keywords" content="DatabaseReferenceChildEvent,com.distriqt.extension.firebase.database.events.DatabaseReferenceChildEvent,CHILD_ADDED,CHILD_CHANGED,CHILD_MOVED,CHILD_REMOVED,ERROR,REMOVE_VALUE_COMPLETE,REMOVE_VALUE_ERROR,SET_VALUE_COMPLETE,SET_VALUE_ERROR,TRANSACTION_COMPLETE,TRANSACTION_ERROR,UPDATE_CHILDREN_COMPLETE,UPDATE_CHILDREN_ERROR,VALUE_CHANGED,VALUE_CHANGED_ERROR,errorCode,errorCode,errorDescription,errorDescription,previousChildName,snapshot,snapshot,clone,clone"><title>com.distriqt.extension.firebase.database.events.DatabaseReferenceChildEvent</title></head><body><script language="javascript" type="text/javascript" src="../../../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'DatabaseReferenceChildEvent - distriqt // Firebase';
+				var baseRef = '../../../../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">distriqt // Firebase Native Extension Documentation</td><td class="titleTableTopNav" align="right"><a href="../../../../../../package-summary.html" onclick="loadClassListFrame('../../../../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../../../../class-summary.html" onclick="loadClassListFrame('../../../../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../../../../all-index-A.html" onclick="loadClassListFrame('../../../../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../../../../index.html?com/distriqt/extension/firebase/database/events/DatabaseReferenceChildEvent.html&amp;com/distriqt/extension/firebase/database/events/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">DatabaseReferenceChildEvent</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#constantSummary">Constants</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("DatabaseReferenceChildEvent"); titleBar_setSubNav(true,true,false,false,false,false,false,false,true,false,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.distriqt.extension.firebase.database.events</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  DatabaseReferenceChildEvent</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">DatabaseReferenceChildEvent  <img src="../../../../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> flash.events.Event</td></tr></table><p></p><p></p><p></p>	
+	 	 <p></p><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#errorCode" class="signatureLink">errorCode</a> : int = -1<div class="summaryTableDescription">
+		 
+		 For error events this will contain the code of the error that occurred
+		 
+		 </div></td><td class="summaryTableOwnerCol">DatabaseReferenceChildEvent</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#errorDescription" class="signatureLink">errorDescription</a> : String<div class="summaryTableDescription">
+		 
+		 For error events this will contain a description of the error that occurred
+		 
+		 </div></td><td class="summaryTableOwnerCol">DatabaseReferenceChildEvent</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#previousChildName" class="signatureLink">previousChildName</a> : String = null<div class="summaryTableDescription">
+		 
+		 The key name of sibling location ordered before the new child.</div></td><td class="summaryTableOwnerCol">DatabaseReferenceChildEvent</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#snapshot" class="signatureLink">snapshot</a> : <a href="../../../../../../com/distriqt/extension/firebase/database/DataSnapshot.html">DataSnapshot</a> = null<div class="summaryTableDescription">
+		 
+		 For CHILD_ADDED/CHILD_CHANGED/CHILD_REMOVED/CHILD_MOVED 
+		 events this will contain the static (immutable) snapshot at the child location.</div></td><td class="summaryTableOwnerCol">DatabaseReferenceChildEvent</td></tr></table></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#DatabaseReferenceChildEvent()" class="signatureLink">DatabaseReferenceChildEvent</a>(type:String, snapshot:<a href="../../../../../../com/distriqt/extension/firebase/database/DataSnapshot.html">DataSnapshot</a> = null, previousChildName:String = null, errorCode:int = -1, errorDescription:String, bubbles:Boolean = false, cancelable:Boolean = false)</div><div class="summaryTableDescription">
+		  Constructor
+		 </div></td><td class="summaryTableOwnerCol">DatabaseReferenceChildEvent</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#clone()" class="signatureLink">clone</a>():Event</div><div class="summaryTableDescription">[override] </div></td><td class="summaryTableOwnerCol">DatabaseReferenceChildEvent</td></tr></table></div><a name="constantSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Constants</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableConstant"><tr><th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#CHILD_ADDED" class="signatureLink">CHILD_ADDED</a> : String = dbref:child:added<div class="summaryTableDescription">[static] 
+		 
+		 This event is triggered when a new child is added to the location to which this listener was added.</div></td><td class="summaryTableOwnerCol">DatabaseReferenceChildEvent</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#CHILD_CHANGED" class="signatureLink">CHILD_CHANGED</a> : String = dbref:child:changed<div class="summaryTableDescription">[static] 
+		 
+		 This method is triggered when the data at a child location has changed
+		 
+		 
+		 </div></td><td class="summaryTableOwnerCol">DatabaseReferenceChildEvent</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#CHILD_MOVED" class="signatureLink">CHILD_MOVED</a> : String = dbref:child:moved<div class="summaryTableDescription">[static] 
+		 
+		 This method is triggered when a child location's priority changes
+		 
+		 
+		 </div></td><td class="summaryTableOwnerCol">DatabaseReferenceChildEvent</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#CHILD_REMOVED" class="signatureLink">CHILD_REMOVED</a> : String = dbref:child:removed<div class="summaryTableDescription">[static] 
+		 
+		 This method is triggered when a child is removed from the location to which this listener was added.</div></td><td class="summaryTableOwnerCol">DatabaseReferenceChildEvent</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#ERROR" class="signatureLink">ERROR</a> : String = dbref:child:error<div class="summaryTableDescription">[static] 
+		 
+		 This event will be triggered in the event that this listener either 
+		 failed at the server, or is removed as a result of the security and 
+		 Firebase rules.</div></td><td class="summaryTableOwnerCol">DatabaseReferenceChildEvent</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="errorCode"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">errorCode</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>public var errorCode:int = -1</code><p></p><p></p><p>
+		 <p>
+		 For error events this will contain the code of the error that occurred
+		 </p>
+		 </p></div><a name="propertyDetail"></a><a name="errorDescription"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">errorDescription</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var errorDescription:String</code><p></p><p></p><p>
+		 <p>
+		 For error events this will contain a description of the error that occurred
+		 </p>
+		 </p></div><a name="propertyDetail"></a><a name="previousChildName"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">previousChildName</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var previousChildName:String = null</code><p></p><p></p><p>
+		 <p>
+		 The key name of sibling location ordered before the new child. 
+		 This will be <code>null</code> for the first child node of a location
+		 and for the removed and error events.
+		 </p>
+		 </p></div><a name="propertyDetail"></a><a name="snapshot"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">snapshot</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var snapshot:<a href="../../../../../../com/distriqt/extension/firebase/database/DataSnapshot.html">DataSnapshot</a> = null</code><p></p><p></p><p>
+		 <p>
+		 For <code>CHILD_ADDED</code>/<code>CHILD_CHANGED</code>/<code>CHILD_REMOVED</code>/<code>CHILD_MOVED</code> 
+		 events this will contain the static (immutable) snapshot at the child location.
+		 </p>
+		 </p></div><a name="constructorDetail"></a><div class="detailSectionHeader">Constructor Detail</div><a name="DatabaseReferenceChildEvent()"></a><a name="DatabaseReferenceChildEvent(String,com.distriqt.extension.firebase.database.DataSnapshot,String,int,String,Boolean,Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">DatabaseReferenceChildEvent</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td></tr></table><div class="detailBody"><code>public function DatabaseReferenceChildEvent(type:String, snapshot:<a href="../../../../../../com/distriqt/extension/firebase/database/DataSnapshot.html">DataSnapshot</a> = null, previousChildName:String = null, errorCode:int = -1, errorDescription:String, bubbles:Boolean = false, cancelable:Boolean = false)</code><p></p><p>
+		  Constructor
+		 </p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">type</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">snapshot</span>:<a href="../../../../../../com/distriqt/extension/firebase/database/DataSnapshot.html">DataSnapshot</a></code> (default = <code>null</code>)<code></code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">previousChildName</span>:String</code> (default = <code>null</code>)<code></code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">errorCode</span>:int</code> (default = <code>-1</code>)<code></code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">errorDescription</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">bubbles</span>:Boolean</code> (default = <code>false</code>)<code></code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">cancelable</span>:Boolean</code> (default = <code>false</code>)<code></code></td></tr></table></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="clone()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">clone</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code>override public function clone():Event</code><p></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Event</code></td></tr></table></div><div class="detailSectionHeader">Constant Detail</div><a name="constantDetail"></a><a name="CHILD_ADDED"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">CHILD_ADDED</td><td class="detailHeaderType">Constant</td></tr></table><div class="detailBody"><code>public static const CHILD_ADDED:String = dbref:child:added</code><p></p><p></p><p>
+		 <p>
+		 This event is triggered when a new child is added to the location to which this listener was added.
+		 </p>
+		 
+		 </p></div><a name="constantDetail"></a><a name="CHILD_CHANGED"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">CHILD_CHANGED</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const CHILD_CHANGED:String = dbref:child:changed</code><p></p><p></p><p>
+		 <p>
+		 This method is triggered when the data at a child location has changed
+		 </p>
+		 
+		 </p></div><a name="constantDetail"></a><a name="CHILD_MOVED"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">CHILD_MOVED</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const CHILD_MOVED:String = dbref:child:moved</code><p></p><p></p><p>
+		 <p>
+		 This method is triggered when a child location's priority changes
+		 </p>
+		 
+		 </p></div><a name="constantDetail"></a><a name="CHILD_REMOVED"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">CHILD_REMOVED</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const CHILD_REMOVED:String = dbref:child:removed</code><p></p><p></p><p>
+		 <p>
+		 This method is triggered when a child is removed from the location to which this listener was added.
+		 </p>
+		 
+		 </p></div><a name="constantDetail"></a><a name="ERROR"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">ERROR</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const ERROR:String = dbref:child:error</code><p></p><p></p><p>
+		 <p>
+		 This event will be triggered in the event that this listener either 
+		 failed at the server, or is removed as a result of the security and 
+		 Firebase rules.
+		 </p>
+		 
+		 </p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>Copyright <a href="http://distriqt.com" target="_top">distriqt</a> 2016</footer><br/>Thu Feb 9 2017, 06:18 PM +10:00  </center></div></body></html><!--Copyright distriqt 2016<br/>Thu Feb 9 2017, 06:18 PM +10:00  -->

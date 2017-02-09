@@ -1,0 +1,159 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../../override.css" type="text/css"><meta name="keywords" content="Query,com.distriqt.extension.firebase.database.Query,child,dispose,disposeUnusedReferences,endAt,equalTo,fromObject,fromObject,getParent,getRef,getReference,getReferenceFromUrl,getRoot,getSdkVersion,getValue,goOffline,goOnline,init,keepSynced,limitToFirst,limitToLast,orderByChild,orderByKey,orderByPriority,orderByValue,purgeOutstandingWrites,push,removeValue,runTransaction,setPersistenceEnabled,setValue,setValue,startAt,toString,updateChildren"><title>com.distriqt.extension.firebase.database.Query</title></head><body><script language="javascript" type="text/javascript" src="../../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'Query - distriqt // Firebase';
+				var baseRef = '../../../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">distriqt // Firebase Native Extension Documentation</td><td class="titleTableTopNav" align="right"><a href="../../../../../package-summary.html" onclick="loadClassListFrame('../../../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../../../class-summary.html" onclick="loadClassListFrame('../../../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../../../all-index-A.html" onclick="loadClassListFrame('../../../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../../../index.html?com/distriqt/extension/firebase/database/Query.html&amp;com/distriqt/extension/firebase/database/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">Query</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#methodSummary">Methods</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Query"); titleBar_setSubNav(false,false,false,false,false,false,false,false,true,false,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.distriqt.extension.firebase.database</a></td></tr><tr><td class="classHeaderTableLabel">Interface</td><td class="classSignature">public  interface  Query extends  flash.events.IEventDispatcher</td></tr></table><p></p><p></p><p></p>
+	              <p>
+	 The <code>Query</code> class (and its subclass, <code>DatabaseReference</code>) are used for reading data. 
+	 Listeners are attached, and they will be triggered when the corresponding data changes. 
+	 </p>
+	              <p>
+	 Instances of Query are obtained by calling <code>startAt()</code>, <code>endAt()</code>, or 
+	 <code>limit()</code> on a <code>DatabaseReference</code>.
+	 </p>
+	           <p></p><br/><hr></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#endAt()" class="signatureLink">endAt</a>(value:Object, key:String = null):<a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></div><div class="summaryTableDescription">
+		 
+		 Create a query constrained to only return child nodes with a value 
+		 less than or equal to the given value, using the given orderBy directive 
+		 or priority as default, and additionally only child nodes with a key 
+		 less than or equal to the given key.</div></td><td class="summaryTableOwnerCol">Query</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#equalTo()" class="signatureLink">equalTo</a>(value:Object, key:String = null):<a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></div><div class="summaryTableDescription">
+		 
+		 Create a query constrained to only return the child node with 
+		 the given key and value.</div></td><td class="summaryTableOwnerCol">Query</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getRef()" class="signatureLink">getRef</a>():<a href="../../../../../com/distriqt/extension/firebase/database/DatabaseReference.html">DatabaseReference</a></div><div class="summaryTableDescription">
+		 
+		 </div></td><td class="summaryTableOwnerCol">Query</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#keepSynced()" class="signatureLink">keepSynced</a>(keepSynced:Boolean):Boolean</div><div class="summaryTableDescription">
+		 
+		 By calling keepSynced(true) on a location, the data for that 
+		 location will automatically be downloaded and kept in sync, even when no 
+		 listeners are attached for that location.</div></td><td class="summaryTableOwnerCol">Query</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#limitToFirst()" class="signatureLink">limitToFirst</a>(limit:int):<a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></div><div class="summaryTableDescription">
+		 
+		 Create a query with limit and anchor it to the start of the window
+		 
+		 
+		 </div></td><td class="summaryTableOwnerCol">Query</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#limitToLast()" class="signatureLink">limitToLast</a>(limit:int):<a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></div><div class="summaryTableDescription">
+		 
+		 Create a query with limit and anchor it to the end of the window
+		 
+		 
+		 </div></td><td class="summaryTableOwnerCol">Query</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#orderByChild()" class="signatureLink">orderByChild</a>(path:String):<a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></div><div class="summaryTableDescription">
+		 Create a query in which child nodes are ordered by the values of the specified path
+		 
+		 </div></td><td class="summaryTableOwnerCol">Query</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#orderByKey()" class="signatureLink">orderByKey</a>():<a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></div><div class="summaryTableDescription">
+		 Create a query in which child nodes are ordered by their keys
+		 
+		 </div></td><td class="summaryTableOwnerCol">Query</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#orderByPriority()" class="signatureLink">orderByPriority</a>():<a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></div><div class="summaryTableDescription">
+		 Create a query in which child nodes are ordered by their priorities
+		 
+		 </div></td><td class="summaryTableOwnerCol">Query</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#orderByValue()" class="signatureLink">orderByValue</a>():<a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></div><div class="summaryTableDescription">
+		 Create a query in which nodes are ordered by their value
+		 
+		 </div></td><td class="summaryTableOwnerCol">Query</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#startAt()" class="signatureLink">startAt</a>(value:Object, key:String = null):<a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></div><div class="summaryTableDescription">
+		 
+		 Create a query constrained to only return child nodes with a value 
+		 greater than or equal to the given value, using the given orderBy 
+		 directive or priority as default, and additionally only child nodes 
+		 with a key greater than or equal to the given key.</div></td><td class="summaryTableOwnerCol">Query</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="endAt()"></a><a name="endAt(Object,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">endAt</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function endAt(value:Object, key:String = null):<a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></code><p></p><p></p><p>
+		 <p>
+		 Create a query constrained to only return child nodes with a value 
+		 less than or equal to the given value, using the given orderBy directive 
+		 or priority as default, and additionally only child nodes with a key 
+		 less than or equal to the given key.
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">value</span>:Object</code> &mdash; The value to end at, inclusive
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">key</span>:String</code> (default = <code>null</code>)<code></code> &mdash; The key to end at, inclusive (ignored if null)
+		 
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></code> &mdash; A Query with the new constraint
+		 
+		 </td></tr></table></div><a name="equalTo()"></a><a name="equalTo(Object,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">equalTo</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function equalTo(value:Object, key:String = null):<a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></code><p></p><p></p><p>
+		 <p>
+		 Create a query constrained to only return the child node with 
+		 the given key and value. Note that there is at most one such 
+		 child as names are unique.
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">value</span>:Object</code> &mdash; The value to query for
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">key</span>:String</code> (default = <code>null</code>)<code></code> &mdash; The key of the child
+		 
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></code> &mdash; A Query with the new constraint
+		 
+		 </td></tr></table></div><a name="getRef()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getRef</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getRef():<a href="../../../../../com/distriqt/extension/firebase/database/DatabaseReference.html">DatabaseReference</a></code><p></p><p></p><p>
+		 
+		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../../../com/distriqt/extension/firebase/database/DatabaseReference.html">DatabaseReference</a></code> &mdash; A <code>DatabaseReference</code> to this location
+		 
+		 </td></tr></table></div><a name="keepSynced()"></a><a name="keepSynced(Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">keepSynced</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function keepSynced(keepSynced:Boolean):Boolean</code><p></p><p></p><p>
+		 <p>
+		 By calling <code>keepSynced(true)</code> on a location, the data for that 
+		 location will automatically be downloaded and kept in sync, even when no 
+		 listeners are attached for that location.
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">keepSynced</span>:Boolean</code> &mdash; Pass <code>true</code> to keep this location synchronized, 
+		 						pass <code>false</code> to stop synchronization.
+		 
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; <code>true</code> if successful and <code>false</code> if the extension is in an invalid state
+		 
+		 </td></tr></table></div><a name="limitToFirst()"></a><a name="limitToFirst(int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">limitToFirst</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function limitToFirst(limit:int):<a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></code><p></p><p></p><p>
+		 <p>
+		 Create a query with limit and anchor it to the start of the window
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">limit</span>:int</code> &mdash; The maximum number of child nodes to return
+		 
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></code> &mdash; A Query with the new constraint
+		 
+		 </td></tr></table></div><a name="limitToLast()"></a><a name="limitToLast(int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">limitToLast</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function limitToLast(limit:int):<a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></code><p></p><p></p><p>
+		 <p>
+		 Create a query with limit and anchor it to the end of the window
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">limit</span>:int</code> &mdash; The maximum number of child nodes to return
+		 
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></code> &mdash; A Query with the new constraint
+		 
+		 </td></tr></table></div><a name="orderByChild()"></a><a name="orderByChild(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">orderByChild</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function orderByChild(path:String):<a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></code><p></p><p></p><p>
+		 Create a query in which child nodes are ordered by the values of the specified path
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">path</span>:String</code> &mdash; The path (key) to the child node to use for sorting
+		 
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></code> &mdash; A Query with the new constraint
+		 
+		 </td></tr></table></div><a name="orderByKey()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">orderByKey</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function orderByKey():<a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></code><p></p><p></p><p>
+		 Create a query in which child nodes are ordered by their keys
+		 
+		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></code> &mdash; A Query with the new constraint
+		 
+		 </td></tr></table></div><a name="orderByPriority()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">orderByPriority</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function orderByPriority():<a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></code><p></p><p></p><p>
+		 Create a query in which child nodes are ordered by their priorities
+		 
+		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></code> &mdash; A Query with the new constraint
+		 
+		 </td></tr></table></div><a name="orderByValue()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">orderByValue</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function orderByValue():<a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></code><p></p><p></p><p>
+		 Create a query in which nodes are ordered by their value
+		 
+		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></code> &mdash; A Query with the new constraint
+		 
+		 </td></tr></table></div><a name="startAt()"></a><a name="startAt(Object,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">startAt</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function startAt(value:Object, key:String = null):<a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></code><p></p><p></p><p>
+		 <p>
+		 Create a query constrained to only return child nodes with a value 
+		 greater than or equal to the given value, using the given orderBy 
+		 directive or priority as default, and additionally only child nodes 
+		 with a key greater than or equal to the given key.
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">value</span>:Object</code> &mdash; The value to start at, inclusive
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">key</span>:String</code> (default = <code>null</code>)<code></code> &mdash; The key to start at, inclusive
+		 
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></code> &mdash; A Query with the new constraint
+		 
+		 </td></tr></table></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>Copyright <a href="http://distriqt.com" target="_top">distriqt</a> 2016</footer><br/>Thu Feb 9 2017, 06:18 PM +10:00  </center></div></body></html><!--Copyright distriqt 2016<br/>Thu Feb 9 2017, 06:18 PM +10:00  -->

@@ -28,8 +28,6 @@ package
 	
 	/**	
 	 * Sample application for using the Database Native Extension
-	 * 
-	 * @author	Michael Archbold
 	 */
 	public class TestDatabase extends Sprite
 	{

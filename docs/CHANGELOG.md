@@ -1,5 +1,10 @@
 
 
+###### 2017.02.09 [v1.0.0]
+
+Android Implementation of Storage (#18)
+
+
 ###### 2017.02.03 [v1.0.0]
 
 Realtime Databases complete implementation (resolves #1)

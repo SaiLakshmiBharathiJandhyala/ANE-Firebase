@@ -1,0 +1,201 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../../override.css" type="text/css"><meta name="keywords" content="DatabaseReference,com.distriqt.extension.firebase.database.DatabaseReference,child,dispose,disposeUnusedReferences,endAt,equalTo,fromObject,fromObject,getParent,getRef,getReference,getReferenceFromUrl,getRoot,getSdkVersion,getValue,goOffline,goOnline,init,keepSynced,limitToFirst,limitToLast,orderByChild,orderByKey,orderByPriority,orderByValue,purgeOutstandingWrites,push,removeValue,runTransaction,setPersistenceEnabled,setValue,setValue,startAt,toString,updateChildren"><title>com.distriqt.extension.firebase.database.DatabaseReference</title></head><body><script language="javascript" type="text/javascript" src="../../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'DatabaseReference - distriqt // Firebase';
+				var baseRef = '../../../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">distriqt // Firebase Native Extension Documentation</td><td class="titleTableTopNav" align="right"><a href="../../../../../package-summary.html" onclick="loadClassListFrame('../../../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../../../class-summary.html" onclick="loadClassListFrame('../../../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../../../all-index-A.html" onclick="loadClassListFrame('../../../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../../../index.html?com/distriqt/extension/firebase/database/DatabaseReference.html&amp;com/distriqt/extension/firebase/database/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">DatabaseReference</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#methodSummary">Methods</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("DatabaseReference"); titleBar_setSubNav(false,false,false,false,false,false,false,false,true,false,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.distriqt.extension.firebase.database</a></td></tr><tr><td class="classHeaderTableLabel">Interface</td><td class="classSignature">public  interface  DatabaseReference extends  <a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a>,  flash.events.IEventDispatcher</td></tr></table><p></p><p></p><p></p>
+	              <p>
+	 A Firebase reference represents a particular location in your 
+	 Database and can be used for reading or writing data to that Database location.
+	 </p>
+	 
+	              <p>
+	 This class is the starting point for all Database operations. 
+	 After you've initialized it with a URL, you can use it to read data, 
+	 write data, and to create new DatabaseReferences.
+	 </p>
+	 
+	           <p></p><br/><hr></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><div class="showHideLinks"><div id="hideInheritedMethod" class="hideInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(false,'Method');"><img class="showHideLinkImage" src="../../../../../images/expanded.gif"> Hide Inherited Public Methods</a></div><div id="showInheritedMethod" class="showInheritedMethod"><a class="showHideLink" href="#methodSummary" onclick="javascript:setInheritedVisible(true,'Method');"><img class="showHideLinkImage" src="../../../../../images/collapsed.gif"> Show Inherited Public Methods</a></div></div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#child()" class="signatureLink">child</a>(path:String):<a href="../../../../../com/distriqt/extension/firebase/database/DatabaseReference.html">DatabaseReference</a></div><div class="summaryTableDescription">
+		 Get a reference to location relative to this one
+		  
+		 </div></td><td class="summaryTableOwnerCol">DatabaseReference</td></tr><tr class="hideInheritedMethod"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../../../com/distriqt/extension/firebase/database/Query.html#endAt()" class="signatureLink">endAt</a>(value:Object, key:String = null):<a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></div><div class="summaryTableDescription">
+		 
+		 Create a query constrained to only return child nodes with a value 
+		 less than or equal to the given value, using the given orderBy directive 
+		 or priority as default, and additionally only child nodes with a key 
+		 less than or equal to the given key.</div></td><td class="summaryTableOwnerCol"><a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></td></tr><tr class="hideInheritedMethod"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../../../com/distriqt/extension/firebase/database/Query.html#equalTo()" class="signatureLink">equalTo</a>(value:Object, key:String = null):<a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></div><div class="summaryTableDescription">
+		 
+		 Create a query constrained to only return the child node with 
+		 the given key and value.</div></td><td class="summaryTableOwnerCol"><a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getParent()" class="signatureLink">getParent</a>():<a href="../../../../../com/distriqt/extension/firebase/database/DatabaseReference.html">DatabaseReference</a></div><div class="summaryTableDescription">
+		 
+		 A DatabaseReference to the parent location, 
+		 or null if this instance references the root location
+		 
+		 
+		 </div></td><td class="summaryTableOwnerCol">DatabaseReference</td></tr><tr class="hideInheritedMethod"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../../../com/distriqt/extension/firebase/database/Query.html#getRef()" class="signatureLink">getRef</a>():<a href="../../../../../com/distriqt/extension/firebase/database/DatabaseReference.html">DatabaseReference</a></div><div class="summaryTableDescription">
+		 
+		 </div></td><td class="summaryTableOwnerCol"><a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getRoot()" class="signatureLink">getRoot</a>():<a href="../../../../../com/distriqt/extension/firebase/database/DatabaseReference.html">DatabaseReference</a></div><div class="summaryTableDescription">
+		 
+		 A DatabaseReference to the root location of this Firebase Database
+		 
+		 
+		 </div></td><td class="summaryTableOwnerCol">DatabaseReference</td></tr><tr class="hideInheritedMethod"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../../../com/distriqt/extension/firebase/database/Query.html#keepSynced()" class="signatureLink">keepSynced</a>(keepSynced:Boolean):Boolean</div><div class="summaryTableDescription">
+		 
+		 By calling keepSynced(true) on a location, the data for that 
+		 location will automatically be downloaded and kept in sync, even when no 
+		 listeners are attached for that location.</div></td><td class="summaryTableOwnerCol"><a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></td></tr><tr class="hideInheritedMethod"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../../../com/distriqt/extension/firebase/database/Query.html#limitToFirst()" class="signatureLink">limitToFirst</a>(limit:int):<a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></div><div class="summaryTableDescription">
+		 
+		 Create a query with limit and anchor it to the start of the window
+		 
+		 
+		 </div></td><td class="summaryTableOwnerCol"><a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></td></tr><tr class="hideInheritedMethod"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../../../com/distriqt/extension/firebase/database/Query.html#limitToLast()" class="signatureLink">limitToLast</a>(limit:int):<a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></div><div class="summaryTableDescription">
+		 
+		 Create a query with limit and anchor it to the end of the window
+		 
+		 
+		 </div></td><td class="summaryTableOwnerCol"><a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></td></tr><tr class="hideInheritedMethod"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../../../com/distriqt/extension/firebase/database/Query.html#orderByChild()" class="signatureLink">orderByChild</a>(path:String):<a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></div><div class="summaryTableDescription">
+		 Create a query in which child nodes are ordered by the values of the specified path
+		 
+		 </div></td><td class="summaryTableOwnerCol"><a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></td></tr><tr class="hideInheritedMethod"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../../../com/distriqt/extension/firebase/database/Query.html#orderByKey()" class="signatureLink">orderByKey</a>():<a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></div><div class="summaryTableDescription">
+		 Create a query in which child nodes are ordered by their keys
+		 
+		 </div></td><td class="summaryTableOwnerCol"><a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></td></tr><tr class="hideInheritedMethod"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../../../com/distriqt/extension/firebase/database/Query.html#orderByPriority()" class="signatureLink">orderByPriority</a>():<a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></div><div class="summaryTableDescription">
+		 Create a query in which child nodes are ordered by their priorities
+		 
+		 </div></td><td class="summaryTableOwnerCol"><a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></td></tr><tr class="hideInheritedMethod"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../../../com/distriqt/extension/firebase/database/Query.html#orderByValue()" class="signatureLink">orderByValue</a>():<a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></div><div class="summaryTableDescription">
+		 Create a query in which nodes are ordered by their value
+		 
+		 </div></td><td class="summaryTableOwnerCol"><a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#push()" class="signatureLink">push</a>():<a href="../../../../../com/distriqt/extension/firebase/database/DatabaseReference.html">DatabaseReference</a></div><div class="summaryTableDescription">
+		 
+		 Create a reference to an auto-generated child location.</div></td><td class="summaryTableOwnerCol">DatabaseReference</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeValue()" class="signatureLink">removeValue</a>():Boolean</div><div class="summaryTableDescription">
+		 
+		 Deletes the value at this location.</div></td><td class="summaryTableOwnerCol">DatabaseReference</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#runTransaction()" class="signatureLink">runTransaction</a>(handler:<a href="../../../../../com/distriqt/extension/firebase/database/transactions/TransactionHandler.html">TransactionHandler</a>, fireLocalEvents:Boolean = true):Boolean</div><div class="summaryTableDescription">
+		 
+		 Run a transaction on the data at this location.</div></td><td class="summaryTableOwnerCol">DatabaseReference</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setValue()" class="signatureLink">setValue</a>(value:*, priority:String = null):Boolean</div><div class="summaryTableDescription">
+		 
+		 Set the data and priority to the given values.</div></td><td class="summaryTableOwnerCol">DatabaseReference</td></tr><tr class="hideInheritedMethod"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../../../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../../../../com/distriqt/extension/firebase/database/Query.html#startAt()" class="signatureLink">startAt</a>(value:Object, key:String = null):<a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></div><div class="summaryTableDescription">
+		 
+		 Create a query constrained to only return child nodes with a value 
+		 greater than or equal to the given value, using the given orderBy 
+		 directive or priority as default, and additionally only child nodes 
+		 with a key greater than or equal to the given key.</div></td><td class="summaryTableOwnerCol"><a href="../../../../../com/distriqt/extension/firebase/database/Query.html">Query</a></td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#updateChildren()" class="signatureLink">updateChildren</a>(update:Object):Boolean</div><div class="summaryTableDescription">
+		 
+		 Update the specific child keys to the specified values.</div></td><td class="summaryTableOwnerCol">DatabaseReference</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="child()"></a><a name="child(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">child</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function child(path:String):<a href="../../../../../com/distriqt/extension/firebase/database/DatabaseReference.html">DatabaseReference</a></code><p></p><p></p><p>
+		 Get a reference to location relative to this one
+		  
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">path</span>:String</code> &mdash; The relative path from this reference to the new one that should be created
+		 
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../../../com/distriqt/extension/firebase/database/DatabaseReference.html">DatabaseReference</a></code> &mdash; A new <code>DatabaseReference</code> to the given path
+		 
+		 </td></tr></table></div><a name="getParent()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getParent</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getParent():<a href="../../../../../com/distriqt/extension/firebase/database/DatabaseReference.html">DatabaseReference</a></code><p></p><p></p><p>
+		 <p>
+		 A <code>DatabaseReference</code> to the parent location, 
+		 or <code>null</code> if this instance references the root location
+		 </p>
+		 
+		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../../../com/distriqt/extension/firebase/database/DatabaseReference.html">DatabaseReference</a></code> &mdash; A <code>DatabaseReference</code> to the parent location, 
+		 or <code>null</code> if this instance references the root location
+		 
+		 </td></tr></table></div><a name="getRoot()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getRoot</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getRoot():<a href="../../../../../com/distriqt/extension/firebase/database/DatabaseReference.html">DatabaseReference</a></code><p></p><p></p><p>
+		 <p>
+		 A <code>DatabaseReference</code> to the root location of this Firebase Database
+		 </p>
+		 
+		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../../../com/distriqt/extension/firebase/database/DatabaseReference.html">DatabaseReference</a></code> &mdash; A reference to the root location of this Firebase Database
+		 
+		 </td></tr></table></div><a name="push()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">push</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function push():<a href="../../../../../com/distriqt/extension/firebase/database/DatabaseReference.html">DatabaseReference</a></code><p></p><p></p><p>
+		 <p>
+		 Create a reference to an auto-generated child location. 
+		 </p>
+		 <p>
+		 The child key is generated client-side and incorporates an estimate 
+		 of the server's time for sorting purposes. Locations generated on a 
+		 single client will be sorted in the order that they are created, and 
+		 will be sorted approximately in order across all clients.
+		 </p>
+		 
+		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../../../com/distriqt/extension/firebase/database/DatabaseReference.html">DatabaseReference</a></code> &mdash; A <code>DatabaseReference</code> pointing to the new location
+		 
+		 </td></tr></table></div><a name="removeValue()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">removeValue</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function removeValue():Boolean</code><p></p><p></p><p>
+		 <p>
+		 Deletes the value at this location.
+		 </p>
+		 
+		 <p>
+		 This is the same as calling <code>setValue( null )</code>
+		 </p>
+		 
+		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; <code>true</code> if successfully started and 
+		 			<code>false</code> if the extension is in an invalid state
+		 
+		 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso"><a href="../../../../../com/distriqt/extension/firebase/database/events/DatabaseReferenceEvent.html#REMOVE_VALUE_COMPLETE" target="">com.distriqt.extension.firebase.database.events.DatabaseReferenceEvent.REMOVE_VALUE_COMPLETE</a><br/><a href="../../../../../com/distriqt/extension/firebase/database/events/DatabaseReferenceEvent.html#REMOVE_VALUE_ERROR" target="">com.distriqt.extension.firebase.database.events.DatabaseReferenceEvent.REMOVE_VALUE_ERROR</a></div></div><a name="runTransaction()"></a><a name="runTransaction(com.distriqt.extension.firebase.database.transactions.TransactionHandler,Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">runTransaction</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function runTransaction(handler:<a href="../../../../../com/distriqt/extension/firebase/database/transactions/TransactionHandler.html">TransactionHandler</a>, fireLocalEvents:Boolean = true):Boolean</code><p></p><p></p><p>
+		 <p>
+		 Run a transaction on the data at this location.
+		 </p> 
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">handler</span>:<a href="../../../../../com/distriqt/extension/firebase/database/transactions/TransactionHandler.html">TransactionHandler</a></code> &mdash; 	Defaults to true. If set to false, events will only be fired for the final result state of the transaction, and not for any intermediate states
+		 
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">fireLocalEvents</span>:Boolean</code> (default = <code>true</code>)<code></code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; <code>true</code> if the transaction was started successfully and <code>false</code> if the extension is in an invalid state
+		 
+		 </td></tr></table></div><a name="setValue()"></a><a name="setValue(any,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setValue</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setValue(value:*, priority:String = null):Boolean</code><p></p><p></p><p>
+		 <p>
+		 Set the data and priority to the given values.
+		 </p>
+		 <p>
+		 Priorities are an optional (alphanumeric) value of each node, which is 
+		 used to sort the children under a specific parent or in a query if no 
+		 other sort condition is specified. The priority of a node is hidden 
+		 from most views of the data.
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">value</span>:*</code> &mdash; 	The value to set at this location
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">priority</span>:String</code> (default = <code>null</code>)<code></code> &mdash; The priority to set at this location
+		 	
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; <code>true</code> if successfully started and 
+		 			<code>false</code> if the extension is in an invalid state 
+		 			or if the value provided is an unsupported type
+		 
+		 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso"><a href="../../../../../com/distriqt/extension/firebase/database/events/DatabaseReferenceEvent.html#SET_VALUE_COMPLETE" target="">com.distriqt.extension.firebase.database.events.DatabaseReferenceEvent.SET_VALUE_COMPLETE</a><br/><a href="../../../../../com/distriqt/extension/firebase/database/events/DatabaseReferenceEvent.html#SET_VALUE_ERROR" target="">com.distriqt.extension.firebase.database.events.DatabaseReferenceEvent.SET_VALUE_ERROR</a></div></div><a name="updateChildren()"></a><a name="updateChildren(Object)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">updateChildren</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function updateChildren(update:Object):Boolean</code><p></p><p></p><p>
+		 <p>
+		 Update the specific child keys to the specified values. 
+		 Passing <code>null</code> in as a value to updateChildren() will 
+		 remove the value at the specified location.
+		 </p>
+		 
+		 <p>
+		 To simplify the creation of the <code>update</code> parameter
+		 we suggest using the <code>UpdateChildrenBuilder</code>
+		 </p>
+		 
+		 <p>
+		 Simultaneous updates made this way are atomic: either all updates succeed or all updates fail.
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">update</span>:Object</code> &mdash; The update(s) to apply to the children of this database reference
+		 
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; <code>true</code> if successfully started and 
+		 			<code>false</code> if the extension is in an invalid state 
+		 			or if the value provided is an unsupported type
+		 
+		 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso"><a href="../../../../../com/distriqt/extension/firebase/database/builders/UpdateChildrenBuilder.html" target="">com.distriqt.extension.firebase.database.builders.UpdateChildrenBuilder</a><br/><a href="../../../../../com/distriqt/extension/firebase/database/events/DatabaseReferenceEvent.html#UPDATE_CHILDREN_COMPLETE" target="">com.distriqt.extension.firebase.database.events.DatabaseReferenceEvent.UPDATE_CHILDREN_COMPLETE</a><br/><a href="../../../../../com/distriqt/extension/firebase/database/events/DatabaseReferenceEvent.html#UPDATE_CHILDREN_ERROR" target="">com.distriqt.extension.firebase.database.events.DatabaseReferenceEvent.UPDATE_CHILDREN_ERROR</a></div><br/><span class="label"> Example </span><br/><div class="detailBody">
+		 <div class="listing"><pre>
+var ref:DatabaseReference = FirebaseDatabase.service.getReference( "test" );
+                
+ref.updateChildren( 
+    new UpdateChildrenBuilder()
+        .update( "/children_test/numericValue", 100 )
+        .update( "/children_test/stringValue", "some value" )
+        .build()
+);
+         </pre></div>
+		 
+		 </div></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>Copyright <a href="http://distriqt.com" target="_top">distriqt</a> 2016</footer><br/>Thu Feb 9 2017, 06:18 PM +10:00  </center></div></body></html><!--Copyright distriqt 2016<br/>Thu Feb 9 2017, 06:18 PM +10:00  -->
