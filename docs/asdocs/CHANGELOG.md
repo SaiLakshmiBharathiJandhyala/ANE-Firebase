@@ -2,11 +2,6 @@
 
 ###### 2017.02.09 [v1.0.0]
 
-Updating documentation
-
-
-###### 2017.02.09 [v1.0.0]
-
 Android Implementation of Storage (#18)
 
 

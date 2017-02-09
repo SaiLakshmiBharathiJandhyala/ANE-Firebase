@@ -326,8 +326,6 @@ package com.distriqt.test.firebase
 			try
 			{
 				var file:File = File.applicationStorageDirectory.resolvePath( "downloads/test.png" );
-				
-				log( "file.exists = " + file.exists );
 					
 				var reference:StorageReference = FirebaseStorage.service.getReference().child( "downloads/cloud-serpent03.jpg" );
 				
