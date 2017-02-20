@@ -1,5 +1,11 @@
 
 
+###### 2017.02.20 [v1.0.0]
+
+Updated iOS SDK to v3.13 which now gives analytics on iOS (resolves #27)
+Implementation of Crash Reporting v1.0 (resolves #26)
+
+
 ###### 2017.02.09 [v1.0.0]
 
 Updating documentation

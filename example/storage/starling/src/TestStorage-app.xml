@@ -128,7 +128,7 @@
 		<extensionID>com.distriqt.Firebase</extensionID>
 		<extensionID>com.distriqt.androidsupport.V4</extensionID>
 	
-    <extensionID>com.distriqt.firebase.Storage</extensionID>
-    </extensions>
+		<extensionID>com.distriqt.firebase.Storage</extensionID>
+	</extensions>
 
 </application>

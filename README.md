@@ -55,14 +55,17 @@ It comes with detailed guides, AS docs, and a complete example application.
 
 ### Features:
 
-- Analytics
+- [Analytics](https://github.com/distriqt/ANE-Firebase/wiki/Core---Introduction)
 - Develop
-	- Realtime Database
-	- Remote Config
+	- [Authentication](https://github.com/distriqt/ANE-Firebase/wiki/Auth---Introduction)
+	- [Realtime Database](https://github.com/distriqt/ANE-Firebase/wiki/Database---Introduction)
+	- [Storage](https://github.com/distriqt/ANE-Firebase/wiki/Storage---Introduction)
+	- [Crash Reporting](https://github.com/distriqt/ANE-Firebase/wiki/Crash---Introduction)
 - Grow
-	- Notifications (Cloud Messaging)
-	- Invites
+	- [Notifications (Cloud Messaging)](https://github.com/distriqt/ANE-Firebase/wiki/FCM---Introduction)
+	- Remote Config
 	- Dynamic Links
+	- Invites
 - Single API interface - your code works across iOS and Android with no modifications
 - Sample project code and ASDocs reference
 
