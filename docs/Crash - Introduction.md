@@ -10,9 +10,9 @@ Comprehensive and actionable information to help diagnose and fix problems in yo
 > capture the steps leading up to a crash.
 >
 
-<iframe width="316" height="178" src="https://www.youtube.com/embed/B7mlLVAkcfU?list=PLl-K7zZEsYLmOF_07IayrTntevxtbUxDL" frameborder="0" allowfullscreen></iframe>
+[![YOUTUBE](https://img.youtube.com/vi/B7mlLVAkcfU/0.jpg)](https://www.youtube.com/watch?v=B7mlLVAkcfU)
 
-https://firebase.google.com/docs/crash/
+[https://firebase.google.com/docs/crash/](https://firebase.google.com/docs/crash/)
 
 ## Key capabilities
 

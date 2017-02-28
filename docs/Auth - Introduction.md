@@ -12,7 +12,9 @@
 > industry standards like OAuth 2.0 and OpenID Connect, so it can be easily integrated with your custom backend.
 >
 
-<iframe width="396" height="223" src="https://www.youtube.com/embed/8sGY55yxicA?list=PLl-K7zZEsYLmOF_07IayrTntevxtbUxDL" frameborder="0" allowfullscreen></iframe>
+[![YOUTUBE](https://img.youtube.com/vi/8sGY55yxicA/0.jpg)](https://www.youtube.com/watch?v=8sGY55yxicA)
+
+[https://firebase.google.com/docs/auth/](https://firebase.google.com/docs/auth/)
 
 ## Key capabilities
 

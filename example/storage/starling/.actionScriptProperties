@@ -34,7 +34,6 @@
           <libraryPathEntry kind="1" linkType="1" path="${PROJECT_FRAMEWORKS}/locale/{locale}"/>
         </excludedEntries>
       </libraryPathEntry>
-      <libraryPathEntry kind="3" linkType="1" path="/distriqt.extension.firebase/bin/distriqt.extension.firebase.swc" useDefaultLinkType="false"/>
       <libraryPathEntry kind="1" linkType="1" path="libs"/>
       <libraryPathEntry kind="3" linkType="1" path="/distriqt.extension.firebase.storage/bin/distriqt.extension.firebase.storage.swc" useDefaultLinkType="false"/>
       <libraryPathEntry kind="5" linkType="2" path="${DOCUMENTS}/extensions/firebase/source/extensions/core/build/com.distriqt.Firebase.ane"/>
@@ -56,22 +55,22 @@
   <buildCSSFiles/>
   <flashCatalyst validateFlashCatalystCompatibility="false"/>
   <buildTargets>
-    <buildTarget buildTargetName="device" iosSettingsVersion="2" isCurrent="true" platformId="com.adobe.flexide.multiplatform.ios.platform" provisioningFile="/Users/marchbold/Dropbox/work/certs/distriqt_test_profile.mobileprovision" releasePackageType="">
-      <airSettings airCertificatePath="/Users/marchbold/Dropbox/work/certs/iPhoneDeveloper_MichaelArchbold_Certificates.p12" airTimestamp="true" anePathSet="true" version="1">
+    <buildTarget buildTargetName="device" iosSettingsVersion="2" isCurrent="true" platformId="com.adobe.flexide.multiplatform.ios.platform" provisioningFile="/Users/marchbold/Dropbox/work/certs/com.distriqt.test/development/distriqt_test_profile.mobileprovision" releasePackageType="">
+      <airSettings airCertificatePath="/Users/marchbold/Dropbox/work/certs/distriqt/development/Certificates.p12" airTimestamp="true" anePathSet="true" version="1">
         <airExcludes/>
         <anePaths>
           <anePathEntry path="${DOCUMENTS}/extensions/firebase/source/extensions/core/build/com.distriqt.Firebase.ane"/>
           <anePathEntry path="${DOCUMENTS}/supportextensions/core/source/build/com.distriqt.Core.ane"/>
           <anePathEntry path="${DOCUMENTS}/supportextensions/googleplayservices/source/build/com.distriqt.playservices.Base.ane"/>
           <anePathEntry path="${DOCUMENTS}/supportextensions/androidsupport/source/build/com.distriqt.androidsupport.V4.ane"/>
-          <anePathEntry path="${DOCUMENTS}/extensions/firebase/source/extensions/database/build/com.distriqt.firebase.Database.ane"/>
+          <anePathEntry path="${DOCUMENTS}/extensions/firebase/source/extensions/storage/build/com.distriqt.firebase.Storage.ane"/>
         </anePaths>
         <newLaunchParams/>
         <modifiedLaunchParams/>
         <newPackagingParams/>
         <modifiedPackagingParams/>
       </airSettings>
-      <multiPlatformSettings enabled="true" hideAneLibSymbols="0" includePlatformLibs="false" platformID="com.adobe.flexide.multiplatform.ios.platform" reducedSizePackaging="false" version="2"/>
+      <multiPlatformSettings enabled="true" hideAneLibSymbols="0" includePlatformLibs="false" nativeSDKPathString="/Users/marchbold/work/sdks/ios/iPhoneOS10.2.sdk" platformID="com.adobe.flexide.multiplatform.ios.platform" reducedSizePackaging="false" version="2"/>
       <actionScriptSettings version="1"/>
     </buildTarget>
     <buildTarget airDownloadURL="" androidSettingsVersion="2" buildTargetName="device" isCurrent="true" platformId="com.adobe.flexide.multiplatform.android.platform">

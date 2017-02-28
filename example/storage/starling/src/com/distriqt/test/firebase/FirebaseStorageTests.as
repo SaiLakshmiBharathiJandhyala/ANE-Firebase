@@ -87,9 +87,10 @@ package com.distriqt.test.firebase
 					}
 				}
 				
-				var sourceDir:File = File.applicationDirectory.resolvePath( "assets" );
-				var destinationDir:File = File.applicationStorageDirectory.resolvePath( "assets" );
-				sourceDir.copyTo( destinationDir, true );
+//				var sourceDir:File = File.applicationDirectory.resolvePath( "assets" );
+//				var destinationDir:File = File.cacheDirectory.resolvePath( "assets" );
+//				destinationDir.createDirectory();
+//				sourceDir.copyTo( destinationDir, true );
 				
 			}
 			catch (e:Error)
@@ -155,7 +156,6 @@ package com.distriqt.test.firebase
 			log( "getMetadata_successHandler" );
 			
 			log( event.metadata.name );
-			log( event.metadata.md5Hash );
 		}
 		
 		private function getMetadata_errorHandler( event:StorageReferenceEvent ):void 
@@ -176,12 +176,15 @@ package com.distriqt.test.firebase
 		{
 			try
 			{
-				var file:File = File.applicationStorageDirectory.resolvePath( "assets/plane.png" );
+				var file:File = File.applicationDirectory.resolvePath( "assets/plane.png" );
+				
+				log( "file.exists="+file.exists );
+				log( "file.size="+file.size );
 				
 				var root:StorageReference = FirebaseStorage.service.getReference();
 				var reference:StorageReference = root.child( "images/test.png" );
 				
-				var task:UploadTask = reference.putFile( "file://" + file.nativePath );
+				var task:UploadTask = reference.putFile( file );
 			
 				task.addEventListener( UploadTaskEvent.COMPLETE, taskEventHandler );
 				task.addEventListener( UploadTaskEvent.SUCCESS, taskEventHandler );
@@ -200,14 +203,14 @@ package com.distriqt.test.firebase
 		{
 			try
 			{
-				var file:File = File.applicationStorageDirectory.resolvePath( "assets/plane.png" );
+				var file:File = File.applicationDirectory.resolvePath( "assets/plane.png" );
 				
 				var reference:StorageReference = FirebaseStorage.service.getReference().child( "images/test_metadata.png" );
 				
 				var metadata:StorageMetadata = new StorageMetadata();
 				metadata.setCustomMetadata( "source", "distriqt-ane" );
 				
-				var task:UploadTask = reference.putFile( "file://" + file.nativePath, metadata );
+				var task:UploadTask = reference.putFile( file, metadata );
 				
 				task.addEventListener( UploadTaskEvent.COMPLETE, taskEventHandler );
 				task.addEventListener( UploadTaskEvent.SUCCESS, taskEventHandler );
@@ -357,7 +360,7 @@ package com.distriqt.test.firebase
 			//			log( "t.isPaused()="+t.isPaused() );
 			//			log( "t.isSuccessful()="+t.isSuccessful() );
 			
-			if (event.type == DownloadTaskEvent.COMPLETE)
+			if (event.type == DownloadTaskEvent.COMPLETE || event.type == DownloadTaskEvent.ERROR)
 			{
 				t.removeEventListener( UploadTaskEvent.COMPLETE, downloadTaskEventHandler );
 				t.removeEventListener( UploadTaskEvent.SUCCESS, downloadTaskEventHandler );

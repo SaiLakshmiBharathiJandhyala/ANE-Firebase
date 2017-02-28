@@ -8,9 +8,9 @@
 > Firebase Analytics reports help you understand clearly how your users behave, which enables you to make informed decisions regarding app marketing and performance optimizations.
 >
 
-<iframe width="396" height="223" src="https://www.youtube.com/embed/iT6EaIwtonY?list=PLl-K7zZEsYLmOF_07IayrTntevxtbUxDL" frameborder="0" allowfullscreen></iframe>
+[![YOUTUBE](https://img.youtube.com/vi/iT6EaIwtonY/0.jpg)](https://www.youtube.com/watch?v=iT6EaIwtonY)
 
-https://firebase.google.com/docs/analytics/
+[https://firebase.google.com/docs/analytics/](https://firebase.google.com/docs/analytics/)
 
 ## Key capabilities
 

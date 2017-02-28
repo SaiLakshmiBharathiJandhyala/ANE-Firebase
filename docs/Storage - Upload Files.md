@@ -41,7 +41,7 @@ which you can use to manage and monitor the status of the upload.
 ```as3
 var file:File = File.applicationStorageDirectory.resolvePath( "plane.png" );
 
-var task:UploadTask = reference.putFile( "file://" + file.nativePath );
+var task:UploadTask = reference.putFile( file );
 ```
 
 
@@ -64,7 +64,7 @@ var reference:StorageReference = FirebaseStorage.service.getReference().child( "
 var metadata:StorageMetadata = new StorageMetadata();
 metadata.contentType = "image/jpg";
 
-var task:UploadTask = reference.putFile( "file://" + file.nativePath, metadata );
+var task:UploadTask = reference.putFile( file, metadata );
 ```
 
 

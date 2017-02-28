@@ -1,5 +1,17 @@
 
 
+###### 2017.02.28 [v1.1.0]
+
+Storage: iOS implementation (resolves #18)
+Auth: Changed photoUri reference to photoUrl for consistency (resolves #32)
+
+
+###### 2017.02.28 [v1.1.0]
+
+Storage: iOS implementation (resolves #18)
+Auth: Changed photoUri reference to photoUrl for consistency (resolves #32)
+
+
 ###### 2017.02.20 [v1.0.0]
 
 Updated documentation

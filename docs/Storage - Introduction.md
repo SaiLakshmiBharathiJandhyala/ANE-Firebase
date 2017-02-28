@@ -17,7 +17,8 @@
 > and cost-effective object storage service.
 >
 
-<iframe width="406" height="228" src="https://www.youtube.com/embed/_tyjqozrEPY?list=PLl-K7zZEsYLmOF_07IayrTntevxtbUxDL" frameborder="0" allowfullscreen></iframe>
+
+[![YOUTUBE](https://img.youtube.com/vi/_tyjqozrEPY/0.jpg)](https://www.youtube.com/watch?v=_tyjqozrEPY)
 
 [https://firebase.google.com/docs/storage/](https://firebase.google.com/docs/storage/)
 

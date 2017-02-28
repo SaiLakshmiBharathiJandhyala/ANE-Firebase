@@ -13,8 +13,10 @@ Benefits of upgrading to FCM SDK include:
 - Simpler client development. You no longer have to write your own registration or subscription retry logic.
 - An out-of-the-box notification solution. You can use Firebase Notifications, a serverless notifications solution with a web console that lets anyone send notifications to target specific audiences based on Firebase Analytics insights.
 
-<iframe width="396" height="223" src="https://www.youtube.com/embed/sioEY4tWmLI?list=PLl-K7zZEsYLmOF_07IayrTntevxtbUxDL" frameborder="0" allowfullscreen></iframe>
 
+[![YOUTUBE](https://img.youtube.com/vi/sioEY4tWmLI/0.jpg)](https://www.youtube.com/watch?v=sioEY4tWmLI)
+
+[https://firebase.google.com/docs/cloud-messaging/](https://firebase.google.com/docs/cloud-messaging/)
 
 ## Key capabilities
 

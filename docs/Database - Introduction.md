@@ -10,9 +10,10 @@
 > receive updates with the newest data.
 >
 
-<iframe width="396" height="223" src="https://www.youtube.com/embed/U5aeM5dvUpA?list=PLl-K7zZEsYLmOF_07IayrTntevxtbUxDL" frameborder="0" allowfullscreen></iframe>
 
-https://firebase.google.com/docs/database/
+[![YOUTUBE](https://img.youtube.com/vi/U5aeM5dvUpA/0.jpg)](https://www.youtube.com/watch?v=U5aeM5dvUpA)
+
+[https://firebase.google.com/docs/database/](https://firebase.google.com/docs/database/)
 
 
 ## Key capabilities
