@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <actionScriptProperties analytics="false" mainApplicationPath="TestStorage.as" projectUUID="8519d9af-915a-4549-a188-eb099d9b1b48" version="11">
-  <compiler additionalCompilerArguments="-locale en_US" advancedTelemetry="true" autoRSLOrdering="true" copyDependentFiles="true" fteInMXComponents="false" generateAccessible="false" htmlExpressInstall="true" htmlGenerate="false" htmlHistoryManagement="false" htmlPlayerVersionCheck="true" includeNetmonSwc="false" outputFolderPath="bin-debug" removeUnusedRSL="true" sourceFolderPath="src" strict="true" targetPlayerVersion="0.0.0" useApolloConfig="true" useDebugRSLSwfs="true" useFlashSDK="true" verifyDigests="true" warn="true">
+  <compiler additionalCompilerArguments="-locale en_US" advancedTelemetry="false" autoRSLOrdering="true" copyDependentFiles="true" fteInMXComponents="false" generateAccessible="false" htmlExpressInstall="true" htmlGenerate="false" htmlHistoryManagement="false" htmlPlayerVersionCheck="true" includeNetmonSwc="false" outputFolderPath="bin-debug" removeUnusedRSL="true" sourceFolderPath="src" strict="true" targetPlayerVersion="0.0.0" useApolloConfig="true" useDebugRSLSwfs="true" useFlashSDK="true" verifyDigests="true" warn="true">
     <compilerSourcePath/>
     <libraryPath defaultLinkType="0">
       <libraryPathEntry kind="4" path="">
@@ -102,6 +102,24 @@
         <modifiedPackagingParams/>
       </airSettings>
       <multiPlatformSettings enabled="false" hideAneLibSymbols="0" includePlatformLibs="false" platformID="default" reducedSizePackaging="false" version="2"/>
+      <actionScriptSettings version="1"/>
+    </buildTarget>
+    <buildTarget basedOn="device" buildTargetName="release" iosSettingsVersion="2" isCurrent="false" platformId="com.adobe.flexide.multiplatform.ios.platform" provisioningFile="/Users/marchbold/Dropbox/work/certs/com.distriqt.test/distribution/distriqt_test_distribution_profile.mobileprovision" releasePackageType="ipa-app-store">
+      <airSettings airCertificatePath="/Users/marchbold/Dropbox/work/certs/distriqt/distribution/Certificates.p12" airTimestamp="true" anePathSet="true" version="1">
+        <airExcludes/>
+        <anePaths>
+          <anePathEntry path="${DOCUMENTS}/extensions/firebase/source/extensions/core/build/com.distriqt.Firebase.ane"/>
+          <anePathEntry path="${DOCUMENTS}/supportextensions/core/source/build/com.distriqt.Core.ane"/>
+          <anePathEntry path="${DOCUMENTS}/supportextensions/googleplayservices/source/build/com.distriqt.playservices.Base.ane"/>
+          <anePathEntry path="${DOCUMENTS}/supportextensions/androidsupport/source/build/com.distriqt.androidsupport.V4.ane"/>
+          <anePathEntry path="${DOCUMENTS}/extensions/firebase/source/extensions/storage/build/com.distriqt.firebase.Storage.ane"/>
+        </anePaths>
+        <newLaunchParams/>
+        <modifiedLaunchParams/>
+        <newPackagingParams/>
+        <modifiedPackagingParams/>
+      </airSettings>
+      <multiPlatformSettings enabled="true" hideAneLibSymbols="0" includePlatformLibs="false" nativeSDKPathString="/Users/marchbold/work/sdks/ios/iPhoneOS10.2.sdk" platformID="com.adobe.flexide.multiplatform.ios.platform" reducedSizePackaging="false" version="2"/>
       <actionScriptSettings version="1"/>
     </buildTarget>
   </buildTargets>

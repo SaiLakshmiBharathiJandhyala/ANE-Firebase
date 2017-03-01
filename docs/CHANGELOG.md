@@ -1,5 +1,10 @@
 
 
+###### 2017.03.01 [v1.1.002]
+
+Android Update for Google Play Services and Firebase v10.2.0
+
+
 ###### 2017.02.28 [v1.1.0]
 
 Storage: iOS implementation (resolves #18)

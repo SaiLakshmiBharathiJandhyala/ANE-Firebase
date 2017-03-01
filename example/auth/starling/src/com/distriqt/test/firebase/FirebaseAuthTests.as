@@ -375,14 +375,15 @@ package com.distriqt.test.firebase
 		{
 			if (FirebaseAuth.isSupported && FirebaseAuth.service.isSignedIn())
 			{
-				log( "updateProfile()" );
+				var newDisplayName:String = "Test Awesome " + Math.floor(Math.random()*1000);
+				log( "updateProfile(): displayName = " + newDisplayName );
 				FirebaseAuth.service.getCurrentUser().addEventListener( 
 					FirebaseUserEvent.UPDATE_PROFILE_COMPLETE,
 					updateProfile_completeHandler );
 				
 				FirebaseAuth.service.getCurrentUser().updateProfile( 
 					new UserProfileChangeRequestBuilder()
-						.setDisplayName( "Test Awesome" )
+						.setDisplayName( newDisplayName )
 						.build()
 					);
 			}
@@ -391,6 +392,9 @@ package com.distriqt.test.firebase
 		private function updateProfile_completeHandler( event:FirebaseUserEvent ):void
 		{
 			log( "updateProfile(): complete: "+event.success +"::"+event.message );
+			
+			log( "updateProfile(): " + FirebaseAuth.service.getCurrentUser().displayName );
+			
 			FirebaseAuth.service.getCurrentUser().removeEventListener( 
 				FirebaseUserEvent.UPDATE_PROFILE_COMPLETE,
 				updateProfile_completeHandler );
