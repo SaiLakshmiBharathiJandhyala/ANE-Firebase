@@ -1,5 +1,10 @@
 
 
+###### 2017.03.02 [v1.1.003]
+
+Corrected build removing duplicate libraries (resolves #38)
+
+
 ###### 2017.03.01 [v1.1.002]
 
 Android Update for Google Play Services and Firebase v10.2.0
