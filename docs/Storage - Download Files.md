@@ -40,12 +40,12 @@ To get access to the byte data you should listen for the `SUCCESS` event:
 task.addEventListener( DownloadTaskEvent.SUCCESS, downloadSuccessHandler );
 ```
 
-In your handler you will have access to the byte data via the snapshot:
+In your handler you will have access to the byte data via the `taskSnapshot`:
 
 ```as3
 private function downloadSuccessHandler( event:DownloadTaskEvent ):void 
 {
-	var data:ByteArray = event.snapshot.bytes; 
+	var data:ByteArray = event.taskSnapshot.bytes; 
 }
 ```
 
@@ -89,7 +89,7 @@ This object is an immutable view of the task at the time the event occurred.
 ```as3
 private function downloadSuccessHandler( event:DownloadTaskEvent ):void 
 {
-	// event.snapshot contains details about the completed download
+	// event.taskSnapshot contains details about the completed download
 }
 
 private function downloadErrorHandler( event:DownloadTaskEvent ):void 

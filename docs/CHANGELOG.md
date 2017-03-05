@@ -1,5 +1,13 @@
 
 
+###### 2017.03.06 [v1.1.003]
+
+Implemented core default lib (resolves #39)
+Corrected storage getBytes success event (resolves #42)
+Corrected storage config documentation (resolves #41)
+Updated config script (resolves #28)
+
+
 ###### 2017.03.02 [v1.1.003]
 
 Corrected build removing duplicate libraries (resolves #38)

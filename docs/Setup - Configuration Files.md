@@ -88,6 +88,7 @@ however it is a simple process using the provided ant build scripts and ensures 
 > | **`firebase_database_url`** 			| `project_info/firebase_url` | |
 > | **`google_api_key`** 					| `{YOUR_CLIENT}/api_key/current_key` | |
 > | **`google_crash_reporting_api_key`** 	| `{YOUR_CLIENT}/api_key/current_key` | |
+> | **`google_storage_bucket`**				| `project_info/storage_bucket` | | 
 > | **`ga_trackingId`** 					| `{YOUR_CLIENT}/services/analytics-service/analytics_property/tracking_id` | optional |
 >
 
@@ -108,7 +109,8 @@ however it is a simple process using the provided ant build scripts and ensures 
 >     <string name="firebase_database_url" translatable="false">https://example-url.firebaseio.com</string>
 >     <string name="google_api_key" translatable="false">AIzbSyCILMsOuUKwN3qhtxrPq7FFemDJUAXTyZ8</string>
 >     <string name="google_crash_reporting_api_key" translatable="false">AIzbSyCILMsOuUKwN3qhtxrPq7FFemDJUAXTyZ8</string>
-> 
+>     <string name="google_storage_bucket" translatable="false">XXX</string>
+>
 > </resources>
 > ```
 > 
@@ -137,6 +139,9 @@ Download this file and place it in the root of your application package and ensu
 
 ## Manual Configuration
 
+>
+>	This method is not working completely as yet, please use the resource method for the moment
+>
 
 If you wish you can manually setup your application. 
 To do this you create an instance of the `FirebaseOptions` class and set the details for your application.
