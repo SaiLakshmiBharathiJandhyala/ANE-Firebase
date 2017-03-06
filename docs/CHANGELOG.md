@@ -2,6 +2,11 @@
 
 ###### 2017.03.06 [v1.1.007]
 
+Corrected release error (#39)
+
+
+###### 2017.03.06 [v1.1.007]
+
 Database: Added ServerValue TIMESTAMP (resolves #34)
 
 
