@@ -21,6 +21,7 @@ package com.distriqt.test.firebase
 	import com.distriqt.extension.firebase.database.DatabaseReference;
 	import com.distriqt.extension.firebase.database.FirebaseDatabase;
 	import com.distriqt.extension.firebase.database.Query;
+	import com.distriqt.extension.firebase.database.ServerValue;
 	import com.distriqt.extension.firebase.database.builders.UpdateChildrenBuilder;
 	import com.distriqt.extension.firebase.database.events.DatabaseReferenceChildEvent;
 	import com.distriqt.extension.firebase.database.events.DatabaseReferenceEvent;
@@ -180,6 +181,20 @@ package com.distriqt.test.firebase
 			}
 		}
 		
+		public function setValue_serverValue():void 
+		{
+			log( "setValue_serverValue()" );
+			try
+			{
+				var ref:DatabaseReference = FirebaseDatabase.service.getReference( "test" );
+				ref.child("timestamp").setValue( ServerValue.TIMESTAMP );
+			}
+			catch (e:Error)
+			{
+				log( e.message );
+			}
+		}
+		
 		
 		
 		////////////////////////////////////////////////////////
@@ -226,6 +241,7 @@ package com.distriqt.test.firebase
 					new UpdateChildrenBuilder()
 						.update( "/children_test/numericValue", Math.floor(Math.random()*1000) )
 						.update( "/children_test/stringValue", "a string value "+String(Math.floor(Math.random()*1000)) )
+						.update( "/children_test/timestamp", ServerValue.TIMESTAMP )
 						.build()
 				);
 				

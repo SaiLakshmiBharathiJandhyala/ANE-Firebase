@@ -1,5 +1,10 @@
 
 
+###### 2017.03.06 [v1.1.007]
+
+Database: Added ServerValue TIMESTAMP (resolves #34)
+
+
 ###### 2017.03.06 [v1.1.003]
 
 Implemented core default lib (resolves #39)
