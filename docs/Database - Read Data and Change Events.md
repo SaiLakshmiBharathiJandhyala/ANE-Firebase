@@ -63,3 +63,34 @@ private function valueChangedErrorHandler( event:DatabaseReferenceEvent ):void
 ```
 
 
+### Read Data Once
+
+In some cases you may want a callback to be called once and then immediately removed, 
+such as when initializing a UI element that you don't expect to change. This is useful 
+for data that only needs to be loaded once and isn't expected to change frequently or 
+require active listening.
+
+To this end you can use the `once( callback:Function )` method and provide a callback 
+function to handle the result.
+
+```as3
+var ref:DatabaseReference = FirebaseDatabase.service.getReference( "test" );
+
+ref.once( function( value:Object ):void 
+{
+	if (value != null)
+	{
+		trace( JSON.stringify( value ) );
+	}
+	else 
+	{
+		// There was an error
+	}
+});
+```
+
+The `once` function takes a `Function` as a parameter which will be called when the value 
+has been read. This function should have one parameter of type `Object` which will be the 
+resulting `value` of the read operation. This value may be `null` if an error occurred. 
+
+

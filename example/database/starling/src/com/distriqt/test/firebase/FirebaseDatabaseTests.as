@@ -308,6 +308,32 @@ package com.distriqt.test.firebase
 		
 		
 		
+		////////////////////////////////////////////////////////
+		//	READ VALUE ONCE
+		//
+		
+		public function once():void 
+		{
+			log( "once()" );
+			try
+			{
+				var ref:DatabaseReference = FirebaseDatabase.service.getReference( "test" );
+				
+				var success:Boolean = ref.once( function( value:Object ):void 
+				{
+					log( "once() complete" );
+					log( JSON.stringify( value ) );
+				});
+				
+				log( "once() = "+success );
+			}
+			catch (e:Error)
+			{
+				log( e.message );
+			}
+		}
+		
+		
 		
 		////////////////////////////////////////////////////////
 		//	VALUE CHANGE EVENTS

@@ -1,5 +1,10 @@
 
 
+###### 2017.03.15 [v1.1.009]
+
+Database: Added once functionality (resolves #47)
+
+
 ###### 2017.03.06 [v1.1.007]
 
 Corrected release error (#39)

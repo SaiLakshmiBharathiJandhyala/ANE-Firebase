@@ -118,6 +118,7 @@ package com.distriqt.test.firebase
 			addAction( "removeValue :Database", _tests.removeValue );
 			
 			addAction( "readValue :Database", _tests.readValue );
+			addAction( "once :Database", _tests.once );
 			
 			addAction( "transaction :Database", _tests.transaction );
 			
