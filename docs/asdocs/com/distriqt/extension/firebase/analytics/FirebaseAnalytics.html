@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../../override.css" type="text/css"><meta name="keywords" content="FirebaseAnalytics,com.distriqt.extension.firebase.analytics.FirebaseAnalytics,logEvent,setUserID,setUserProperty"><title>com.distriqt.extension.firebase.analytics.FirebaseAnalytics</title></head><body><script language="javascript" type="text/javascript" src="../../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../../override.css" type="text/css"><meta name="keywords" content="FirebaseAnalytics,com.distriqt.extension.firebase.analytics.FirebaseAnalytics,logEvent,setAnalyticsCollectionEnabled,setCurrentScreen,setMinimumSessionDuration,setSessionTimeoutDuration,setUserID,setUserProperty"><title>com.distriqt.extension.firebase.analytics.FirebaseAnalytics</title></head><body><script language="javascript" type="text/javascript" src="../../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
 				asdocTitle = 'FirebaseAnalytics - distriqt // Firebase';
 				var baseRef = '../../../../../';
 				window.onload = configPage;
@@ -14,22 +14,92 @@
 	 
 	 <p></p><br/><hr></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#logEvent()" class="signatureLink">logEvent</a>(event:<a href="../../../../../com/distriqt/extension/firebase/analytics/EventObject.html">EventObject</a>):Boolean</div><div class="summaryTableDescription">
 		 
-		 </div></td><td class="summaryTableOwnerCol">FirebaseAnalytics</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setUserID()" class="signatureLink">setUserID</a>(userID:String):Boolean</div><div class="summaryTableDescription">
+		 Logs an app event
 		 
-		 </div></td><td class="summaryTableOwnerCol">FirebaseAnalytics</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setUserProperty()" class="signatureLink">setUserProperty</a>(name:String, value:String):Boolean</div><div class="summaryTableDescription">
 		 
-		 </div></td><td class="summaryTableOwnerCol">FirebaseAnalytics</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+		 </div></td><td class="summaryTableOwnerCol">FirebaseAnalytics</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setAnalyticsCollectionEnabled()" class="signatureLink">setAnalyticsCollectionEnabled</a>(enabled:Boolean):Boolean</div><div class="summaryTableDescription">
+		 
+		 Sets whether analytics collection is enabled for this app on this device.</div></td><td class="summaryTableOwnerCol">FirebaseAnalytics</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setCurrentScreen()" class="signatureLink">setCurrentScreen</a>(screenName:String, screenClass:String):Boolean</div><div class="summaryTableDescription">
+		 
+		 Sets the current screen name, which specifies the current visual context in your app.</div></td><td class="summaryTableOwnerCol">FirebaseAnalytics</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setMinimumSessionDuration()" class="signatureLink">setMinimumSessionDuration</a>(milliseconds:int):Boolean</div><div class="summaryTableDescription">
+		 
+		 Sets the minimum engagement time required before starting a session.</div></td><td class="summaryTableOwnerCol">FirebaseAnalytics</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setSessionTimeoutDuration()" class="signatureLink">setSessionTimeoutDuration</a>(milliseconds:int):Boolean</div><div class="summaryTableDescription">
+		 
+		 Sets the duration of inactivity that terminates the current session.</div></td><td class="summaryTableOwnerCol">FirebaseAnalytics</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setUserID()" class="signatureLink">setUserID</a>(userID:String):Boolean</div><div class="summaryTableDescription">
+		 
+		 Sets the user ID property.</div></td><td class="summaryTableOwnerCol">FirebaseAnalytics</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setUserProperty()" class="signatureLink">setUserProperty</a>(name:String, value:String):Boolean</div><div class="summaryTableDescription">
+		 
+		 Sets a user property to a given value.</div></td><td class="summaryTableOwnerCol">FirebaseAnalytics</td></tr></table></div><script language="javascript" type="text/javascript"><!--
 										showHideInherited();
 										--></script><div class="MainContent"><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="logEvent()"></a><a name="logEvent(com.distriqt.extension.firebase.analytics.EventObject)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">logEvent</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function logEvent(event:<a href="../../../../../com/distriqt/extension/firebase/analytics/EventObject.html">EventObject</a>):Boolean</code><p></p><p></p><p>
+		 <p>
+		 Logs an app event
+		 </p>
 		 
-		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">event</span>:<a href="../../../../../com/distriqt/extension/firebase/analytics/EventObject.html">EventObject</a></code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">event</span>:<a href="../../../../../com/distriqt/extension/firebase/analytics/EventObject.html">EventObject</a></code> &mdash; The <code>EventObject</code> to log
+		 
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; <code>true</code> if successful and <code>false</code> otherwise
+		 
+		 </td></tr></table></div><a name="setAnalyticsCollectionEnabled()"></a><a name="setAnalyticsCollectionEnabled(Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setAnalyticsCollectionEnabled</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setAnalyticsCollectionEnabled(enabled:Boolean):Boolean</code><p></p><p></p><p>
+		 <p>
+		 Sets whether analytics collection is enabled for this app on this device. 
+		 This setting is persisted across app sessions. By default it is enabled.
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">enabled</span>:Boolean</code> &mdash; Whether analytics collection is enabled for this app on this device
+		 
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; <code>true</code> if successful and <code>false</code> otherwise
+		 
+		 </td></tr></table></div><a name="setCurrentScreen()"></a><a name="setCurrentScreen(String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setCurrentScreen</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setCurrentScreen(screenName:String, screenClass:String):Boolean</code><p></p><p></p><p>
+		 <p>
+		 Sets the current screen name, which specifies the current visual context in your app. 
+		 This helps identify the areas in your app where users spend their time 
+		 and how they interact with your app.
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">screenName</span>:String</code> &mdash; The name of the current screen. Should contain 1 to 100 characters.
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">screenClass</span>:String</code> &mdash; The name of the screen class. Should contain 1 to 100 characters.
+		 
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; <code>true</code> if successful and <code>false</code> otherwise
+		 
+		 </td></tr></table></div><a name="setMinimumSessionDuration()"></a><a name="setMinimumSessionDuration(int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setMinimumSessionDuration</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setMinimumSessionDuration(milliseconds:int):Boolean</code><p></p><p></p><p>
+		 <p>
+		 Sets the minimum engagement time required before starting a session. The default value is 10000 (10 seconds).
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">milliseconds</span>:int</code> &mdash; The minimum engagement time required to start a new session.
+		 
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; <code>true</code> if successful and <code>false</code> otherwise
+		 
+		 </td></tr></table></div><a name="setSessionTimeoutDuration()"></a><a name="setSessionTimeoutDuration(int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setSessionTimeoutDuration</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setSessionTimeoutDuration(milliseconds:int):Boolean</code><p></p><p></p><p>
+		 <p>
+		 Sets the duration of inactivity that terminates the current session. The default value is 1800000 (30 minutes).
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">milliseconds</span>:int</code> &mdash; Session timeout duration in milliseconds
+		 
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; <code>true</code> if successful and <code>false</code> otherwise
 		 
 		 </td></tr></table></div><a name="setUserID()"></a><a name="setUserID(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setUserID</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setUserID(userID:String):Boolean</code><p></p><p></p><p>
+		 <p>
+		 Sets the user ID property. This feature must be used in accordance with 
+		 <a href="http://www.google.com/policies/privacy" target="">Google's Privacy Policy</a>.
+		 </p>
 		 
-		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">userID</span>:String</code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">userID</span>:String</code> &mdash; The user ID to ascribe to the user of this app on this device, 
+		 					which must be non-empty and no more than 36 characters long.
+		 
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; <code>true</code> if successful and <code>false</code> otherwise
 		 
 		 </td></tr></table></div><a name="setUserProperty()"></a><a name="setUserProperty(String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setUserProperty</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setUserProperty(name:String, value:String):Boolean</code><p></p><p></p><p>
+		 <p>
+		 Sets a user property to a given value. Up to 25 user property names are supported. 
+		 Once set, user property values persist throughout the app lifecycle and across sessions.
+		 </p>
 		 
-		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">name</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">value</span>:String</code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">name</span>:String</code> &mdash; 	The name of the user property to set. Should contain 1 to 24 alphanumeric characters or underscores and must start with an alphabetic character. The "firebase_" prefix is reserved and should not be used for user property names.
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">value</span>:String</code> &mdash; 	The value of the user property. Values can be up to 36 characters long. 
 		 
-		 </td></tr></table></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>Copyright <a href="http://distriqt.com" target="_top">distriqt</a> 2016</footer><br/>Wed Mar 15 2017, 12:11 PM +10:00  </center></div></body></html><!--Copyright distriqt 2016<br/>Wed Mar 15 2017, 12:11 PM +10:00  -->
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; <code>true</code> if successful and <code>false</code> otherwise
+		 
+		 </td></tr></table></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>Copyright <a href="http://distriqt.com" target="_top">distriqt</a> 2016</footer><br/>Thu Mar 23 2017, 09:48 AM +10:00  </center></div></body></html><!--Copyright distriqt 2016<br/>Thu Mar 23 2017, 09:48 AM +10:00  -->

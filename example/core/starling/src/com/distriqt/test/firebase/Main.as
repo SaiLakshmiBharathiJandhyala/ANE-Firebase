@@ -105,6 +105,7 @@ package com.distriqt.test.firebase
 			addAction( "Log Event :Analytics", _tests.logEvent );
 			addAction( "Set User ID :Analytics", _tests.setUserID );
 			addAction( "Set User Prop :Analytics", _tests.setUserProperty );
+			addAction( "Set Current Screen :Analytics", _tests.setCurrentScreen );
 			
 			
 			addChild( _text );

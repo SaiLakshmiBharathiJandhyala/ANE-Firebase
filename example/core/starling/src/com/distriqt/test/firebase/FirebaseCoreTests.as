@@ -126,5 +126,16 @@ package com.distriqt.test.firebase
 		}
 			
 		
+		public function setCurrentScreen():void 
+		{
+			if (Firebase.isSupported)
+			{
+				var screenName:String = "screen_test_"+String(Math.floor(Math.random()*10));;
+				
+				var success:Boolean = Firebase.service.analytics.setCurrentScreen( screenName );
+				log( "setCurrentScreen( " + screenName +" ) = " + success );
+			}
+		}
+		
 	}
 }

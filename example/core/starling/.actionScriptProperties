@@ -40,6 +40,7 @@
       <libraryPathEntry kind="5" linkType="2" path="${DOCUMENTS}/supportextensions/core/source/build/com.distriqt.Core.ane"/>
       <libraryPathEntry kind="5" linkType="2" path="${DOCUMENTS}/supportextensions/googleplayservices/source/build/com.distriqt.playservices.Base.ane"/>
       <libraryPathEntry kind="5" linkType="2" path="${DOCUMENTS}/supportextensions/androidsupport/source/build/com.distriqt.androidsupport.V4.ane"/>
+      <libraryPathEntry kind="5" linkType="2" path="${DOCUMENTS}/extensions/firebase/_distriqt/com.distriqt.firebase.Config.ane"/>
     </libraryPath>
     <sourceAttachmentPath/>
   </compiler>
@@ -53,8 +54,8 @@
   <buildCSSFiles/>
   <flashCatalyst validateFlashCatalystCompatibility="false"/>
   <buildTargets>
-    <buildTarget buildTargetName="device" iosSettingsVersion="2" isCurrent="true" platformId="com.adobe.flexide.multiplatform.ios.platform" provisioningFile="/Users/marchbold/Dropbox/work/certs/distriqt_test_profile.mobileprovision" releasePackageType="">
-      <airSettings airCertificatePath="/Users/marchbold/Dropbox/work/certs/iPhoneDeveloper_MichaelArchbold_Certificates.p12" airTimestamp="true" anePathSet="true" version="1">
+    <buildTarget buildTargetName="device" iosSettingsVersion="2" isCurrent="true" platformId="com.adobe.flexide.multiplatform.ios.platform" provisioningFile="/Users/marchbold/Dropbox/work/certs/com.distriqt.test/development/distriqt_test_profile.mobileprovision" releasePackageType="">
+      <airSettings airCertificatePath="/Users/marchbold/Dropbox/work/certs/distriqt/development/Certificates.p12" airTimestamp="true" anePathSet="true" version="1">
         <airExcludes/>
         <anePaths>
           <anePathEntry path="${DOCUMENTS}/extensions/firebase/source/extensions/core/build/com.distriqt.Firebase.ane"/>

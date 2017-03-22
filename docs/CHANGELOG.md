@@ -1,5 +1,15 @@
 
 
+###### 2017.03.23 [v1.1.011]
+
+Analytics: Added additional functionality (resolves #52)
+
+
+###### 2017.03.23 [v1.1.009]
+
+Analytics: Added additional functionality (resolves #52)
+
+
 ###### 2017.03.15 [v1.1.009]
 
 Database: Added once functionality (resolves #47)
