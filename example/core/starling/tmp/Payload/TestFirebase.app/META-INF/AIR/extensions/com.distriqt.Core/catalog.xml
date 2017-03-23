@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<swc xmlns="http://www.adobe.com/flash/swccatalog/9">
+    <versions>
+        <swc version="1.2"/>
+        <compiler name="ActionScript Compiler" version="2.0.0" build="354200"/>
+    </versions>
+    <features>
+        <feature-script-deps/>
+    </features>
+    <libraries>
+        <library path="library.swf">
+            <script name="com/distriqt/extension/core/Core" mod="1470915466000">
+                <def id="com.distriqt.extension.core:Core"/>
+                <dep id="Array" type="e"/>
+                <dep id="Boolean" type="s"/>
+                <dep id="Error" type="e"/>
+                <dep id="Function" type="s"/>
+                <dep id="JSON" type="e"/>
+                <dep id="Object" type="e"/>
+                <dep id="String" type="s"/>
+                <dep id="com.distriqt.extension.core:Version" type="e"/>
+                <dep id="com.distriqt.extension.core.events:GenericEvent" type="e"/>
+                <dep id="flash.desktop:InvokeEventReason" type="e"/>
+                <dep id="flash.desktop:NativeApplication" type="e"/>
+                <dep id="flash.events:EventDispatcher" type="i"/>
+                <dep id="flash.events:InvokeEvent" type="e"/>
+                <dep id="flash.events:StatusEvent" type="e"/>
+                <dep id="flash.external:ExtensionContext" type="s"/>
+                <dep id="int" type="s"/>
+                <dep id="trace" type="e"/>
+            </script>
+            <script name="com/distriqt/extension/core/Version" mod="1484180022000">
+                <def id="com.distriqt.extension.core:Version"/>
+                <dep id="Object" type="i"/>
+                <dep id="String" type="s"/>
+            </script>
+            <script name="com/distriqt/extension/core/events/GenericEvent" mod="1425038465000">
+                <def id="com.distriqt.extension.core.events:GenericEvent"/>
+                <dep id="Boolean" type="s"/>
+                <dep id="String" type="s"/>
+                <dep id="flash.events:Event" type="i"/>
+            </script>
+            <digests>
+                <digest type="SHA-256" signed="false" value="aebd0d4fde2764526f9ee509a5daf1f0e24f5dcfac0d0d27eb4579e0ae13112b"/>
+            </digests>
+        </library>
+    </libraries>
+</swc>

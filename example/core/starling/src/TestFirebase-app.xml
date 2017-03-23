@@ -126,7 +126,8 @@
 
 		<extensionID>com.distriqt.Firebase</extensionID>
 		<extensionID>com.distriqt.androidsupport.V4</extensionID>
-	<extensionID>com.distriqt.firebase.Config</extensionID>
+	
+    <extensionID>com.distriqt.CustomResources</extensionID>
     </extensions>
 
 </application>

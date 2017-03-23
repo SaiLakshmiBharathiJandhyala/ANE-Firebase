@@ -1,0 +1,16 @@
+<platform xmlns="http://ns.adobe.com/air/extension/4.0">
+	<copyright>2015 // distriqt</copyright>
+	<sdkVersion>7.0</sdkVersion>
+	<linkerOptions>
+		<option>-ios_version_min 7.0</option>
+		<option>-w</option>
+		<option>-framework AddressBook</option>
+	</linkerOptions>
+	<packagedDependencies>
+		<packagedDependency>CoreNativeExtension.framework</packagedDependency>
+		<packagedDependency>FirebaseAnalytics.framework</packagedDependency>
+		<packagedDependency>FirebaseCore.framework</packagedDependency>
+		<packagedDependency>FirebaseInstanceID.framework</packagedDependency>
+		<packagedDependency>GoogleToolboxForMac.framework</packagedDependency>
+	</packagedDependencies>
+</platform>

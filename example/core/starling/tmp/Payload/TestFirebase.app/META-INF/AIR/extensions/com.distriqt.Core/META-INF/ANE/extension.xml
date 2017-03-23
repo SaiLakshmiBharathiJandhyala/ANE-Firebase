@@ -1,0 +1,37 @@
+<extension xmlns="http://ns.adobe.com/air/extension/4.0">
+	<id>com.distriqt.Core</id>
+	<versionNumber>2.1.011</versionNumber>
+	<platforms>
+		<platform name="Android-ARM">
+			<applicationDeployment>
+				<nativeLibrary>distriqt.extension.core.android.jar</nativeLibrary>
+				<initializer>com.distriqt.extension.core.CoreExtension</initializer>
+				<finalizer>com.distriqt.extension.core.CoreExtension</finalizer>
+			</applicationDeployment>
+		</platform>
+		<platform name="Android-x86">
+			<applicationDeployment>
+				<nativeLibrary>distriqt.extension.core.android.jar</nativeLibrary>
+				<initializer>com.distriqt.extension.core.CoreExtension</initializer>
+				<finalizer>com.distriqt.extension.core.CoreExtension</finalizer>
+			</applicationDeployment>
+		</platform>
+		<platform name="iPhone-ARM">
+			<applicationDeployment>
+				<nativeLibrary>libCore.a</nativeLibrary>
+				<initializer>CoreExtInitializer</initializer>
+				<finalizer>CoreExtFinalizer</finalizer>
+			</applicationDeployment>
+		</platform>
+		<platform name="iPhone-x86">
+			<applicationDeployment>
+				<nativeLibrary>libCore.a</nativeLibrary>
+				<initializer>CoreExtInitializer</initializer>
+				<finalizer>CoreExtFinalizer</finalizer>
+			</applicationDeployment>
+		</platform>
+		<platform name="default"> 
+			<applicationDeployment /> 
+		</platform>
+	</platforms>
+</extension>

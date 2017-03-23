@@ -2,10 +2,10 @@
 
 ###### 2017.03.23 [v1.1.011]
 
-Analytics: Added additional functionality (resolves #52)
+Minor framework updates
 
 
-###### 2017.03.23 [v1.1.009]
+###### 2017.03.23 [v1.1.011]
 
 Analytics: Added additional functionality (resolves #52)
 
