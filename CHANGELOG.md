@@ -1,5 +1,10 @@
 
 
+###### 2017.05.17 [v1.2.011]
+
+Database: Added onDisconnect functionality (resolves #55)
+
+
 ###### 2017.03.23 [v1.1.011]
 
 Minor framework updates

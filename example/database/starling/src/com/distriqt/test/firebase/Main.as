@@ -137,6 +137,9 @@ package com.distriqt.test.firebase
 			addAction( "disposeUnusedReferences", _tests.disposeUnusedReferences );
 			
 			
+			addAction( "setValue :OnDisconnect", _tests.disconnectSetValue );
+			
+			
 			addChild( _text );
 			for each (var button:Button in _buttons)
 			{

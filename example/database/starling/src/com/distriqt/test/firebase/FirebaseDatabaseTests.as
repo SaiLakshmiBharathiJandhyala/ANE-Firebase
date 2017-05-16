@@ -551,6 +551,26 @@ package com.distriqt.test.firebase
 		
 		
 		
+		////////////////////////////////////////////////////////
+		//	DISCONNECT OPERATIONS
+		//
+		
+		public function disconnectSetValue():void 
+		{
+			try
+			{
+				var ref:DatabaseReference = FirebaseDatabase.service.getReference("disconnect");
+				ref.setValue( "connected" );
+				ref.onDisconnect().setValue( "disconnected" );
+			}
+			catch (e:Error)
+			{
+			}
+		}
+		
+		
+		
+		
 		
 	}
 }
