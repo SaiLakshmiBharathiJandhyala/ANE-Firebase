@@ -106,6 +106,7 @@ package com.distriqt.test.firebase
 			addAction( "setValue String 1 :Database", _tests.setValueString );
 			addAction( "setValue String 2 :Database", _tests.setValueString2 );
 			addAction( "setValue int :Database", _tests.setValueNumber );
+			addAction( "setValue complex :Database", _tests.setValueComplex );
 			addAction( "setValue null :Database", _tests.setValue_null );
 			addAction( "setValue ServerValue :Database", _tests.setValue_serverValue );
 			

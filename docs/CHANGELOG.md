@@ -1,5 +1,10 @@
 
 
+###### 2017.05.31 [v1.3.0]
+
+Updated SDK: Android v10.2.6, iOS v4.0.0 (#30, #45, #57)
+
+
 ###### 2017.05.17 [v1.2.011]
 
 Database: Added onDisconnect functionality (resolves #55)

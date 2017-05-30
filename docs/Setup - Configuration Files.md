@@ -50,14 +50,19 @@ As we don't have this option there are two available avenues to setup your appli
 - Delayed Configuration
 
 
-### Create Android Resource
+### Android: Create Resource ANE
 
 The first is the preferred method using Android resources. 
+
 Here we manually create the `values.xml` file from the details in the `google-services.json` file and then package this into an ANE using a custom resources build script.
 This is slightly more complex as you need to create an ANE containing your configuration resources 
 however it is a simple process using the provided ant build scripts and ensures your application is correctly configured.
+If you are wanting to use custom notification icons you are going to have to generate this ANE anyway so
+it's a good idea to use this method from the start.
 
-1. Locate the `config` folder in the repository and make a copy for yourself.
+
+
+1. Check out the Custom Resources script and make a copy for yourself from the [repository here](https://github.com/distriqt/ANE-CustomResources).
 
 2. You will need to make sure you have all the tools installed to run `ant` 
   - see details in the [CustomResources tutorial](https://github.com/distriqt/ANE-CustomResources)
@@ -115,10 +120,10 @@ however it is a simple process using the provided ant build scripts and ensures 
 > ```
 > 
 
-5. Run `ant` in the `config` directory and you will generate an ANE file in the `build` directory called `com.distriqt.firebase.Config.ane`. 
+5. Run `ant` in the repository directory and you will generate an ANE file in the `build` directory (the name will be based on your package name). 
   This extension contains your configuration values resource and will be automatically loaded by the Firebase extension. 
 
-6. Add `com.distriqt.firebase.Config.ane` to your AIR application and ensure it's packaged with your Android application
+6. Add that ANE to your AIR application and ensure it's packaged with your Android application
 
 7. More information on the `google-services.json` format [here](https://developers.google.com/android/guides/google-services-plugin#processing_the_json_file)
 
@@ -126,7 +131,11 @@ however it is a simple process using the provided ant build scripts and ensures 
 
 
 
-### Delayed Configuration
+### Android: Delayed Configuration
+
+>
+>	This method is not working completely as yet, please use the resource method for the moment
+>
 
 The second method is a delayed configuration method similar to the manual configuration in the next section.
 
@@ -140,7 +149,7 @@ Download this file and place it in the root of your application package and ensu
 ## Manual Configuration
 
 >
->	This method is not working completely as yet, please use the resource method for the moment
+>	This method is not working completely as yet, please use the above methods currently
 >
 
 If you wish you can manually setup your application. 

@@ -69,6 +69,7 @@ package com.distriqt.test.firebase
 				if (Firebase.isSupported)
 				{
 					log( "Firebase Version:   " + Firebase.service.version );
+					log( "Database Version:   " + FirebaseDatabase.service.version );
 					
 					var success:Boolean = Firebase.service.initialiseApp();
 					log( "Firebase.service.initialiseApp() = " + success );
@@ -160,6 +161,23 @@ package com.distriqt.test.firebase
 				var value:Number = Math.floor(Math.random()*1000);
 				
 				ref.child("numericValue").setValue( value );
+			}
+			catch (e:Error)
+			{
+				log( e.message );
+			}
+		}
+		
+		public function setValueComplex():void 
+		{
+			log( "setValueComplex()" );
+			try
+			{
+				var ref:DatabaseReference = FirebaseDatabase.service.getReference( "test" );
+				
+				var value:Object = { "ccc": [ "asdf" ] };
+				
+				ref.child("complex").setValue( value );
 			}
 			catch (e:Error)
 			{
