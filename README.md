@@ -63,7 +63,7 @@ It comes with detailed guides, AS docs, and a complete example application.
 	- [Crash Reporting](https://github.com/distriqt/ANE-Firebase/wiki/Crash---Introduction)
 - Grow
 	- [Notifications (Cloud Messaging)](https://github.com/distriqt/ANE-Firebase/wiki/FCM---Introduction)
-	- Remote Config
+	- [Remote Config](https://github.com/distriqt/ANE-Firebase/wiki/RemoteConfig---Introduction)
 	- Dynamic Links
 	- Invites
 - Single API interface - your code works across iOS and Android with no modifications

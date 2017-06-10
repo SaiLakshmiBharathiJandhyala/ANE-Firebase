@@ -1,14 +1,14 @@
 /**
- *        __       __               __ 
+ *        __       __               __
  *   ____/ /_ ____/ /______ _ ___  / /_
  *  / __  / / ___/ __/ ___/ / __ `/ __/
- * / /_/ / (__  ) / / /  / / /_/ / / 
- * \__,_/_/____/_/ /_/  /_/\__, /_/ 
- *                           / / 
- *                           \/ 
+ * / /_/ / (__  ) / / /  / / /_/ / /
+ * \__,_/_/____/_/ /_/  /_/\__, /_/
+ *                           / /
+ *                           \/
  * http://distriqt.com
  *
- * @brief  		
+ * @brief
  * @author 		"Michael Archbold (ma&#64;distriqt.com)"
  * @created		07/10/2014
  * @copyright	http://distriqt.com/copyright/license.txt
@@ -16,8 +16,8 @@
 package
 {
 	
-	/**	
-	 * 
+	/**
+	 *
 	 */
 	public class Config
 	{
@@ -26,8 +26,7 @@ package
 		//	VARIABLES
 		//
 		
-		public static var distriqtApplicationKey	: String = "dd2fec01866925cf777648bc35fd3342844eff55BLLcdhix580NT7cOfQmnDdS/ScTbdmY6cYl/FmOZkATHeI6C83qJ3Rn7rIDrum7gWj82U1Tx3ni9Ri31UByIOa9XVyrJnVVraDW3aXRjwq9msXj/4eK61QP3E6dqE2shN2vPU9GTm+qUXc0O6Cwqt13KmyrlYX3IeaKqjuNXV+NzZ7Z3VFh8mhe81SEkypgjK0vD1mIyDd5DLhVVw1p3uHDfXX/SG+Bq7uXvg5XH82ViTHZn1jqmIpLN+WLudi85u9hQj5CMkJpW1Fl3eYGZcW/LrK7jbFKKOz5ykFoAMOnRfKcZrx/QgYikSQUZFc09PZ09kYSAMjhYwTMEa446+Q==";
-		
+		public static var distriqtApplicationKey	: String = "111c4110929ae7895af1a0c578014f3d62cfd39aYMUPcenKIoYHV8iQKBXRAoZt8VRbA85v0dq52LQ1vcnuMtGlfBw6Fe+hlSo3kGsSqTzqcpptJgVd3w9nfSRgeOhnTQvUJTAnoZW1okjswpz5nGQyPBATmrYLpAUrnJIh7IEvPep+LfdmN7jG7bTzk9Qzt/X9vYRW2pKE0E9MIJlbx1fI8UUtFadXp/9HYhc8XdvSKqehK084Baq+sHOZVokcbll9jnziSaYZ5vrosL1BZ+00txHkp1OES3LARHNlbLkIur6aENhb9RuyX3aA5CWckShbkI5SHq22qv5EHxyXyUYz6WwK4unEGPbLbR0iDCv8j1jRbGbZ+JxRmUKzug==";
 		
 		
 		public static var scale : Number = 1;

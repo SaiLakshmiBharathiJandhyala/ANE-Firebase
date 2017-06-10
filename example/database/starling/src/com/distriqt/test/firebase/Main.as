@@ -103,6 +103,8 @@ package com.distriqt.test.firebase
 			
 			addAction( "Setup :Core", _tests.setup );
 			
+			addAction( "connected :Database", _tests.connectedListener );
+			
 			addAction( "setValue String 1 :Database", _tests.setValueString );
 			addAction( "setValue String 2 :Database", _tests.setValueString2 );
 			addAction( "setValue int :Database", _tests.setValueNumber );

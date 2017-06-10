@@ -214,6 +214,29 @@ package com.distriqt.test.firebase
 		}
 		
 		
+		////////////////////////////////////////////////////////
+		//  DETECTING CONNECTION STATE
+		//
+		
+		public function connectedListener():void
+		{
+			try
+			{
+				var ref:DatabaseReference = FirebaseDatabase.service.getReference( ".info/connected" );
+				ref.addEventListener( DatabaseReferenceEvent.VALUE_CHANGED, info_valueChangedHandler );
+			}
+			catch (e:Error)
+			{
+				log( e.message );
+			}
+		}
+		
+		private function info_valueChangedHandler( event:DatabaseReferenceEvent ):void
+		{
+			log( "connected: " + event.snapshot.value );
+		}
+		
+		
 		
 		////////////////////////////////////////////////////////
 		//	ROOT / PARENT TESTS

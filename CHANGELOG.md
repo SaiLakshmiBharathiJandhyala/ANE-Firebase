@@ -1,5 +1,11 @@
 
 
+###### 2017.06.10 [v1.4.005]
+
+RemoteConfig implementation (resolves #6)
+Updated SDK: Android v11.0.0, iOS v4.0.1 (#57, #45, resolves #30)
+
+
 ###### 2017.05.31 [v1.3.0]
 
 Updated SDK: Android v10.2.6, iOS v4.0.0 (#30, #45, #57)

@@ -9,7 +9,7 @@ Make sure you have added all the extensions required for the Firebase Core exten
 
 ### Firebase Realtime Database
 
-The only required additional ANE is the Auth ANE located in this repository:
+The only required additional ANE is the Database ANE located in this repository:
 
 - `com.distriqt.firebase.Database` : https://github.com/distriqt/ANE-Firebase
 
