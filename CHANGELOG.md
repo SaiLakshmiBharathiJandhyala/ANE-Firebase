@@ -4,6 +4,7 @@
 
 RemoteConfig implementation (resolves #6)
 Updated SDK: Android v11.0.0, iOS v4.0.1 (#57, #45, resolves #30)
+Correct operation for '.info' properties (resolves #64)
 
 
 ###### 2017.05.31 [v1.3.0]
