@@ -1,0 +1,74 @@
+{
+  "project_info": {
+    "project_number": "616489336300",
+    "firebase_url": "https://distriqt-test-ios.firebaseio.com",
+    "project_id": "distriqt-test-ios",
+    "storage_bucket": "distriqt-test-ios.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616489336300:android:f08f8e8681a9d6b6",
+        "android_client_info": {
+          "package_name": "air.com.distriqt.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "616489336300-kaf1gmosq61l65m3q8s78unaetpvtq0d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "air.com.distriqt.test",
+            "certificate_hash": "1d9516adb60b31357b503c7e4f477c73357fc42b"
+          }
+        },
+        {
+          "client_id": "616489336300-smdc7b35h61acr3d21rrpebgvvb61p7s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "air.com.distriqt.test",
+            "certificate_hash": "aa9f0336ce4b39be98b44b1b61d3fae465890440"
+          }
+        },
+        {
+          "client_id": "616489336300-frtqo01vj1uorslb7mcvg9v0tui26ca2.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "616489336300-7e6ik9lppme9rhl69kqdp1h3ivblnsjt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6IhiLmTNp87D9LDMk70wNsc1BgXo1Ygw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "616489336300-11jtfbdshdgdgs0gi36vicf7m7o02cqi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.distriqt.test"
+              }
+            },
+            {
+              "client_id": "616489336300-frtqo01vj1uorslb7mcvg9v0tui26ca2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -395,7 +395,7 @@ package com.distriqt.test.firebase
 			
 			log( "updateProfile(): " + FirebaseAuth.service.getCurrentUser().displayName );
 			
-			FirebaseAuth.service.getCurrentUser().removeEventListener( 
+			FirebaseAuth.service.getCurrentUser().removeEventListener(
 				FirebaseUserEvent.UPDATE_PROFILE_COMPLETE,
 				updateProfile_completeHandler );
 		}

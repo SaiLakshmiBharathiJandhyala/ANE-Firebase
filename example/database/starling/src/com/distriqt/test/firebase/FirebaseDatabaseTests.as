@@ -175,7 +175,12 @@ package com.distriqt.test.firebase
 			{
 				var ref:DatabaseReference = FirebaseDatabase.service.getReference( "test" );
 				
-				var value:Object = { "ccc": [ "asdf" ] };
+				var value:Object = {
+					"progress":[],
+					"guide":[{"data":{"index":0},"id":"someId","type":"simple","state":0}],
+					"inventory":{},
+					"balance":{"coin":100}
+				};
 				
 				ref.child("complex").setValue( value );
 			}

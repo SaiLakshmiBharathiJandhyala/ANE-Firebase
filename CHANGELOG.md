@@ -1,5 +1,12 @@
 
 
+###### 2017.06.16 [v1.5.001]
+
+Updated SDK: iOS v4.0.2 
+Fixed issue with incorrectly loading config files (#67)
+
+
+
 ###### 2017.06.10 [v1.4.005]
 
 RemoteConfig implementation (resolves #6)
