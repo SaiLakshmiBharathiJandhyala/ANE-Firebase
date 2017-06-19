@@ -23,7 +23,7 @@
             <entry library-id="ed464e46-9ef6-4248-8347-05609ce97930">
               <dependency linkage="Merged" />
             </entry>
-            <entry library-id="c3d5188c-6252-4384-9995-47dd3bcc2244">
+            <entry library-id="c1bf7f22-cc81-48e3-b7a7-c8ddabf60bf3">
               <dependency linkage="Merged" />
             </entry>
           </entries>
@@ -91,7 +91,7 @@
     </orderEntry>
     <orderEntry type="module-library" exported="">
       <library type="flex">
-        <properties id="c3d5188c-6252-4384-9995-47dd3bcc2244" />
+        <properties id="c1bf7f22-cc81-48e3-b7a7-c8ddabf60bf3" />
         <CLASSES>
           <root url="jar://$MODULE_DIR$/../../../../../_distriqt/air.com.distriqt.test.Resources.ane!/" />
         </CLASSES>

@@ -1,5 +1,10 @@
 
 
+###### 2017.06.19 [v1.5.003]
+
+Database update to correctly handle invalid references (#61)
+
+
 ###### 2017.06.16 [v1.5.001]
 
 Updated SDK: iOS v4.0.2 
