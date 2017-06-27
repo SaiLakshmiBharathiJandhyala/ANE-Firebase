@@ -1,5 +1,10 @@
 
 
+###### 2017.06.27 [v1.6.019]
+
+Dynamic Links implementation (resolves #4)
+
+
 ###### 2017.06.19 [v1.5.003]
 
 Database update to correctly handle invalid references (#61)

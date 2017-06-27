@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<application xmlns="http://ns.adobe.com/air/application/26.0">
+	<id>com.distriqt.test</id>
+	<filename>TestFirebase</filename>
+	<name>TestFirebase</name>
+	<versionNumber>1.0.0</versionNumber>
+	<versionLabel>1</versionLabel>
+	
+	<initialWindow>
+		<content>[This value will be overwritten by Flash Builder in the output app.xml]</content>
+		<autoOrients>false</autoOrients>
+		<fullScreen>false</fullScreen>
+		<visible>true</visible>
+		<aspectRatio>portrait</aspectRatio>
+		<renderMode>direct</renderMode>
+	</initialWindow>
+
+	<icon>
+		<image16x16>icons/icon16x16.png</image16x16>
+		<image29x29>icons/icon29x29.png</image29x29>
+		<image32x32>icons/icon32x32.png</image32x32>
+		<image36x36>icons/icon36x36.png</image36x36>
+		<image48x48>icons/icon48x48.png</image48x48>
+		<image57x57>icons/icon57x57.png</image57x57>
+		<image72x72>icons/icon72x72.png</image72x72>
+		<image114x114>icons/icon114x114.png</image114x114>
+		<image128x128>icons/icon128x128.png</image128x128>
+		<image512x512>icons/icon512x512.png</image512x512>
+	</icon>
+
+	<iPhone>
+		<InfoAdditions><![CDATA[
+			<key>UIDeviceFamily</key>
+			<array>
+				<string>1</string>
+				<string>2</string>
+			</array>
+
+			<key>FirebaseAppDelegateProxyEnabled</key>
+			<false/>
+
+			<key>CFBundleURLTypes</key>
+            <array>
+                <dict>
+                    <key>CFBundleURLSchemes</key>
+                    <array>
+                        <string>distriqt</string>
+                    </array>
+                </dict>
+            </array>
+
+		]]></InfoAdditions>
+		<requestedDisplayResolution>high</requestedDisplayResolution>
+		<Entitlements>
+		<![CDATA[
+
+		    <key>com.apple.developer.associated-domains</key>
+            <array>
+                <string>applinks:bb9g6.app.goo.gl</string>
+            </array>
+
+		]]>
+		</Entitlements>
+	</iPhone>
+
+	<android>
+		<manifestAdditions><![CDATA[
+			<manifest android:installLocation="auto">
+				<uses-permission android:name="android.permission.INTERNET"/>
+				<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+				<uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+
+				<application>
+				    <intent-filter>
+						<action android:name="android.intent.action.MAIN" />
+						<category android:name="android.intent.category.LAUNCHER" />
+					</intent-filter>
+
+				    <intent-filter>
+                        <action android:name="android.intent.action.VIEW"/>
+                        <category android:name="android.intent.category.DEFAULT"/>
+                        <category android:name="android.intent.category.BROWSABLE"/>
+
+                        <data android:host="airnativeextensions.com" android:scheme="http"/>
+                        <data android:host="airnativeextensions.com" android:scheme="https"/>
+                    </intent-filter>
+
+
+
+
+
+
+					<meta-data
+						android:name="com.google.android.gms.version"
+						android:value="@integer/google_play_services_version" />
+						
+					<activity android:name="com.google.android.gms.common.api.GoogleApiActivity" 
+						android:theme="@android:style/Theme.Translucent.NoTitleBar" 
+						android:exported="false"/>
+						
+						
+					<!-- FIREBASE CORE -->
+					<!-- analytics -->
+					<receiver
+						android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+						android:enabled="true">
+						<intent-filter>
+							<action android:name="com.google.android.gms.measurement.UPLOAD"/>
+						</intent-filter>
+					</receiver>
+					<service
+						android:name="com.google.android.gms.measurement.AppMeasurementService"
+						android:enabled="true"
+						android:exported="false"/>
+						
+					<!-- common -->
+					<provider
+						android:authorities="air.com.distriqt.test.firebaseinitprovider"
+						android:name="com.google.firebase.provider.FirebaseInitProvider"
+						android:exported="false"
+						android:initOrder="100" />
+					
+					<!-- iid -->
+					<receiver
+						android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+						android:exported="true"
+						android:permission="com.google.android.c2dm.permission.SEND" >
+						<intent-filter>
+							<action android:name="com.google.android.c2dm.intent.RECEIVE" />
+							<action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+							<category android:name="air.com.distriqt.test" />
+						</intent-filter>
+					</receiver>
+					<receiver
+						android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"
+						android:exported="false" />
+					<service
+						android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+						android:exported="true">
+						<intent-filter android:priority="-500">
+							<action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+						</intent-filter>
+					</service>
+					
+				</application>
+				
+			</manifest>
+		]]></manifestAdditions>
+	</android>
+	
+	<extensions>
+		<extensionID>com.distriqt.Core</extensionID>
+		<extensionID>com.distriqt.playservices.Base</extensionID>
+		<extensionID>com.distriqt.androidsupport.V4</extensionID>
+
+		<extensionID>com.distriqt.Firebase</extensionID>
+	    <extensionID>com.distriqt.firebase.DynamicLinks</extensionID>
+        <extensionID>com.distriqt.CustomResources</extensionID>
+    </extensions>
+
+</application>
