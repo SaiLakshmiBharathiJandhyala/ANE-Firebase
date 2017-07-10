@@ -42,6 +42,19 @@
 		<requestedDisplayResolution>high</requestedDisplayResolution>
 		<Entitlements>
 		<![CDATA[
+
+            <key>get-task-allow</key>
+            <true/>
+            <key>aps-environment</key>
+            <string>development</string>
+
+            <key>application-identifier</key>
+            <string>X5LW23Q6CJ.com.distriqt.test</string>
+            <key>keychain-access-groups</key>
+            <array>
+                <string>X5LW23Q6CJ.*</string>
+            </array>
+
 		]]>
 		</Entitlements>
 	</iPhone>
@@ -121,7 +134,10 @@
 	<extensions>
 		<extensionID>com.distriqt.Core</extensionID>
 		<extensionID>com.distriqt.playservices.Base</extensionID>
+	    <extensionID>com.distriqt.androidsupport.AppCompatV7</extensionID>
 	    <extensionID>com.distriqt.androidsupport.V4</extensionID>
+
+		<extensionID>com.distriqt.Dialog</extensionID>
 
 		<extensionID>com.distriqt.Firebase</extensionID>
         <extensionID>com.distriqt.firebase.Auth</extensionID>

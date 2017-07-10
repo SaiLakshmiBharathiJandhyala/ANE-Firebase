@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<application xmlns="http://ns.adobe.com/air/application/24.0">
+<application xmlns="http://ns.adobe.com/air/application/26.0">
 	<id>com.distriqt.test</id>
 	<filename>TestFirebase</filename>
 	<name>TestFirebase</name>
@@ -145,17 +145,19 @@
 	
 	<extensions>
 		<extensionID>com.distriqt.Core</extensionID>
-		<extensionID>com.distriqt.AndroidSupport</extensionID>
-		<extensionID>com.distriqt.playservices.Base</extensionID>
 
-		<extensionID>com.distriqt.firebase.Config</extensionID>
+        <extensionID>com.distriqt.androidsupport.V4</extensionID>
+
+		<extensionID>com.distriqt.playservices.Base</extensionID>
+        <extensionID>com.distriqt.playservices.Auth</extensionID>
+        <extensionID>com.distriqt.playservices.Identity</extensionID>
 
 		<extensionID>com.distriqt.Firebase</extensionID>
-	<extensionID>com.distriqt.androidsupport.V4</extensionID>
-    <extensionID>com.distriqt.firebase.Auth</extensionID>
-    <extensionID>com.distriqt.GoogleIdentity</extensionID>
-    <extensionID>com.distriqt.playservices.Auth</extensionID>
-        <extensionID>com.distriqt.playservices.Identity</extensionID>
+        <extensionID>com.distriqt.firebase.Auth</extensionID>
+
+        <extensionID>com.distriqt.GoogleIdentity</extensionID>
+
+		<extensionID>com.distriqt.CustomResources</extensionID>
     </extensions>
 
 </application>

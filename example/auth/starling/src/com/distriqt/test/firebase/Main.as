@@ -109,8 +109,12 @@ package com.distriqt.test.firebase
 			addAction( "Create Email :Auth", _tests.createUserWithEmail );
 			addAction( "Link Email :Auth", _tests.linkEmailAuthCredential );
 			addAction( "Sign In Email :Auth", _tests.signInWithEmail );
+			addAction( "Sign In Email Incorrect :Auth", _tests.signInWithEmailIncorrectPassword );
 			addAction( "Email Reset :Auth", _tests.sendPasswordResetEmail );
 			addAction( "Email Verify :Auth", _tests.sendEmailVerification );
+			
+			addAction( "Sign In With Phone :Auth", _tests.signInWithPhoneNumber );
+			
 			addAction( "Delete User :Auth", _tests.deleteUser );
 			addAction( "Update Profile :Auth", _tests.updateProfile );
 			addAction( "Get Token :Auth" , _tests.getToken );

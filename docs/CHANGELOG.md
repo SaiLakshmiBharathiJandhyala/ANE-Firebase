@@ -1,5 +1,13 @@
 
 
+###### 2017.07.10 [v1.7.027]
+
+Updated SDK: Android v11.0.2 iOS v4.0.3 
+Added Phone Auth (resolves #81)
+Added Custom Auth (resolves #71)
+Auth: Added more error information for better error handling (#84)
+
+
 ###### 2017.06.27 [v1.6.019]
 
 Dynamic Links implementation (resolves #4)

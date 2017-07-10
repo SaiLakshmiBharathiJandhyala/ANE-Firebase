@@ -26,4 +26,8 @@ include the required extensions for your situation.
 No additional manifest additions are required
 
 
+## iOS Info Additions
+
+No additional additions are required. There is an exception with Phone Authentication
+and the details of these additions are in the documentation for that method.
 

@@ -15,11 +15,19 @@
  */
 package com.distriqt.test.firebase
 {
+	import com.distriqt.extension.core.Core;
+	import com.distriqt.extension.dialog.Dialog;
+	import com.distriqt.extension.dialog.DialogView;
+	import com.distriqt.extension.dialog.builders.AlertBuilder;
+	import com.distriqt.extension.dialog.events.DialogViewEvent;
+	import com.distriqt.extension.dialog.objects.DialogAction;
 	import com.distriqt.extension.firebase.Firebase;
 	import com.distriqt.extension.firebase.analytics.FirebaseAnalytics;
 	import com.distriqt.extension.firebase.auth.AuthCredential;
 	import com.distriqt.extension.firebase.auth.EmailAuthProvider;
 	import com.distriqt.extension.firebase.auth.FirebaseAuth;
+	import com.distriqt.extension.firebase.auth.PhoneAuthCredential;
+	import com.distriqt.extension.firebase.auth.PhoneAuthProvider;
 	import com.distriqt.extension.firebase.auth.builders.UserProfileChangeRequestBuilder;
 	import com.distriqt.extension.firebase.auth.events.FirebaseAuthEvent;
 	import com.distriqt.extension.firebase.auth.events.FirebaseUserEvent;
@@ -59,6 +67,8 @@ package com.distriqt.test.firebase
 		{
 			try
 			{
+				Core.init();
+				
 				Firebase.init( Config.distriqtApplicationKey );
 				FirebaseAuth.init( Config.distriqtApplicationKey );
 				
@@ -78,6 +88,12 @@ package com.distriqt.test.firebase
 					
 					FirebaseAuth.service.addEventListener( FirebaseAuthEvent.AUTHSTATE_CHANGED, authState_changedHandler );
 				}
+				
+				
+				
+				
+				Dialog.init( "1cd2ab3feb5355be149632e99d6a7ab720a51426ZWS/fwnftkfJVG61flWTmZT75Bl4OD6GoEsQE22djUSQ3S5YRKkP34Mxu9rCYmNcLdQva2IZAYwl8HkrjJSE40VVw4ZoVCy1EtJhda3eOaEwX6D0pT+QcSFv2foW69RaOHpkCGLusD4BXpZSURNLaplA2zc758PFNDIhlLHwXTqrAG1X2HsSx/vml/qn7uDGBYdhZ924WqRwtXB81/KmnbrrpQ7P+uAN0WLfbX9UTi5MHte4fxExpTYoH/LEwhIJ3fkKOygJXq1kkBUlJaP6UkvI+nn8cJy9XQJM5+5HyBlbVNcvfEA5DU4akMTl1S4yNbF8sFuk1DpVVK6dtYhMew==" );
+				
 			}
 			catch (e:Error)
 			{
@@ -126,6 +142,7 @@ package com.distriqt.test.firebase
 						log( "\tidentifier:  " + info.identifier );
 						log( "\tdisplayName: " + info.displayName );
 						log( "\temail:       " + info.email );
+						log( "\tphone:       " + info.phoneNumber );
 					}
 				}
 				else 
@@ -169,7 +186,7 @@ package com.distriqt.test.firebase
 					FirebaseAuthEvent.SEND_PASSWORD_RESET_EMAIL_COMPLETE,
 					sendPasswordResetEmail_completeHandler );
 				
-				FirebaseAuth.service.sendPasswordResetEmail( email );
+				FirebaseAuth.service.sendPasswordResetEmail( Config.email );
 			}
 		}
 		
@@ -190,10 +207,6 @@ package com.distriqt.test.firebase
 		//
 		
 		
-		private var email:String = "ma@distriqt.com";
-		private var password:String = "dfgh*&!@7822";
-		
-		
 		public function createUserWithEmail():void
 		{
 			if (FirebaseAuth.isSupported)
@@ -203,7 +216,7 @@ package com.distriqt.test.firebase
 					FirebaseAuthEvent.CREATE_USER_WITH_EMAIL_COMPLETE,
 					createUserWithEmailAndPassword_completeHandler );
 				
-				FirebaseAuth.service.createUserWithEmailAndPassword( email, password );
+				FirebaseAuth.service.createUserWithEmailAndPassword( Config.email, Config.password );
 			}
 		}
 		
@@ -229,9 +242,30 @@ package com.distriqt.test.firebase
 						FirebaseAuthEvent.SIGNIN_WITH_EMAIL_COMPLETE,
 						signInWithEmailAndPassword_completeHandler );
 					
-					FirebaseAuth.service.signInWithEmailAndPassword( email, password );
+					FirebaseAuth.service.signInWithEmailAndPassword( Config.email, Config.password );
 				}
 				else 
+				{
+					log( "Already signed in" );
+				}
+			}
+		}
+		
+		public function signInWithEmailIncorrectPassword():void
+		{
+			if (FirebaseAuth.isSupported)
+			{
+				if (!FirebaseAuth.service.isSignedIn())
+				{
+					log( "signInWithEmailIncorrectPassword()" );
+					
+					FirebaseAuth.service.addEventListener(
+							FirebaseAuthEvent.SIGNIN_WITH_EMAIL_COMPLETE,
+							signInWithEmailAndPassword_completeHandler );
+					
+					FirebaseAuth.service.signInWithEmailAndPassword( Config.email, Config.password+"incorrect" );
+				}
+				else
 				{
 					log( "Already signed in" );
 				}
@@ -252,6 +286,11 @@ package com.distriqt.test.firebase
 				var user:FirebaseUser = FirebaseAuth.service.getCurrentUser();
 				log( user.identifier );
 			}
+			else if (event.error != null)
+			{
+				log( "Error: " + event.error.name );
+				log( "Error: " + JSON.stringify(event.error.info) );
+			}
 		}
 		
 		
@@ -263,7 +302,7 @@ package com.distriqt.test.firebase
 				{
 					log( "linkWithCredential()" );
 					
-					var credential:AuthCredential = EmailAuthProvider.getEmailAuthCredential( email, password );
+					var credential:AuthCredential = EmailAuthProvider.getEmailAuthCredential( Config.email, Config.password );
 					
 					FirebaseAuth.service.getCurrentUser().addEventListener( 
 						FirebaseUserEvent.LINK_WITH_CREDENTIAL_COMPLETE, 
@@ -320,6 +359,88 @@ package com.distriqt.test.firebase
 				log( user.identifier );
 			}
 		}
+		
+		
+		
+		
+		//
+		//  PHONE AUTHENTICATION
+		//
+		
+		
+		public function signInWithPhoneNumber():void
+		{
+			if (FirebaseAuth.isSupported)
+			{
+				if (!FirebaseAuth.service.isSignedIn())
+				{
+					FirebaseAuth.service.addEventListener( FirebaseAuthEvent.VERIFY_PHONE_NUMBER_FAILED, verifyPhoneNumber_failedHandler );
+					FirebaseAuth.service.addEventListener( FirebaseAuthEvent.VERIFY_PHONE_NUMBER_CODE_SENT, verifyPhoneNumber_codeSentHandler );
+					FirebaseAuth.service.addEventListener( FirebaseAuthEvent.SIGNIN_WITH_CREDENTIAL_COMPLETE, signInWithPhoneNumber_completeHandler );
+					
+					var success:Boolean = FirebaseAuth.service.verifyPhoneNumber( Config.phoneNumber );
+					log( "verifyPhoneNumber()="+success);
+				}
+				else
+				{
+					log( "Already signed in" );
+				}
+			}
+		}
+		
+		
+		private function verifyPhoneNumber_failedHandler( event:FirebaseAuthEvent ):void
+		{
+			log( "verifyPhoneNumber: failed: " + event.message );
+		}
+		
+		
+		private var _verificationId : String;
+		
+		private function verifyPhoneNumber_codeSentHandler( event:FirebaseAuthEvent ):void
+		{
+			log( "verifyPhoneNumber: code sent: " + event.verificationId );
+			
+			//  Here we should save the verification id somewhere persistent
+			//  in case the application crashes or something else occurs while
+			//  the user is getting the sms code from their message application.
+			//
+			//  Then we should display an input for the sms code
+		
+			_verificationId = event.verificationId;
+			
+			if (Dialog.isSupported)
+			{
+				var dialogView:DialogView = Dialog.service.create(
+						new AlertBuilder()
+								.setTitle("Enter SMS Code")
+								.addTextField( "", "SMS Code" )
+								.addOption("OK", DialogAction.STYLE_POSITIVE)
+								.build()
+				);
+				dialogView.addEventListener( DialogViewEvent.CLOSED, function( event:DialogViewEvent ):void
+				{
+					var view:DialogView = DialogView(event.currentTarget);
+					
+					var smsCode:String = event.values[0];
+					log( "signInWithCredential( " + _verificationId + ", " + smsCode + " )");
+					var credential:PhoneAuthCredential = PhoneAuthProvider.getCredential( _verificationId, smsCode );
+					FirebaseAuth.service.signInWithCredential( credential );
+				});
+				dialogView.show();
+			}
+			
+			
+		}
+		
+		
+		private function signInWithPhoneNumber_completeHandler( event:FirebaseAuthEvent ):void
+		{
+			log( "signInWithPhoneNumber: complete: " + event.success );
+		}
+		
+		
+		
 		
 		
 		//
