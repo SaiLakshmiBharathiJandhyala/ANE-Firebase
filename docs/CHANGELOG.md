@@ -1,5 +1,10 @@
 
 
+###### 2017.07.14 [v1.7.029]
+
+Database: Removed debug traces (resolves #86)
+
+
 ###### 2017.07.10 [v1.7.027]
 
 Updated SDK: Android v11.0.2 iOS v4.0.3 
