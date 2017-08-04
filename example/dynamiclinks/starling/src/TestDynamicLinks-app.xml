@@ -71,7 +71,7 @@
 				<uses-permission android:name="android.permission.WAKE_LOCK"/>
 
 
-				<application>
+				<application android:name="android.support.multidex.MultiDexApplication">
 				    <intent-filter>
 						<action android:name="android.intent.action.MAIN" />
 						<category android:name="android.intent.category.LAUNCHER" />

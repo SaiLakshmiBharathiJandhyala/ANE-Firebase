@@ -1,5 +1,12 @@
 
 
+###### 2017.08.04 [v1.8.017]
+
+Updated SDK: Android v11.0.4 iOS v4.0.4 
+Added Performance Monitoring (resolves #58)
+RemoteConfig: Added  (resolves #87)
+
+
 ###### 2017.07.14 [v1.7.029]
 
 Database: Removed debug traces (resolves #86)

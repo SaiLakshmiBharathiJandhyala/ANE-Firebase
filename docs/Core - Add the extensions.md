@@ -94,7 +94,7 @@ You must add all of the following Firebase related manifest additions.
 
 Make sure you only have one `<application>` node in your manifest additions combining them if you have multiple. 
 
-The following shows the complete manifest additions node. You must replace `YOUR_APPLICATION_ID` with your 
+The following shows the complete manifest additions node. You must replace `YOUR_APPLICATION_PACKAGE` with your 
 AIR application's Java package name, something like `air.com.distriqt.test`.
 Generally this is your AIR application id prefixed by `air.` unless you have specified no air flair in your build options.
 
@@ -108,11 +108,11 @@ Generally this is your AIR application id prefixed by `air.` unless you have spe
 	<uses-permission android:name="android.permission.WAKE_LOCK"/>
 	
 	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-	<permission android:name="YOUR_APPLICATION_ID.permission.C2D_MESSAGE" android:protectionLevel="signature" />
-	<uses-permission android:name="YOUR_APPLICATION_ID.permission.C2D_MESSAGE" />
+	<permission android:name="YOUR_APPLICATION_PACKAGE.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+	<uses-permission android:name="YOUR_APPLICATION_PACKAGE.permission.C2D_MESSAGE" />
 	
 	
-	<application>
+	<application android:name="android.support.multidex.MultiDexApplication">
 		
 		<meta-data
 			android:name="com.google.android.gms.version"
@@ -139,7 +139,7 @@ Generally this is your AIR application id prefixed by `air.` unless you have spe
 			
 		<!-- common -->
 		<provider
-			android:authorities="YOUR_APPLICATION_ID.firebaseinitprovider"
+			android:authorities="YOUR_APPLICATION_PACKAGE.firebaseinitprovider"
 			android:name="com.google.firebase.provider.FirebaseInitProvider"
 			android:exported="false"
 			android:initOrder="100" />
@@ -152,7 +152,7 @@ Generally this is your AIR application id prefixed by `air.` unless you have spe
 			<intent-filter>
 				<action android:name="com.google.android.c2dm.intent.RECEIVE" />
 				<action android:name="com.google.android.c2dm.intent.REGISTRATION" />
-				<category android:name="YOUR_APPLICATION_ID" />
+				<category android:name="YOUR_APPLICATION_PACKAGE" />
 			</intent-filter>
 		</receiver>
 		<receiver
@@ -172,12 +172,66 @@ Generally this is your AIR application id prefixed by `air.` unless you have spe
 ```
 
 
+### MultiDex Applications 
+
+If you have a large application and are supporting Android 4.x then you will need to ensure you
+enable your application to correctly support MultiDex to allow the application to be broken up
+into smaller dex packages.
+
+This is enabled by default with recent releases of AIR (25+), except in the Android 4.x case where 
+you need to change the manifest additions for the application tag to match the following and use 
+the `MultiDexApplication`:
+
+```xml
+<manifest android:installLocation="auto">
+	<!-- PERMISSIONS -->
+
+	<application android:name="android.support.multidex.MultiDexApplication">
+
+		<!-- ACTIVITIES / RECEIVERS / SERVICES -->
+
+	</application>
+</manifest>
+```
+
+
+
 ---
 
 ## iOS Info Additions / Entitlements
 
-There are no specific requirements here. 
+In order for the Firebase system to work well with AIR and other extensions we need
+to disable the automatic delegate proxy that Firebase implements on iOS. To do so 
+you must add the following to your InfoAdditions:
 
-You may wish to add a minimum iOS version to restrict yout application to the 
+```xml
+<key>FirebaseAppDelegateProxyEnabled</key>
+<false/>
+```
+
+Eg:
+
+```xml
+<iPhone>
+	<InfoAdditions><![CDATA[
+		<key>UIDeviceFamily</key>
+		<array>
+			<string>1</string>
+			<string>2</string>
+		</array>
+		
+		<key>FirebaseAppDelegateProxyEnabled</key>
+		<false/>
+			
+	)></InfoAdditions>
+	<requestedDisplayResolution>high</requestedDisplayResolution>
+	<Entitlements>
+	<![CDATA[
+	)>
+	</Entitlements>
+</iPhone>
+```
+
+You may wish to add a minimum iOS version to restrict your application to the 
 minimum Firebase version.
 

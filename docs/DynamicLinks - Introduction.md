@@ -18,7 +18,7 @@ Firebase Dynamic Links are links that work the way you want, on multiple platfor
 
 [![YOUTUBE](https://img.youtube.com/vi/LvY1JMcrPF8/0.jpg)](https://www.youtube.com/watch?v=LvY1JMcrPF8)
 
-[https://firebase.google.com/docs/crash/](https://firebase.google.com/docs/crash/)
+[https://firebase.google.com/docs/dynamic-links/](https://firebase.google.com/docs/dynamic-links/)
 
 
 ## How does it work?

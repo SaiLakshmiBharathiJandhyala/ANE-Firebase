@@ -51,7 +51,7 @@
 				<uses-permission android:name="air.com.distriqt.test.permission.C2D_MESSAGE" />
 				
 				
-				<application>
+				<application android:name="android.support.multidex.MultiDexApplication">
 					
 					<meta-data
 						android:name="com.google.android.gms.version"

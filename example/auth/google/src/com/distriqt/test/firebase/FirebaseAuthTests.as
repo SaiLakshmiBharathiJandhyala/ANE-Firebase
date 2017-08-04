@@ -70,7 +70,7 @@ package com.distriqt.test.firebase
 				
 				if (Firebase.isSupported)
 				{
-					log( "Firebase     Version:   " + Firebase.service.version );
+					log( "Firebase Version:   " + Firebase.service.version );
 					
 					var success:Boolean = Firebase.service.initialiseApp();
 					log( "Firebase.service.initialiseApp() = " + success );
