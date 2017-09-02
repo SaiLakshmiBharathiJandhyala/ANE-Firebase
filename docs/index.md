@@ -27,7 +27,8 @@ We provide complete guides to get you up and running with Firebase as quickly an
 	- ![](Authentication|Auth - Introduction)
 	- ![](Realtime Database|Database - Introduction)
 	- ![](Storage|Storage - Introduction)
-	- ![](Crash Reporting|Crash - Introduction]
+	- ![](Performance Monitoring|Performance - Introduction)
+	- ![](Crash Reporting|Crash - Introduction)
 - Grow
 	- ![](Notifications (Cloud Messaging)|FCM - Introduction)
 	- ![](Remote Config|RemoteConfig - Introduction)

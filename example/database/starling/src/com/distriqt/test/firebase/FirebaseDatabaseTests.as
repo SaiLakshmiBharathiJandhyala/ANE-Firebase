@@ -112,6 +112,23 @@ package com.distriqt.test.firebase
 		//
 		//		
 		
+		//
+		//  GET KEY
+		//
+		
+		public function getKey():void
+		{
+			try
+			{
+				var ref:DatabaseReference = FirebaseDatabase.service.getReference( "test" );
+				log( "getReference( 'test' ).getKey() = " + ref.getKey() );
+			}
+			catch (e:Error)
+			{
+			}
+		}
+		
+		
 		
 		////////////////////////////////////////////////////////
 		//	SET VALUES
@@ -467,7 +484,8 @@ package com.distriqt.test.firebase
 				
 				
 				var item:DatabaseReference = ref.push();
-				
+				log( "push(): item.getKey() = " + item.getKey() );
+
 //				item.child("name").setValue( "a pushed item" );
 //				item.child("count").setValue( Math.floor(Math.random()*1000) );
 				

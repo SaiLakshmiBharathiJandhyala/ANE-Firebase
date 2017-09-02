@@ -3,6 +3,7 @@ built by [distriqt //](https://airnativeextensions.com)
 ![](images/hero.png)
 
 
+
 # Firebase
 
 This extension enables the use of the Google Firebase platform.
@@ -13,6 +14,7 @@ allowing you to develop once and deploy everywhere!
 It comes with detailed guides, AS docs, and a complete example application.
 
 
+
 ### Features:
 
 - [Analytics](https://github.com/distriqt/ANE-Firebase/wiki/Core---Introduction)
@@ -20,6 +22,7 @@ It comes with detailed guides, AS docs, and a complete example application.
 	- [Authentication](https://github.com/distriqt/ANE-Firebase/wiki/Auth---Introduction)
 	- [Realtime Database](https://github.com/distriqt/ANE-Firebase/wiki/Database---Introduction)
 	- [Storage](https://github.com/distriqt/ANE-Firebase/wiki/Storage---Introduction)
+	- [Performance Monitoring](https://github.com/distriqt/ANE-Firebase/wiki/Performance---Introduction)
 	- [Crash Reporting](https://github.com/distriqt/ANE-Firebase/wiki/Crash---Introduction)
 - Grow
 	- [Notifications (Cloud Messaging)](https://github.com/distriqt/ANE-Firebase/wiki/FCM---Introduction)
@@ -51,6 +54,7 @@ Firebase.service.analytics.logEvent( event );
 More information here: 
 
 [com.distriqt.Firebase](https://airnativeextensions.com/extension/com.distriqt.Firebase)
+
 
 
 ## License

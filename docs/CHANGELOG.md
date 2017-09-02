@@ -1,5 +1,10 @@
 
 
+###### 2017.09.02 [v1.8.019]
+
+Database: Added getKey functionality (resolves #100)
+
+
 ###### 2017.08.04 [v1.8.017]
 
 Updated SDK: Android v11.0.4 iOS v4.0.4 

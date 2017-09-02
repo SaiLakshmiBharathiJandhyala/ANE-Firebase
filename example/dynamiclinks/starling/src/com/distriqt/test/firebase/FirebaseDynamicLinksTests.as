@@ -82,7 +82,7 @@ package com.distriqt.test.firebase
 					log( "Firebase Version:     " + Firebase.service.version );
 					log( "DynamicLinks Version: " + FirebaseDynamicLinks.service.version );
 					
-					Firebase.service.deepLinkURLScheme = "distriqt";
+//					Firebase.service.deepLinkURLScheme = "distriqt";
 					
 					var success:Boolean = Firebase.service.initialiseApp();
 
