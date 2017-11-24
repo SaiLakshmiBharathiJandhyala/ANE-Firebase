@@ -1,0 +1,194 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../../override.css" type="text/css"><meta name="keywords" content="FirebaseRemoteConfig,com.distriqt.extension.firebase.remoteconfig.FirebaseRemoteConfig,EXT_CONTEXT_ID,LAST_FETCH_STATUS_FAILURE,LAST_FETCH_STATUS_NO_FETCH_YET,LAST_FETCH_STATUS_SUCCESS,LAST_FETCH_STATUS_THROTTLED,VERSION,fetchTimestamp,implementation,isSupported,lastFetchStatus,nativeVersion,service,version,dispose,fetch,getBoolean,getByteArray,getDouble,getInfo,getInt,getKeysByPrefix,getString,init,setDefaults,setDeveloperModeEnabled"><title>com.distriqt.extension.firebase.remoteconfig.FirebaseRemoteConfig</title></head><body><script language="javascript" type="text/javascript" src="../../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'FirebaseRemoteConfig - distriqt // Firebase';
+				var baseRef = '../../../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">distriqt // Firebase Native Extension Documentation</td><td class="titleTableTopNav" align="right"><a href="../../../../../package-summary.html" onclick="loadClassListFrame('../../../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../../../class-summary.html" onclick="loadClassListFrame('../../../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../../../all-index-A.html" onclick="loadClassListFrame('../../../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../../../index.html?com/distriqt/extension/firebase/remoteconfig/FirebaseRemoteConfig.html&amp;com/distriqt/extension/firebase/remoteconfig/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">FirebaseRemoteConfig</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#eventSummary">Events</a>&nbsp;| <a href="#constantSummary">Constants</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("FirebaseRemoteConfig"); titleBar_setSubNav(true,true,false,false,false,false,true,false,true,false,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.distriqt.extension.firebase.remoteconfig</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public final   class  FirebaseRemoteConfig</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">FirebaseRemoteConfig  <img src="../../../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> flash.events.EventDispatcher</td></tr></table><p></p><p></p><p></p>	
+	              <p>This class represents the FirebaseRemoteConfig extension.</p>
+	           <p></p><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#implementation" class="signatureLink">implementation</a> : String<div class="summaryTableDescription">[read-only] 
+		 
+		 The implementation currently in use.</div></td><td class="summaryTableOwnerCol">FirebaseRemoteConfig</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#isSupported" class="signatureLink">isSupported</a> : Boolean<div class="summaryTableDescription">[static] [read-only] 
+		 Whether the current device supports the extensions functionality
+		 </div></td><td class="summaryTableOwnerCol">FirebaseRemoteConfig</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#nativeVersion" class="signatureLink">nativeVersion</a> : String<div class="summaryTableDescription">[read-only] 
+		 
+		 The native version string of the native extension.</div></td><td class="summaryTableOwnerCol">FirebaseRemoteConfig</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#service" class="signatureLink">service</a> : <a href="../../../../../com/distriqt/extension/firebase/remoteconfig/FirebaseRemoteConfig.html">FirebaseRemoteConfig</a><div class="summaryTableDescription">[static] [read-only] 
+		 The singleton instance of the RemoteConfig class.</div></td><td class="summaryTableOwnerCol">FirebaseRemoteConfig</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#version" class="signatureLink">version</a> : String<div class="summaryTableDescription">[read-only] 
+		 
+		 The version of this extension.</div></td><td class="summaryTableOwnerCol">FirebaseRemoteConfig</td></tr></table></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#FirebaseRemoteConfig()" class="signatureLink">FirebaseRemoteConfig</a>()</div><div class="summaryTableDescription">
+		 Constructor
+		 
+		 You should not call this directly, but instead use the singleton access
+		 </div></td><td class="summaryTableOwnerCol">FirebaseRemoteConfig</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#dispose()" class="signatureLink">dispose</a>():void</div><div class="summaryTableDescription">
+		 
+		 Disposes the extension and releases any allocated resources.</div></td><td class="summaryTableOwnerCol">FirebaseRemoteConfig</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#fetch()" class="signatureLink">fetch</a>(cacheExpirationSeconds:int = 43200):Boolean</div><div class="summaryTableDescription">
+		 
+		 Fetches parameter values for your app.</div></td><td class="summaryTableOwnerCol">FirebaseRemoteConfig</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getBoolean()" class="signatureLink">getBoolean</a>(key:String):Boolean</div><div class="summaryTableDescription">
+		 
+		 Gets the value corresponding to the specified key, as a Boolean
+		 
+		 		 
+		 Value as a boolean if a value corresponding to the look up key was present and could be converted to a boolean; default (if set) or static default value otherwise.</div></td><td class="summaryTableOwnerCol">FirebaseRemoteConfig</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getByteArray()" class="signatureLink">getByteArray</a>(key:String):ByteArray</div><div class="summaryTableDescription">
+		 
+		 Gets the value corresponding to the specified key, as a byte array.</div></td><td class="summaryTableOwnerCol">FirebaseRemoteConfig</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getDouble()" class="signatureLink">getDouble</a>(key:String):Number</div><div class="summaryTableDescription">
+		 
+		 Gets the value corresponding to the specified key, as a Number.</div></td><td class="summaryTableOwnerCol">FirebaseRemoteConfig</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getInfo()" class="signatureLink">getInfo</a>():<a href="../../../../../com/distriqt/extension/firebase/remoteconfig/FirebaseRemoteConfigInfo.html">FirebaseRemoteConfigInfo</a></div><div class="summaryTableDescription">
+		 
+		 Gets the current state of the FirebaseRemoteConfig singleton object.</div></td><td class="summaryTableOwnerCol">FirebaseRemoteConfig</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getInt()" class="signatureLink">getInt</a>(key:String):int</div><div class="summaryTableDescription">
+		 
+		 Gets the value corresponding to the specified key, as an int.</div></td><td class="summaryTableOwnerCol">FirebaseRemoteConfig</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getKeysByPrefix()" class="signatureLink">getKeysByPrefix</a>(prefix:String = null):Array</div><div class="summaryTableDescription">
+		 
+		 Gets the set of keys that start with the given prefix.</div></td><td class="summaryTableOwnerCol">FirebaseRemoteConfig</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getString()" class="signatureLink">getString</a>(key:String):String</div><div class="summaryTableDescription">
+		 
+		 Gets the value corresponding to the specified key, as a String.</div></td><td class="summaryTableOwnerCol">FirebaseRemoteConfig</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#init()" class="signatureLink">init</a>(key:String):void</div><div class="summaryTableDescription">[static] 
+		 Initialises the extension class for use with the provided key.</div></td><td class="summaryTableOwnerCol">FirebaseRemoteConfig</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setDefaults()" class="signatureLink">setDefaults</a>(defaultValues:Object):Boolean</div><div class="summaryTableDescription">
+		 
+		 Sets defaults
+		 
+		 		 </div></td><td class="summaryTableOwnerCol">FirebaseRemoteConfig</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setDeveloperModeEnabled()" class="signatureLink">setDeveloperModeEnabled</a>(enabled:Boolean):Boolean</div><div class="summaryTableDescription">
+		 
+		 Turns the developer mode setting on or off.</div></td><td class="summaryTableOwnerCol">FirebaseRemoteConfig</td></tr></table></div><a name="eventSummary"></a><div class="summarySection"><div class="summaryTableTitle">Events</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableEvent"><tr><th>&nbsp;</th><th colspan="2">Event</th><th> Summary </th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:firebaseconfig:fetch:complete" class="signatureLink">firebaseconfig:fetch:complete</a></div></td><td class="summaryTableDescription summaryTableCol">
+		 
+		 Dispatched when a fetch operation is complete and the new configuration
+		 values have been activated.</td><td class="summaryTableOwnerCol">FirebaseRemoteConfig</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:firebaseconfig:fetch:error" class="signatureLink">firebaseconfig:fetch:error</a></div></td><td class="summaryTableDescription summaryTableCol">
+		 
+		 Dispatched if there was an error fetching the remote configuration values.</td><td class="summaryTableOwnerCol">FirebaseRemoteConfig</td></tr></table></div><a name="constantSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Constants</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableConstant"><tr><th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#EXT_CONTEXT_ID" class="signatureLink">EXT_CONTEXT_ID</a> : String = com.distriqt.firebase.RemoteConfig<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">FirebaseRemoteConfig</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#VERSION" class="signatureLink">VERSION</a> : String = 1.9.027<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">FirebaseRemoteConfig</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="implementation"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">implementation</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>implementation:String</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 <p>
+		 The implementation currently in use. 
+		 This should be one of the following depending on the platform in use and the
+		 functionality supported by this extension:
+		 <ul>
+		 <li><code>Android</code></li>
+		 <li><code>iOS</code></li>
+		 <li><code>default</code></li>
+		 <li><code>unknown</code></li>
+		 </ul>
+		 </p>
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get implementation():String</code><br/></div><a name="propertyDetail"></a><a name="isSupported"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">isSupported</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>isSupported:Boolean</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Whether the current device supports the extensions functionality
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get isSupported():Boolean</code><br/></div><a name="propertyDetail"></a><a name="nativeVersion"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">nativeVersion</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>nativeVersion:String</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 <p>
+		 The native version string of the native extension.
+		 </p>
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get nativeVersion():String</code><br/></div><a name="propertyDetail"></a><a name="service"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">service</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>service:<a href="../../../../../com/distriqt/extension/firebase/remoteconfig/FirebaseRemoteConfig.html">FirebaseRemoteConfig</a></code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 The singleton instance of the RemoteConfig class.
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get service():<a href="../../../../../com/distriqt/extension/firebase/remoteconfig/FirebaseRemoteConfig.html">FirebaseRemoteConfig</a></code><br/><br/><span class="label"> Throws </span><br/><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Error </code> &mdash; If there was a problem creating or accessing the extension, or if the key is invalid
+		 </td></tr></table></div><a name="propertyDetail"></a><a name="version"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">version</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>version:String</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 <p>
+		 The version of this extension.
+		 </p>
+		 <p>
+		 This should be of the format, MAJOR.MINOR.BUILD
+		 </p>
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get version():String</code><br/></div><a name="constructorDetail"></a><div class="detailSectionHeader">Constructor Detail</div><a name="FirebaseRemoteConfig()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">FirebaseRemoteConfig</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td></tr></table><div class="detailBody"><code>public function FirebaseRemoteConfig()</code><p></p><p>
+		 Constructor
+		 
+		 You should not call this directly, but instead use the singleton access
+		 </p></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="dispose()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">dispose</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function dispose():void</code><p></p><p></p><p>
+		 <p>
+		 Disposes the extension and releases any allocated resources. Once this function 
+		 has been called, a call to <code>init</code> is neccesary again before any of the 
+		 extensions functionality will work.
+		 </p>
+		 </p></div><a name="fetch()"></a><a name="fetch(int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">fetch</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function fetch(cacheExpirationSeconds:int = 43200):Boolean</code><p></p><p></p><p>
+		 <p>
+		 Fetches parameter values for your app.
+		 </p>
+		 		 <p>
+		 Configuration values may be served from the Default Config (local cache)
+		 or from the Remote Config Server, depending on how much time has elapsed
+		 since parameter values were last fetched from the Remote Config server.
+		 This method lets the caller specify the cache expiration in seconds.
+		 </p>
+		 		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">cacheExpirationSeconds</span>:int</code> (default = <code>43200</code>)<code></code> &mdash; If the data in the cache was fetched no longer than this many seconds ago, this method will return the cached data. If not, a fetch from the Remote Config Server will be attempted.
+		 		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; <code>true</code> if the fetch was started successfully and <code>false</code> if there was an error
+		 </td></tr></table></div><a name="getBoolean()"></a><a name="getBoolean(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getBoolean</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getBoolean(key:String):Boolean</code><p></p><p></p><p>
+		 <p>
+		 Gets the value corresponding to the specified key, as a <code>Boolean</code>
+		 </p>
+		 		 <p>
+		 Value as a boolean if a value corresponding to the look up key was present and could be converted to a boolean; default (if set) or static default value otherwise.
+		 </p>
+		 		 <p>
+		 "1", "true", "t", "yes", "y", and "on" are strings that are interpreted (case insensitive) as <code>true</code>,
+		 and "0", "false", "f", "no", "n", "off", and empty string are interpreted (case insensitive) as <code>false</code>.
+		 </p>
+		 		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">key</span>:String</code> &mdash;  The parameter key to look up
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; The value for the corresponding key interpreted as a Boolean
+		 </td></tr></table></div><a name="getByteArray()"></a><a name="getByteArray(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getByteArray</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getByteArray(key:String):ByteArray</code><p></p><p></p><p>
+		 <p>
+		 Gets the value corresponding to the specified key, as a byte array.
+		 </p>
+		 		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">key</span>:String</code> &mdash;   The parameter key to look up
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>ByteArray</code> &mdash; The value for the corresponding key interpreted as a ByteArray
+		 </td></tr></table></div><a name="getDouble()"></a><a name="getDouble(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getDouble</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getDouble(key:String):Number</code><p></p><p></p><p>
+		 <p>
+		 Gets the value corresponding to the specified key, as a <code>Number</code>.
+		 </p>
+		 <p>
+		 Value as a Number if a value corresponding to the look up key was present and could be converted to a Number; default (if set) or static default value otherwise.
+		 </p>
+		 		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">key</span>:String</code> &mdash;   The parameter key to look up
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Number</code> &mdash; The value for the corresponding key interpreted as a Number
+		 </td></tr></table></div><a name="getInfo()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getInfo</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getInfo():<a href="../../../../../com/distriqt/extension/firebase/remoteconfig/FirebaseRemoteConfigInfo.html">FirebaseRemoteConfigInfo</a></code><p></p><p></p><p>
+		 <p>
+		 Gets the current state of the <code>FirebaseRemoteConfig</code> singleton object.
+		 </p>
+		 		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../../../com/distriqt/extension/firebase/remoteconfig/FirebaseRemoteConfigInfo.html">FirebaseRemoteConfigInfo</a></code> &mdash; <code>FirebaseRemoteConfigInfo</code> representing the current state
+		 </td></tr></table></div><a name="getInt()"></a><a name="getInt(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getInt</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getInt(key:String):int</code><p></p><p></p><p>
+		 <p>
+		 Gets the value corresponding to the specified key, as an <code>int</code>.
+		 </p>
+		 		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">key</span>:String</code> &mdash;   The parameter key to look up
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>int</code> &mdash; The value for the corresponding key interpreted as an int
+		 </td></tr></table></div><a name="getKeysByPrefix()"></a><a name="getKeysByPrefix(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getKeysByPrefix</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getKeysByPrefix(prefix:String = null):Array</code><p></p><p></p><p>
+		 <p>
+		 Gets the set of keys that start with the given prefix.
+		 </p>
+		 		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">prefix</span>:String</code> (default = <code>null</code>)<code></code> &mdash;    The key prefix to look for. If empty or null, this method will return all keys
+		 		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Array</code> &mdash; Array of Remote Config parameter keys that start with the specified prefix.
+		          Will return an empty array if there are no keys with the given prefix.
+		 </td></tr></table></div><a name="getString()"></a><a name="getString(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getString</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getString(key:String):String</code><p></p><p></p><p>
+		 <p>
+		 Gets the value corresponding to the specified key, as a <code>String</code>.
+		 </p>
+		 		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">key</span>:String</code> &mdash;   The parameter key to look up
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>String</code> &mdash; The value for the corresponding key interpreted as a String
+		 </td></tr></table></div><a name="init()"></a><a name="init(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">init</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function init(key:String):void</code><p></p><p></p><p>
+		 Initialises the extension class for use with the provided key.
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">key</span>:String</code></td></tr></table></p><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Error </code> &mdash; If there was a problem creating or accessing the extension, or if the key is invalid
+		 </td></tr></table></div><a name="setDefaults()"></a><a name="setDefaults(Object)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setDefaults</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setDefaults(defaultValues:Object):Boolean</code><p></p><p></p><p>
+		 <p>
+		 Sets defaults
+		 </p>
+		 		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">defaultValues</span>:Object</code> &mdash; The key / value object to be used for setting the defaults.
+		                      The values in this object should be one of int, Number, String, or Boolean
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; <code>true</code> if the defaults where set correctly and <code>false</code> if there was an error
+		 </td></tr></table></div><a name="setDeveloperModeEnabled()"></a><a name="setDeveloperModeEnabled(Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setDeveloperModeEnabled</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setDeveloperModeEnabled(enabled:Boolean):Boolean</code><p></p><p></p><p>
+		 <p>
+		 Turns the developer mode setting on or off.
+		 </p>
+		 		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">enabled</span>:Boolean</code> &mdash;   Should be <code>true</code> to enable, or <code>false</code> to disable this setting.
+		 		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; <code>true</code> if successful and <code>false</code> if there was an error
+		 </td></tr></table></div><div class="detailSectionHeader"> Event Detail </div><a name="event:firebaseconfig:fetch:complete"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">firebaseconfig:fetch:complete</td><td class="detailHeaderType"> Event </td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../../../com/distriqt/extension/firebase/remoteconfig/events/FirebaseRemoteConfigEvent.html"><code>com.distriqt.extension.firebase.remoteconfig.events.FirebaseRemoteConfigEvent</code></a><br/><span class="label">FirebaseRemoteConfigEvent.type property = </span><a href="../../../../../com/distriqt/extension/firebase/remoteconfig/events/FirebaseRemoteConfigEvent.html#FETCH_COMPLETE"><code>com.distriqt.extension.firebase.remoteconfig.events.FirebaseRemoteConfigEvent.FETCH_COMPLETE</code></a><br/><p></p><p></p><p>
+	 </p>
+		 <p>
+		 Dispatched when a fetch operation is complete and the new configuration
+		 values have been activated.
+		 </p>
+		 		 </div><a name="event:firebaseconfig:fetch:error"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">firebaseconfig:fetch:error</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../../../com/distriqt/extension/firebase/remoteconfig/events/FirebaseRemoteConfigEvent.html"><code>com.distriqt.extension.firebase.remoteconfig.events.FirebaseRemoteConfigEvent</code></a><br/><span class="label">FirebaseRemoteConfigEvent.type property = </span><a href="../../../../../com/distriqt/extension/firebase/remoteconfig/events/FirebaseRemoteConfigEvent.html#FETCH_ERROR"><code>com.distriqt.extension.firebase.remoteconfig.events.FirebaseRemoteConfigEvent.FETCH_ERROR</code></a><br/><p></p><p></p><p>
+	 </p>
+		 <p>
+		 Dispatched if there was an error fetching the remote configuration values.
+		 You should try again at a later time.
+		 </p>
+		 		 </div><div class="detailSectionHeader">Constant Detail</div><a name="constantDetail"></a><a name="EXT_CONTEXT_ID"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">EXT_CONTEXT_ID</td><td class="detailHeaderType">Constant</td></tr></table><div class="detailBody"><code>public static const EXT_CONTEXT_ID:String = com.distriqt.firebase.RemoteConfig</code><p></p></div><a name="constantDetail"></a><a name="VERSION"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">VERSION</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const VERSION:String = 1.9.027</code><p></p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>Copyright <a href="http://distriqt.com" target="_top">distriqt</a> 2016</footer><br/>Fri Nov 24 2017, 03:17 PM +10:00  </center></div></body></html><!--Copyright distriqt 2016<br/>Fri Nov 24 2017, 03:17 PM +10:00  -->

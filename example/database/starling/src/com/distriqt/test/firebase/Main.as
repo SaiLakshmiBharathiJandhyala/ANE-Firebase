@@ -119,6 +119,8 @@ package com.distriqt.test.firebase
 			
 			addAction( "updateChildren :Database", _tests.updateChildren );
 			addAction( "updateChildren null :Database", _tests.updateChildren_null );
+			addAction( "updateChildren stress :Database", _tests.updateChildren_stress );
+			addAction( "updateChildren stress 2 :Database", _tests.updateChildren_stress_2 );
 			
 			addAction( "removeValue :Database", _tests.removeValue );
 			

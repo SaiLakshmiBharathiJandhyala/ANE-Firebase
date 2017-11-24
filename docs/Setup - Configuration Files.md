@@ -61,6 +61,10 @@ If you are wanting to use custom notification icons you are going to have to gen
 it's a good idea to use this method from the start.
 
 
+>
+> If you have any issues with this process, please send us your `values.xml` along with any custom icons and we can create the custom resources ANE for you.
+>
+
 
 1. Check out the Custom Resources script and make a copy for yourself from the [repository here](https://github.com/distriqt/ANE-CustomResources).
 
@@ -69,8 +73,6 @@ it's a good idea to use this method from the start.
 
 3. Open `build_config/build.config` and perform the following changes:
   - Change the AIR SDK and Android SDK paths to match your environment
-  - Change the `android.package` variable to match your AIR applications Java package name. 
-    This should be something like `air.com.distriqt.test`
   - You should have something like the following:
 
 > ```
@@ -78,24 +80,9 @@ it's a good idea to use this method from the start.
 > air.sdk = /Users/marchbold/work/sdks/air/current
 > # ANDROID
 > android.sdk = /Users/marchbold/work/sdks/android/android-sdk-macosx
-> # YOUR APPLICATION PACKAGE NAME
-> android.package = air.com.distriqt.test
 > ```
 
-4. Open the `res/values/values.xml` file and set the values from your `google-services.json` file as below:
-
->
-> | Field Name | Json value | Comments |
-> | --- | --- | --- |
-> | **`google_app_id`**					| `{YOUR_CLIENT}/client_info/mobilesdk_app_id`	| |
-> | **`gcm_defaultSenderId`** 			| `project_info/project_number` | |
-> | **`default_web_client_id`** 			| `{YOUR_CLIENT}/oauth_client/client_id` | where `client_type == 3` |
-> | **`firebase_database_url`** 			| `project_info/firebase_url` | |
-> | **`google_api_key`** 					| `{YOUR_CLIENT}/api_key/current_key` | |
-> | **`google_crash_reporting_api_key`** 	| `{YOUR_CLIENT}/api_key/current_key` | |
-> | **`google_storage_bucket`**				| `project_info/storage_bucket` | | 
-> | **`ga_trackingId`** 					| `{YOUR_CLIENT}/services/analytics-service/analytics_property/tracking_id` | optional |
->
+4. Create your values file at `res/values/values.xml` by copying the example below and 
 
 >
 > Complete `values.xml` example:
@@ -120,13 +107,28 @@ it's a good idea to use this method from the start.
 > ```
 > 
 
-5. Run `ant` in the repository directory and you will generate an ANE file in the `build` directory (the name will be based on your package name). 
+5. Set the values from your `google-services.json` file in your `values.xml` as per the table below:
+
+>
+> | Field Name | Json value | Comments |
+> | --- | --- | --- |
+> | **`google_app_id`**					| `{YOUR_CLIENT}/client_info/mobilesdk_app_id`	| |
+> | **`gcm_defaultSenderId`** 			| `project_info/project_number` | |
+> | **`default_web_client_id`** 			| `{YOUR_CLIENT}/oauth_client/client_id` | where `client_type == 3` |
+> | **`firebase_database_url`** 			| `project_info/firebase_url` | |
+> | **`google_api_key`** 					| `{YOUR_CLIENT}/api_key/current_key` | |
+> | **`google_crash_reporting_api_key`** 	| `{YOUR_CLIENT}/api_key/current_key` | |
+> | **`google_storage_bucket`**				| `project_info/storage_bucket` | | 
+> | **`ga_trackingId`** 					| `{YOUR_CLIENT}/services/analytics-service/analytics_property/tracking_id` | optional |
+>
+
+
+6. Run `ant` in the repository directory and you will generate an ANE file in the `build` directory (the name will be based on your package name). 
   This extension contains your configuration values resource and will be automatically loaded by the Firebase extension. 
 
-6. Add that ANE to your AIR application and ensure it's packaged with your Android application
+7. Add that ANE to your AIR application and ensure it's packaged with your Android application
 
-7. More information on the `google-services.json` format [here](https://developers.google.com/android/guides/google-services-plugin#processing_the_json_file)
-
+8. More information on the `google-services.json` format [here](https://developers.google.com/android/guides/google-services-plugin#processing_the_json_file)
 
 
 

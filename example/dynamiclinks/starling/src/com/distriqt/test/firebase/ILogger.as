@@ -25,4 +25,5 @@ package com.distriqt.test.firebase
 		
 		function log( tag:String, message:String ):void;
 	}
+	
 }

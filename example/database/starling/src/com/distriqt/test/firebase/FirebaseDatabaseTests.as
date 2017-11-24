@@ -27,6 +27,7 @@ package com.distriqt.test.firebase
 	import com.distriqt.extension.firebase.database.events.DatabaseReferenceEvent;
 	
 	import flash.system.System;
+	import flash.utils.getTimer;
 	
 	import starling.events.Event;
 	
@@ -335,6 +336,73 @@ package com.distriqt.test.firebase
 			{
 				log( e.message );
 			}
+		}
+		
+		
+		public function updateChildren_stress():void
+		{
+			var stressSize:int = 400;
+			log( "updateChildren_stress() : " + stressSize );
+			try
+			{
+				var ref:DatabaseReference = FirebaseDatabase.service.getReference( "stress" );
+				ref.addEventListener( DatabaseReferenceEvent.UPDATE_CHILDREN_COMPLETE, updateChildren_stress_completeHandler );
+				ref.addEventListener( DatabaseReferenceEvent.UPDATE_CHILDREN_ERROR, updateChildren_stress_errorHandler );
+				
+				var values:Array = [];
+				for (var i:int; i < stressSize; ++i) {
+					values.push( { highscore: 100, id: "", index: i, stars: 3 } );
+				}
+				var builder:UpdateChildrenBuilder = new UpdateChildrenBuilder();
+				builder.update( "progress", values );
+				
+				_startTime = getTimer();
+				ref.updateChildren( builder.build() );
+				log( "ref.updateChildren() : " + (getTimer() - _startTime) );
+			}
+			catch (e:Error)
+			{
+				log( e.message );
+			}
+		}
+		
+		public function updateChildren_stress_2():void
+		{
+			var stressSize:int = 400;
+			log( "updateChildren_stress_2() : " + stressSize );
+			try
+			{
+				var ref:DatabaseReference = FirebaseDatabase.service.getReference( "stress" );
+				ref.addEventListener( DatabaseReferenceEvent.UPDATE_CHILDREN_COMPLETE, updateChildren_stress_completeHandler );
+				ref.addEventListener( DatabaseReferenceEvent.UPDATE_CHILDREN_ERROR, updateChildren_stress_errorHandler );
+				
+				var builder:UpdateChildrenBuilder = new UpdateChildrenBuilder();
+				for (var i:int; i < stressSize; ++i) {
+					builder.update( "progress/"+i+"/highscore" , 100 );
+					builder.update( "progress/"+i+"/id" , "" );
+					builder.update( "progress/"+i+"/index" , i );
+					builder.update( "progress/"+i+"/stars" , 3 );
+				}
+				
+				_startTime = getTimer();
+				ref.updateChildren( builder.build() );
+				log( "ref.updateChildren() : " + (getTimer() - _startTime) );
+			}
+			catch (e:Error)
+			{
+				log( e.message );
+			}
+		}
+		
+		private var _startTime : Number;
+		private function updateChildren_stress_completeHandler( event:DatabaseReferenceEvent ):void
+		{
+			log( "updateChildren_stress_completeHandler() : " + (getTimer() - _startTime) )
+		}
+		
+		private function updateChildren_stress_errorHandler( event:DatabaseReferenceEvent ):void
+		{
+			log( "updateChildren_stress_errorHandler(): " + event.errorDescription );
 		}
 		
 		

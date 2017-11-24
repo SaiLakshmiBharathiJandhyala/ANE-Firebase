@@ -135,6 +135,9 @@ package com.distriqt.test.firebase
 		//
 		//
 		
+		private var _idToken : String;
+		private var _accessToken : String;
+		
 		private function googleIdentity_setupCompleteHandler( event:GoogleIdentityEvent ):void
 		{
 			GoogleIdentity.service.signInSilently();
@@ -144,17 +147,14 @@ package com.distriqt.test.firebase
 		{
 			// Have google sign in, lets use this to sign into Firebase
 			
-			var idToken:String = event.user.authentication.idToken;
-			var accessToken:String = event.user.authentication.accessToken;
+			_idToken = event.user.authentication.idToken;
+			_accessToken = event.user.authentication.accessToken;
 			
 			log( "Google Sign in success" );
-			log( idToken );
-			log( accessToken );
+			log( _idToken );
+			log( _accessToken );
 			
-			var credential:AuthCredential = GoogleAuthProvider.getCredential( idToken, accessToken );
 			
-			FirebaseAuth.service.addEventListener( FirebaseAuthEvent.SIGNIN_WITH_CREDENTIAL_COMPLETE, signInWithCredential_completeHandler );
-			FirebaseAuth.service.signInWithCredential( credential );
 		}
 		
 		private function googleIdentity_errorHandler( event:GoogleIdentityEvent ):void
@@ -182,7 +182,17 @@ package com.distriqt.test.firebase
 		//
 		//	AUTH
 		//
-		//		
+		//
+		
+		public function signIn():void
+		{
+			log( "signIn()" );
+
+			var credential:AuthCredential = GoogleAuthProvider.getCredential( _idToken, _accessToken );
+			
+			FirebaseAuth.service.addEventListener( FirebaseAuthEvent.SIGNIN_WITH_CREDENTIAL_COMPLETE, signInWithCredential_completeHandler );
+			FirebaseAuth.service.signInWithCredential( credential );
+		}
 		
 		public function getCurrentUser():void 
 		{

@@ -1,5 +1,13 @@
 
 
+###### 2017.11.24 [v1.9.027]
+
+Updated SDK: Android v11.0.4 iOS v4.6.0
+Added Invites (resolves #5)
+iOS: Fixed crash when no network connection (resolves #117)
+Updated documentation
+
+
 ###### 2017.09.02 [v1.8.019]
 
 Database: Added getKey functionality (resolves #100)

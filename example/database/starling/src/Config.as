@@ -26,7 +26,7 @@ package
 		//	VARIABLES
 		//
 		
-		public static var distriqtApplicationKey	: String = "d765dbbc78f96f4d72830729b28d5f5a75ae5f0aRuqU8TOTJ4QUjxWQjDNyv/WOou7EdodjDWtRWFX8I/V0rXmCm3Au36CZ81Eo3hp0J/YDVAn0SZUPrwmjwKAT3LahCgyDLnSst9eltcARz8kLmVsv6uCbIpngZ7713qTg2mYWSO7x2GLR+TdbjQSQobeUkCk/2nN2Qa2NDnsg5Djq06S5rfxveZKBa9liLhVIDuF0M79eKP5CQusTiVz0RvuTAn93orynsKkFMsju/IEz9q6OMhBrixfv1uAt3o2v0Rvu5W26OVmHDV9qafKLhndCfLyySZhKhINyTsnW6cLBwR4WY9QTVYxX41UwqUK3azuCLBe5TCiZ4S69ZeXP7g==";
+		public static var distriqtApplicationKey	: String = "6ad5517c40bf200a8feaa7867c51e50605d7bc54bGCT0o9Y/rHkpbhlZIEZuyj/VWVZmFkeo0FiOsGDUGzLqxp1YrL4QMdcQky8vtLL4P0cu3khs6mXY/gI3Mh+vM+4UfaiFzDQy+PM+xJxAuxUZb0e1pLIxUZe450IB0TAt1Oj5hBjYEA5+Vjav3SnfqmzTKmAVGxa6xPqGRomiGJNJhp4Axcf/4iRP9XkrU+paH45DCuoixCLva2Lzf65Xl/+0Nro1M7QaHi0NU1pmUX2Zwa9ROIrmntP6FcMPpSCS5/9QMNql9BY1v4XpKlQtnrXDziCdo1dVSrrLwe2sJOatTeVFbKM9XAIG8qDbo+0eapwGDSOAmROyMAWR0+U+Q==";
 		
 		public static var scale : Number = 1;
 		

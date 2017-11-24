@@ -113,6 +113,7 @@ package com.distriqt.test.firebase
 //			addAction( "Email Reset :Auth", _tests.sendPasswordResetEmail );
 
 			addAction( "Sign In :Google", _tests.googleSignIn );
+			addAction( "Sign In :Auth", _tests.signIn );
 			
 			addAction( "Email Verify :Auth", _tests.sendEmailVerification );
 			addAction( "Delete User :Auth", _tests.deleteUser );

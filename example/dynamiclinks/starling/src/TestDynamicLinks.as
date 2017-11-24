@@ -15,6 +15,7 @@
  */
 package
 {
+	import com.distriqt.extension.firebase.dynamiclinks.FirebaseDynamicLinks;
 	import com.distriqt.test.firebase.Main;
 	
 	import flash.display.Sprite;
@@ -115,7 +116,7 @@ package
 			addEventListener( Event.ACTIVATE, activateHandler, false, 0, true );
 			this._starling.stop();
 		}
-		
+
 		
 	}
 }
