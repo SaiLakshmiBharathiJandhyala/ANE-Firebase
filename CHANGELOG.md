@@ -1,5 +1,10 @@
 
 
+###### 2017.12.17 [v1.9.029]
+
+Updated documentation for Facebook Auth (resolves #126)
+
+
 ###### 2017.11.24 [v1.9.029]
 
 Corrected Database iOS build

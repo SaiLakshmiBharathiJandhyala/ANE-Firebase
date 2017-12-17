@@ -88,11 +88,12 @@ package com.distriqt.test.firebase
 			if (Firebase.isSupported)
 			{
 				var event:EventObject = new EventObject();
+				event.name = "custom_event_name";
 				
-				event.name = EventObject.ADD_TO_CART;
-				event.params[Params.PRICE] = 1.99;
-				event.params[Params.CURRENCY] = "USD";
-				event.params[Params.VALUE] = 88;
+//				event.name = EventObject.ADD_TO_CART;
+//				event.params[Params.PRICE] = 1.99;
+//				event.params[Params.CURRENCY] = "USD";
+//				event.params[Params.VALUE] = 88;
 				
 				var success:Boolean = Firebase.service.analytics.logEvent( event );
 			
@@ -130,7 +131,7 @@ package com.distriqt.test.firebase
 		{
 			if (Firebase.isSupported)
 			{
-				var screenName:String = "screen_test_"+String(Math.floor(Math.random()*10));;
+				var screenName:String = "screen_test_"+String(Math.floor(Math.random()*10));
 				
 				var success:Boolean = Firebase.service.analytics.setCurrentScreen( screenName );
 				log( "setCurrentScreen( " + screenName +" ) = " + success );
