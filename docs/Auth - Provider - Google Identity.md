@@ -21,13 +21,11 @@ Firstly, integrate Google Sign-In in your application by following the steps out
 You must ensure that you request the id token when setting up the extension, by setting `requestIdToken` to `true`:
 
 ```as3
-var options:GoogleIdentityOptions = new GoogleIdentityOptions( Config.clientID_Android, Config.clientID_iOS );
-options.requestIdToken = true;
-
-// Other options eg:
-options.scopes.push( "https://www.googleapis.com/auth/plus.login" );
-options.scopes.push( "https://www.googleapis.com/auth/plus.me" );
-options.scopes.push( "profile" );
+var options:GoogleIdentityOptions = new GoogleIdentityOptionsBuilder()
+	.requestIdToken()
+	.setIOSClientID( Config.clientID_iOS )
+	.setServerClientID( Config.serverClientID )
+	.build();
 
 GoogleIdentity.service.setup( options );
 ```
@@ -69,7 +67,7 @@ function googleIdentity_signInHandler( event:GoogleIdentityEvent ):void
 {
 	// Have google sign in, lets use this to sign into Firebase
 	var idToken:String = event.user.authentication.idToken;
-	var accessToken:String = event.user.authentication.accessToken;
+	var accessToken:String = event.user.authentication.accessToken; // probably will be null
 
 	// Create AuthCredential	
 	var credential:AuthCredential = GoogleAuthProvider.getCredential( idToken, accessToken );

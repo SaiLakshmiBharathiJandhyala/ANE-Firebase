@@ -80,10 +80,27 @@ Finally the all important Firebase extension:
 
 
 If you are building for Android using the Android resources configuration you should also make sure you 
-package your `com.distriqt.firebase.Config.ane`.
+package your `com.distriqt.CustomResources.ane`.
 
 
 
+
+
+## Extension IDs
+
+The following should be added to your `extensions` node in your application descriptor to identify all the required ANEs in your application:
+
+```xml
+<extensions>
+    <extensionID>com.distriqt.Firebase</extensionID>
+	
+    <extensionID>com.distriqt.Core</extensionID>
+    <extensionID>com.distriqt.androidsupport.V4</extensionID>
+    <extensionID>com.distriqt.playservices.Base</extensionID>
+
+	<extensionID>com.distriqt.CustomResources</extensionID>
+</extensions>
+```
 
 
 ---

@@ -16,6 +16,27 @@ The only required additional ANE is the Remote Config ANE located in this reposi
 This ANE contains all the required libraries for the main Firebase Remote Config functionality.
 
 
+
+
+## Extension IDs
+
+The following should be added to your `extensions` node in your application descriptor to identify all the required ANEs in your application:
+
+```xml
+<extensions>
+    <extensionID>com.distriqt.Firebase</extensionID>
+    <extensionID>com.distriqt.firebase.RemoteConfig</extensionID>
+	
+    <extensionID>com.distriqt.Core</extensionID>
+    <extensionID>com.distriqt.androidsupport.V4</extensionID>
+    <extensionID>com.distriqt.playservices.Base</extensionID>
+
+	<extensionID>com.distriqt.CustomResources</extensionID>
+</extensions>
+```
+
+
+
 ---
 
 ## Android Manifest Additions

@@ -33,7 +33,7 @@ We provide complete guides to get you up and running with Firebase as quickly an
 	- ![](Notifications (Cloud Messaging)|FCM - Introduction)
 	- ![](Remote Config|RemoteConfig - Introduction)
 	- ![](Dynamic Links|DynamicLinks - Introduction)
-	- Invites
+	- ![](Invites|Invites - Introduction)
 - Single API interface - your code works across iOS and Android with no modifications
 - Sample project code and ASDocs reference
 

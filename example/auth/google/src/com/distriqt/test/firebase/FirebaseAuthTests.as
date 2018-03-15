@@ -15,6 +15,7 @@
  */
 package com.distriqt.test.firebase
 {
+	import com.distriqt.extension.core.Core;
 	import com.distriqt.extension.firebase.Firebase;
 	import com.distriqt.extension.firebase.auth.AuthCredential;
 	import com.distriqt.extension.firebase.auth.EmailAuthProvider;
@@ -27,6 +28,7 @@ package com.distriqt.test.firebase
 	import com.distriqt.extension.firebase.auth.user.UserInfo;
 	import com.distriqt.extension.googleidentity.GoogleIdentity;
 	import com.distriqt.extension.googleidentity.GoogleIdentityOptions;
+	import com.distriqt.extension.googleidentity.GoogleIdentityOptionsBuilder;
 	import com.distriqt.extension.googleidentity.events.GoogleIdentityEvent;
 	
 	import starling.events.Event;
@@ -62,9 +64,10 @@ package com.distriqt.test.firebase
 		{
 			try
 			{
-				Firebase.init( Config.distriqtApplicationKey );
-				FirebaseAuth.init( Config.distriqtApplicationKey );
-				GoogleIdentity.init( Config.distriqtApplicationKey );
+				Core.init();
+				Firebase.init( Config.firebaseKey );
+				FirebaseAuth.init( Config.firebaseKey );
+				GoogleIdentity.init( Config.googleIdentityKey );
 				
 				log( "Firebase Supported: " + Firebase.isSupported );
 				
@@ -91,18 +94,23 @@ package com.distriqt.test.firebase
 				{
 					log( "GoogleIdentity Version: " + GoogleIdentity.service.version );
 					
-					GoogleIdentity.service.addEventListener( GoogleIdentityEvent.SETUP_COMPLETE, googleIdentity_setupCompleteHandler );
 					GoogleIdentity.service.addEventListener( GoogleIdentityEvent.SIGN_IN, googleIdentity_signInHandler );
 					GoogleIdentity.service.addEventListener( GoogleIdentityEvent.ERROR, googleIdentity_errorHandler );
 
-					var options:GoogleIdentityOptions = new GoogleIdentityOptions( Config.clientID_Android, Config.clientID_iOS );
 					
-					options.requestIdToken = true;
-					options.scopes.push( "https://www.googleapis.com/auth/plus.login" );
-					options.scopes.push( "https://www.googleapis.com/auth/plus.me" );
-					options.scopes.push( "profile" );
+					var options:GoogleIdentityOptions = new GoogleIdentityOptionsBuilder()
+							.requestEmail()
+							.requestIdToken()
+							.setIOSClientID( Config.clientID_iOS )
+							.setServerClientID( Config.serverClientID )
+							.build();
+					
+//					options.scopes.push( "https://www.googleapis.com/auth/plus.login" );
+//					options.scopes.push( "https://www.googleapis.com/auth/plus.me" );
+//					options.scopes.push( "profile" );
 					
 					GoogleIdentity.service.setup( options );
+					GoogleIdentity.service.signInSilently();
 				}
 
 			}
@@ -136,24 +144,15 @@ package com.distriqt.test.firebase
 		//
 		
 		private var _idToken : String;
-		private var _accessToken : String;
-		
-		private function googleIdentity_setupCompleteHandler( event:GoogleIdentityEvent ):void
-		{
-			GoogleIdentity.service.signInSilently();
-		}
 		
 		private function googleIdentity_signInHandler( event:GoogleIdentityEvent ):void
 		{
 			// Have google sign in, lets use this to sign into Firebase
 			
 			_idToken = event.user.authentication.idToken;
-			_accessToken = event.user.authentication.accessToken;
 			
 			log( "Google Sign in success" );
 			log( _idToken );
-			log( _accessToken );
-			
 			
 		}
 		
@@ -188,7 +187,7 @@ package com.distriqt.test.firebase
 		{
 			log( "signIn()" );
 
-			var credential:AuthCredential = GoogleAuthProvider.getCredential( _idToken, _accessToken );
+			var credential:AuthCredential = GoogleAuthProvider.getCredential( _idToken, null );
 			
 			FirebaseAuth.service.addEventListener( FirebaseAuthEvent.SIGNIN_WITH_CREDENTIAL_COMPLETE, signInWithCredential_completeHandler );
 			FirebaseAuth.service.signInWithCredential( credential );

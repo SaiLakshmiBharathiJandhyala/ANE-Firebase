@@ -19,6 +19,26 @@ extensions. We list these in the documentation in each of the specific providers
 include the required extensions for your situation.
 
 
+
+## Extension IDs
+
+The following should be added to your `extensions` node in your application descriptor to identify all the required ANEs in your application:
+
+```xml
+<extensions>
+    <extensionID>com.distriqt.Firebase</extensionID>
+    <extensionID>com.distriqt.firebase.Auth</extensionID>
+	
+    <extensionID>com.distriqt.Core</extensionID>
+    <extensionID>com.distriqt.androidsupport.V4</extensionID>
+    <extensionID>com.distriqt.playservices.Base</extensionID>
+
+	<extensionID>com.distriqt.CustomResources</extensionID>
+</extensions>
+```
+
+
+
 ---
 
 ## Android Manifest Additions

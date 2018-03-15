@@ -72,8 +72,8 @@ package com.distriqt.test.firebase
 			try
 			{
 				Core.init();
-				Firebase.init( Config.distriqtApplicationKey );
-				FirebaseInvites.init( Config.distriqtApplicationKey );
+				Firebase.init( Config.firebaseKey );
+				FirebaseInvites.init( Config.firebaseKey );
 				log( "Firebase Supported:    " + Firebase.isSupported );
 				log( "Invites Supported:     " + FirebaseInvites.isSupported );
 				

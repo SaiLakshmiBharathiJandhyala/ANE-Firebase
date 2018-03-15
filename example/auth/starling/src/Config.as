@@ -25,14 +25,15 @@ package
 		////////////////////////////////////////////////////////
 		//	VARIABLES
 		//
+		
+		public static var distriqtApplicationKey	: String = "356cba0cd6500297208c99f0ca34e0a2cc3eb1daU5Y7gQc3vBiHu57VdEzsyzNSTttTs2VHwds8a9Vgq2z3PodwMpxOcVMWVLhVJ21E1TfmDmhHi08Cw8l7QSAUpWZGmVqlg30CxAkwTDsuDlLI/7qNyQ9tDCCK8cel5Y6nRw1lNmeCRC/7bAo+Tj6WfMD1AJjNyCvq+No91wREwuc5tzrwIUZ4BjoyO4P696MBFMN4pifVyYZPwJNrSJ0wW1ayoJjqO1V2EAMxZqcccOV6PUimozz8R1tImvfMf3vZiN48LUrWgjmtXD7ZWmR4LocxM5l6Op51p+juZROQPZmjwlww/IPqvSsem6bsAenEACY1kBysO5W0GxqKtG2jOA==";
+		
 		public static var scale : Number = 1;
 		
-		public static var distriqtApplicationKey	: String = "";
 		
 		
-		public static var phoneNumber:String = "";
-		public static var email:String = "";
-		public static var password:String = "";
+		
+		
 		
 	}
 }

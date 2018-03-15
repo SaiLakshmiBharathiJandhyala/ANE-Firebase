@@ -16,6 +16,24 @@ The only required additional ANE is the Auth ANE located in this repository:
 This ANE contains all the required libraries for the main Firebase Storage functionality.
 
 
+## Extension IDs
+
+The following should be added to your `extensions` node in your application descriptor to identify all the required ANEs in your application:
+
+```xml
+<extensions>
+    <extensionID>com.distriqt.Firebase</extensionID>
+    <extensionID>com.distriqt.firebase.Storage</extensionID>
+	
+    <extensionID>com.distriqt.Core</extensionID>
+    <extensionID>com.distriqt.androidsupport.V4</extensionID>
+    <extensionID>com.distriqt.playservices.Base</extensionID>
+
+	<extensionID>com.distriqt.CustomResources</extensionID>
+</extensions>
+```
+
+
 ---
 
 ## Android Manifest Additions

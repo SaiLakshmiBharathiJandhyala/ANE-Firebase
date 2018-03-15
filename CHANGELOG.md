@@ -1,5 +1,16 @@
 
 
+###### 2018.03.15 [v2.0.042]
+
+Updated SDK: 
+  - Android v11.8.0 
+  - iOS v4.10.1
+  - (resolves #137, #134, #116, #105)
+
+Updates:
+  - Corrected docs formatting (resolves #106)
+
+
 ###### 2017.12.17 [v1.9.029]
 
 Updated documentation for Facebook Auth (resolves #126)

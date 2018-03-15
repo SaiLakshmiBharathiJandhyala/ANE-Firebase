@@ -16,6 +16,25 @@ The only required additional ANE is the Database ANE located in this repository:
 This ANE contains all the required libraries for the main Firebase Realtime Database functionality.
 
 
+
+## Extension IDs
+
+The following should be added to your `extensions` node in your application descriptor to identify all the required ANEs in your application:
+
+```xml
+<extensions>
+    <extensionID>com.distriqt.Firebase</extensionID>
+    <extensionID>com.distriqt.firebase.Database</extensionID>
+	
+    <extensionID>com.distriqt.Core</extensionID>
+    <extensionID>com.distriqt.androidsupport.V4</extensionID>
+    <extensionID>com.distriqt.playservices.Base</extensionID>
+
+	<extensionID>com.distriqt.CustomResources</extensionID>
+</extensions>
+```
+
+
 ---
 
 ## Android Manifest Additions

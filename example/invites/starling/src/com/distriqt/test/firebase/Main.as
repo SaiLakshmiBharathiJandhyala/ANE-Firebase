@@ -18,15 +18,16 @@ package com.distriqt.test.firebase
 {
 	import feathers.controls.Button;
 	import feathers.controls.ScrollContainer;
+	import feathers.layout.HorizontalAlign;
+	import feathers.layout.VerticalAlign;
 	import feathers.layout.VerticalLayout;
 	import feathers.themes.MetalWorksMobileTheme;
 	
 	import starling.display.Sprite;
 	import starling.events.Event;
 	import starling.text.TextField;
+	import starling.text.TextFormat;
 	import starling.utils.Color;
-	import starling.utils.HAlign;
-	import starling.utils.VAlign;
 	
 	/**	
 	 * 
@@ -79,15 +80,14 @@ package com.distriqt.test.firebase
 		
 		private function init():void
 		{
-			_text = new TextField( stage.stageWidth, stage.stageHeight, "", "_typewriter", 18, Color.WHITE );
-			_text.hAlign = HAlign.LEFT; 
-			_text.vAlign = VAlign.TOP;
+			var tf:TextFormat = new TextFormat( "_typewriter", 12, Color.WHITE, HorizontalAlign.LEFT, VerticalAlign.TOP );
+			_text = new TextField( stage.stageWidth, stage.stageHeight, "", tf );
 			_text.y = 40;
 			_text.touchable = false;
 			
 			var layout:VerticalLayout = new VerticalLayout();
-			layout.horizontalAlign = VerticalLayout.HORIZONTAL_ALIGN_RIGHT;
-			layout.verticalAlign = VerticalLayout.VERTICAL_ALIGN_MIDDLE;
+			layout.horizontalAlign = HorizontalAlign.RIGHT;
+			layout.verticalAlign = VerticalAlign.MIDDLE;
 			layout.gap = 5;
 			
 			_container = new ScrollContainer();

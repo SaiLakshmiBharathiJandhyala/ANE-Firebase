@@ -148,7 +148,7 @@ package
 					setTimeout( function():void {
 						log( "END LOOP TEST" );
 						loopTestTrace.stop();
-					}, Math.random() * 1000 );
+					}, Math.random() * 5000 );
 				
 					var request:URLRequest = new URLRequest( "https://airnativeextensions.com" );
 					var loader:URLLoader = new URLLoader();
@@ -159,12 +159,11 @@ package
 				else
 				{
 					// Enable performance collection
+					log( "Enable performance collection" );
 					
 					FirebasePerformance.service.setPerformanceCollectionEnabled( true );
 					
 				}
-				
-				
 				
 				
 				

@@ -229,7 +229,7 @@ package com.distriqt.test.firebase
 		{
 			try
 			{
-				var file:File = File.applicationStorageDirectory.resolvePath( "assets/Hyper_8_Bit_Memories_by_webbsta.jpg" );
+				var file:File = File.applicationDirectory.resolvePath( "assets/memories.jpg" );
 				var fileStream:FileStream = new FileStream(); 
 				fileStream.open(file, FileMode.READ);
 				var bytes:ByteArray = new ByteArray();
