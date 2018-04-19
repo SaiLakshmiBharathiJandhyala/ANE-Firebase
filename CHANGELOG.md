@@ -1,5 +1,10 @@
 
 
+###### 2018.04.20 [v2.0.043]
+
+Database: updateChildren Android performance improvements (resolves #141)
+
+
 ###### 2018.03.15 [v2.0.042]
 
 Updated SDK: 

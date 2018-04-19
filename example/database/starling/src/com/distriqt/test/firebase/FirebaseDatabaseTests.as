@@ -368,7 +368,7 @@ package com.distriqt.test.firebase
 		
 		public function updateChildren_stress_2():void
 		{
-			var stressSize:int = 400;
+			var stressSize:int = 2000;
 			log( "updateChildren_stress_2() : " + stressSize );
 			try
 			{
@@ -376,6 +376,7 @@ package com.distriqt.test.firebase
 				ref.addEventListener( DatabaseReferenceEvent.UPDATE_CHILDREN_COMPLETE, updateChildren_stress_completeHandler );
 				ref.addEventListener( DatabaseReferenceEvent.UPDATE_CHILDREN_ERROR, updateChildren_stress_errorHandler );
 				
+				_startTime = getTimer();
 				var builder:UpdateChildrenBuilder = new UpdateChildrenBuilder();
 				for (var i:int; i < stressSize; ++i) {
 					builder.update( "progress/"+i+"/highscore" , 100 );
@@ -383,9 +384,11 @@ package com.distriqt.test.firebase
 					builder.update( "progress/"+i+"/index" , i );
 					builder.update( "progress/"+i+"/stars" , 3 );
 				}
+				var update:Object = builder.build();
+				log( "builder.update(): " + (getTimer() - _startTime) );
 				
 				_startTime = getTimer();
-				ref.updateChildren( builder.build() );
+				ref.updateChildren( update );
 				log( "ref.updateChildren() : " + (getTimer() - _startTime) );
 			}
 			catch (e:Error)
