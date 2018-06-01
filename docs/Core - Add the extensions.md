@@ -124,6 +124,7 @@ Generally this is your AIR application id prefixed by `air.` unless you have spe
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 	<uses-permission android:name="android.permission.WAKE_LOCK"/>
 	
+	<uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
 	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 	<permission android:name="YOUR_APPLICATION_PACKAGE.permission.C2D_MESSAGE" android:protectionLevel="signature" />
 	<uses-permission android:name="YOUR_APPLICATION_PACKAGE.permission.C2D_MESSAGE" />
@@ -141,26 +142,49 @@ Generally this is your AIR application id prefixed by `air.` unless you have spe
 			
 			
 		<!-- FIREBASE CORE -->
-		<!-- analytics -->
-		<receiver
-			android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-			android:enabled="true">
-			<intent-filter>
-				<action android:name="com.google.android.gms.measurement.UPLOAD"/>
-			</intent-filter>
-		</receiver>
-		<service
-			android:name="com.google.android.gms.measurement.AppMeasurementService"
-			android:enabled="true"
-			android:exported="false"/>
-			
 		<!-- common -->
+		<service android:name="com.google.firebase.components.ComponentDiscoveryService" >
+			<meta-data
+				android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+				android:value="com.google.firebase.components.ComponentRegistrar" />
+			<meta-data
+				android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+				android:value="com.google.firebase.components.ComponentRegistrar" />
+		</service>
 		<provider
 			android:authorities="YOUR_APPLICATION_PACKAGE.firebaseinitprovider"
 			android:name="com.google.firebase.provider.FirebaseInitProvider"
 			android:exported="false"
 			android:initOrder="100" />
-		
+
+
+		<!-- analytics -->
+		<receiver
+			android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+			android:enabled="true"
+			android:exported="false" >
+		</receiver>
+		<receiver
+			android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+			android:enabled="true"
+			android:exported="true"
+			android:permission="android.permission.INSTALL_PACKAGES" >
+			<intent-filter>
+				<action android:name="com.android.vending.INSTALL_REFERRER" />
+			</intent-filter>
+		</receiver>
+
+		<service
+			android:name="com.google.android.gms.measurement.AppMeasurementService"
+			android:enabled="true"
+			android:exported="false" />
+		<service
+			android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+			android:enabled="true"
+			android:exported="false"
+			android:permission="android.permission.BIND_JOB_SERVICE" />
+
+
 		<!-- iid -->
 		<receiver
 			android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
@@ -168,17 +192,18 @@ Generally this is your AIR application id prefixed by `air.` unless you have spe
 			android:permission="com.google.android.c2dm.permission.SEND" >
 			<intent-filter>
 				<action android:name="com.google.android.c2dm.intent.RECEIVE" />
-				<action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
 				<category android:name="YOUR_APPLICATION_PACKAGE" />
 			</intent-filter>
 		</receiver>
-		<receiver
-			android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"
-			android:exported="false" />
+		<!--
+				FirebaseInstanceIdService performs security checks at runtime,
+				no need for explicit permissions despite exported="true"
+		-->
 		<service
 			android:name="com.google.firebase.iid.FirebaseInstanceIdService"
-			android:exported="true">
-			<intent-filter android:priority="-500">
+			android:exported="true" >
+			<intent-filter android:priority="-500" >
 				<action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
 			</intent-filter>
 		</service>

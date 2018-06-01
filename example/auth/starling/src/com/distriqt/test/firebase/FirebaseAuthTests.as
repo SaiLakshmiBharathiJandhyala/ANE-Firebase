@@ -92,8 +92,7 @@ package com.distriqt.test.firebase
 				
 				
 				
-				Dialog.init( "1cd2ab3feb5355be149632e99d6a7ab720a51426ZWS/fwnftkfJVG61flWTmZT75Bl4OD6GoEsQE22djUSQ3S5YRKkP34Mxu9rCYmNcLdQva2IZAYwl8HkrjJSE40VVw4ZoVCy1EtJhda3eOaEwX6D0pT+QcSFv2foW69RaOHpkCGLusD4BXpZSURNLaplA2zc758PFNDIhlLHwXTqrAG1X2HsSx/vml/qn7uDGBYdhZ924WqRwtXB81/KmnbrrpQ7P+uAN0WLfbX9UTi5MHte4fxExpTYoH/LEwhIJ3fkKOygJXq1kkBUlJaP6UkvI+nn8cJy9XQJM5+5HyBlbVNcvfEA5DU4akMTl1S4yNbF8sFuk1DpVVK6dtYhMew==" );
-				
+				Dialog.init( "bfe880bd6ec687b8b3ec7013735d910d98bcc510HAI9Ihhh0P2HMz/xJwlMh9jnZsPZLQ6BJ9/fVnTob+qiBxIQC9kPTJkwmMES0XWrNLqsB73PkXW77BAVCzk6iAEP5kwTuHLOmPsLFn6THIakHp2zM/TC7HeXyqLbIS43wxrsQVeJsAHCtNRckntn7SIe3QFWRfMYlhVD83pj+M7AqLvj4KOmVmaSBguKPn/OlmBeH9s8zbddbMeShiLETBNvOqQlIl+wqmUwenMez3BnKJd3U0dp0D2iBer+nr1W2Mag+t5hfdZwm+ASFihyjTxfC17kqCjuuoGZlXuqkk7QE+gOCTvCvrg0eABU/oQ6gqWv4MkJlCHHuQaoqmvvJg==" );
 			}
 			catch (e:Error)
 			{

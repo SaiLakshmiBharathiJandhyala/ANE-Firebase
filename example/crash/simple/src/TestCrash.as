@@ -32,7 +32,7 @@ package
 	 */
 	public class TestCrash extends Sprite
 	{
-		public static const APP_KEY : String = "111c4110929ae7895af1a0c578014f3d62cfd39aYMUPcenKIoYHV8iQKBXRAoZt8VRbA85v0dq52LQ1vcnuMtGlfBw6Fe+hlSo3kGsSqTzqcpptJgVd3w9nfSRgeOhnTQvUJTAnoZW1okjswpz5nGQyPBATmrYLpAUrnJIh7IEvPep+LfdmN7jG7bTzk9Qzt/X9vYRW2pKE0E9MIJlbx1fI8UUtFadXp/9HYhc8XdvSKqehK084Baq+sHOZVokcbll9jnziSaYZ5vrosL1BZ+00txHkp1OES3LARHNlbLkIur6aENhb9RuyX3aA5CWckShbkI5SHq22qv5EHxyXyUYz6WwK4unEGPbLbR0iDCv8j1jRbGbZ+JxRmUKzug==";
+		public static const APP_KEY : String = "b27853585fb448740080a7d09479cd3bd3985495aeZvjt5vveXmco2mkIq31k//CtdbHMuBU2fPH80tVQA+q0RIU0UujJj9fq4FNraWi4CVtZoda+e9EyPw+obJL5+OESPk6EPBytbBjVwCcAYkNUh6HUTwC3X+Xq3K6WRg0VsGAYt3RokM/lvnqmrC16ntpZhp3lhfeSy6+443u8TrSSGe7f9vCNykuLLHqg5imDyFLex6i/woiAhCKEMfZN9xewb03Oc/5rxT0li6HvzVfQWPwxQPspnET1599DAU/S5WbXENLb5+fhhp1dhKNja2RJMK/wBackbB/1OUer7ZzDh3uhMteypa+srWV0euDMi65kyN12jw1xixZOTPRQ==";
 		
 		/**
 		 * Class constructor 

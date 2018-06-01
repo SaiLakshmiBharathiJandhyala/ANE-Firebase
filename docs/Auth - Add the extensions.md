@@ -46,6 +46,26 @@ The following should be added to your `extensions` node in your application desc
 No additional manifest additions are required
 
 
+```xml
+    <activity
+        android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+        android:excludeFromRecents="true"
+        android:exported="true"
+        android:launchMode="singleInstance"
+        android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+
+```
+
+`com.google.firebase.components.ComponentDiscoveryService`:
+
+```xml
+    <meta-data
+        android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+        android:value="com.google.firebase.components.ComponentRegistrar" />
+```
+
 ## iOS Info Additions
 
 No additional additions are required. There is an exception with Phone Authentication

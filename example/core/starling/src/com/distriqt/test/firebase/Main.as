@@ -101,6 +101,7 @@ package com.distriqt.test.firebase
 			_buttons = new Vector.<Button>();
 			
 			addAction( "Setup :Core", _tests.setup );
+			addAction( "Get Options :Core", _tests.getOptions );
 			
 			addAction( "Log Event :Analytics", _tests.logEvent );
 			addAction( "Set User ID :Analytics", _tests.setUserID );

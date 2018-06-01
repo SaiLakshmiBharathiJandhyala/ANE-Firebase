@@ -43,27 +43,19 @@ if (Firebase.isSupported)
 The call to `initialiseApp` returns a Boolean value indicating whether you have a configured 
 Firebase application available.
 
-If the call returns `false`, you should return to the ![](Configuration Files|Setup - Configuration Files) section
-and ensure you have correctly setup all the appropriate options.
+If the call returns `false`, you should return to the ![](Configuration Files|Setup - Configuration Files) section and ensure you have correctly setup all the appropriate options.
 
 
-## Manual Configuration
+### Checking the configuration
 
-If you wish you can manually setup your application. 
-To do this you create an instance of the `FirebaseOptions` class and set the details for your application.
-You can locate these in the configuration files downloaded above.
+You can call `getOptions()` to return the current options loaded into the Firebase application.
 
-This is not the suggested method however it is a valid way of configuring your Firebase Application.
-
+This is useful if you are having issues with connecting your application to confirm you are correctly configuring your application.
 
 ```as3
-var options:FirebaseOptions = new FirebaseOptions();  
-options.apiKey      = google_api_key;
-options.clientID    = default_web_client_id;
-options.databaseURL = firebase_database_url
-options.gcmSenderID = gcm_defaultSenderId;
-options.googleAppID = google_app_id;
+var options:FirebaseOptions = Firebase.service.getOptions();
 
-Firebase.service.initialiseApp( options );
+trace( options.toString() );
 ```
 
+This may return `null` if the Firebase app has not been configured, either by resources, configuration file or manually. 

@@ -43,8 +43,7 @@ package com.distriqt.test.firebase
 		//
 		
 		private var _tests		: FirebaseStorageTests;
-
-		private var _buttons	: Vector.<Button>;
+		private var _container	: ScrollContainer;
 		private var _text		: TextField;
 		
 		
@@ -77,13 +76,6 @@ package com.distriqt.test.firebase
 		
 		private function init():void
 		{
-			_tests = new FirebaseStorageTests( this );
-			addChild( _tests );
-		}
-		
-		
-		private function createUI():void
-		{
 			_text = new TextField( stage.stageWidth, stage.stageHeight, "", "_typewriter", 18, Color.WHITE );
 			_text.hAlign = HAlign.LEFT; 
 			_text.vAlign = VAlign.TOP;
@@ -94,13 +86,14 @@ package com.distriqt.test.firebase
 			layout.horizontalAlign = VerticalLayout.HORIZONTAL_ALIGN_RIGHT;
 			layout.verticalAlign = VerticalLayout.VERTICAL_ALIGN_BOTTOM;
 			layout.gap = 5;
-			var container:ScrollContainer = new ScrollContainer();
-			container.y = 50;
-			container.layout = layout;
-			container.width = stage.stageWidth;
-			container.height = stage.stageHeight-50;
 			
-			_buttons = new Vector.<Button>();
+			_container = new ScrollContainer();
+			_container.y = 50;
+			_container.layout = layout;
+			_container.width = stage.stageWidth;
+			_container.height = stage.stageHeight-50;
+			
+			_tests = new FirebaseStorageTests( this );
 			
 			addAction( "Setup :Core", _tests.setup );
 			
@@ -108,24 +101,21 @@ package com.distriqt.test.firebase
 			
 			addAction( "Info :Reference", _tests.printReferenceInfo );
 			addAction( "Get Metadata :Reference", _tests.getMetadata );
-			addAction( "Delete :Reference", _tests.deleteReference );
+			addAction( "Get Download Url :Reference", _tests.getDownloadUrl );
 			
+			addAction( "Delete :Reference", _tests.deleteReference );
 			
 			addAction( "File :Upload", _tests.uploadFile );
 			addAction( "File With Metadata :Upload", _tests.uploadFileWithMetadata );
 			addAction( "Bytes :Upload", _tests.uploadBytes );
 			
-			
 			addAction( "File :Download", _tests.downloadFile );
 			addAction( "Bytes :Download", _tests.downloadBytes );
 			
 			
+			addChild( _tests );
 			addChild( _text );
-			for each (var button:Button in _buttons)
-			{
-				container.addChild(button);
-			}
-			addChild( container );
+			addChild( _container );
 		}
 		
 		
@@ -134,7 +124,8 @@ package com.distriqt.test.firebase
 			var b:Button = new Button();
 			b.label = label;
 			b.addEventListener( starling.events.Event.TRIGGERED, listener );
-			_buttons.push( b );
+			
+			_container.addChild( b );
 		}
 		
 		
@@ -147,7 +138,6 @@ package com.distriqt.test.firebase
 			removeEventListener(Event.ADDED_TO_STAGE, addedToStageHandler );
 			new MetalWorksMobileTheme();
 			init();
-			createUI();
 		}
 		
 		

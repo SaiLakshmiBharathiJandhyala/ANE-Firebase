@@ -26,11 +26,11 @@ package
 		//	VARIABLES
 		//
 		
-		public static var firebaseKey				: String = "356cba0cd6500297208c99f0ca34e0a2cc3eb1daU5Y7gQc3vBiHu57VdEzsyzNSTttTs2VHwds8a9Vgq2z3PodwMpxOcVMWVLhVJ21E1TfmDmhHi08Cw8l7QSAUpWZGmVqlg30CxAkwTDsuDlLI/7qNyQ9tDCCK8cel5Y6nRw1lNmeCRC/7bAo+Tj6WfMD1AJjNyCvq+No91wREwuc5tzrwIUZ4BjoyO4P696MBFMN4pifVyYZPwJNrSJ0wW1ayoJjqO1V2EAMxZqcccOV6PUimozz8R1tImvfMf3vZiN48LUrWgjmtXD7ZWmR4LocxM5l6Op51p+juZROQPZmjwlww/IPqvSsem6bsAenEACY1kBysO5W0GxqKtG2jOA==";
+		public static var firebaseKey				: String = "9c3ce9f62be48b5f394bff2028b8050619375102SNCJT6II2mxgZE09358DD8Qo+wUctj4QaPniV025oTm192eYiGN6QyibUSjFQIidPngvjdZ+cP21DPfgDriZw6EI4U4rxanlQuogCyplUgE16/tc2BgEQ6QgKbN4SHMAdq6ZHcYVVllzarF+7oCx48MAP5obe/BFr/F625KOdaN4ZNAehd52bBAQ0+kXivw6D5Qzl4B0DeEP9adH5R7HmNC2X9dGipwOzPAN0fkdw6fNK7mvoaXQkSZFjuLr0agbKInh4EowpI6p8rOu07NNCFyXQ90p2PlZ+zsHChIK5vSrtQLXbljeDQCKSXStofumGgheom633Nd2i05xION5YQ==";
 		
 		public static var scale : Number = 1;
 		
-		public static var googleIdentityKey         : String = "46840909248b17d6db2d6b9d5681db6c1848e597Gn0JqQwXVs/j9uRqmBaxYVk78e6LwycEWerSK845fl5YpWMW42Z/n8QMyEG8nn4EQ051GrsTSU7YDhqCypZjchLz6SVI+jJgVBvnBxmUNUZIQzl9EBYkoBLRqDklW/dtgPoBBl5jntmzBMSu9btfWTr0evgTyKHku5OTwjQRCCbydm9a3DZPPWWx/zYMYyb1K2ivDBvw95Ac5KhpSUCnkS/NCWOytkrbZT9FL6qk1z6p2hmdQ81cnLKYiOYT86lXRrmqrOa2BQmhCqFmSTb6/RzBSvjrpQMyDR+3Lwmen9gZTnCWDRPSiln4jf6fiSyLwjEOIZ3dXmt6dWZ2PbgIYw==";
+		public static var googleIdentityKey         : String = "ddc1e20a1088197f734d8e52d8529b40a7b29a05W2QNp6D/BaHcmo9Yr7K83cfSQMazOW6M3UZ88FvOy/EKkPXUtn5j3/6xG2lyELgtaoT5qrztNFqDQf9qh/3H8GLBpU5DjxbVhLuW6T3hEizqyVIth08xk+uXvU16/KQTBEYDMXjvXQIkf44YWK0nHejTDwqhi3cckWPhvMUCSqzi4m38cnCkffKjJK8ere5PGWHxw6UIBfTeFYMug4JPl6KhPu55kxblxy9/0avK0jl8py3RzTlSgfSSHyoEtf2IVkYCncFfvyC1nL2/zTclM+CeNlTnf05WgykdxGwWp21E2mOrWkzG8c9DJhMR+km40j9D3NaU+hIWu9lVE+4Hdg==";
 		
 		public static var clientID_iOS 				: String = "";
 		public static var serverClientID			: String = "";

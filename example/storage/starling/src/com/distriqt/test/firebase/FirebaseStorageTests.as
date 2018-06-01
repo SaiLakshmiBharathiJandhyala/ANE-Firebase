@@ -21,6 +21,7 @@ package com.distriqt.test.firebase
 	import com.distriqt.extension.firebase.storage.FirebaseStorage;
 	import com.distriqt.extension.firebase.storage.StorageMetadata;
 	import com.distriqt.extension.firebase.storage.StorageReference;
+	import com.distriqt.extension.firebase.storage.StorageReference;
 	import com.distriqt.extension.firebase.storage.UploadTask;
 	import com.distriqt.extension.firebase.storage.events.DownloadTaskEvent;
 	import com.distriqt.extension.firebase.storage.events.StorageReferenceEvent;
@@ -161,6 +162,44 @@ package com.distriqt.test.firebase
 		private function getMetadata_errorHandler( event:StorageReferenceEvent ):void 
 		{
 			log( "getMetadata_errorHandler" );
+		}
+		
+		
+		
+		
+		public function getDownloadUrl():void
+		{
+			log( "getDownloadUrl()" );
+			try
+			{
+				var reference:StorageReference = FirebaseStorage.service.getReference().child( "images/test_metadata.png" );
+				
+				reference.addEventListener( StorageReferenceEvent.GET_DOWNLOAD_URL_SUCCESS, getDownloadUrl_successHandler );
+				reference.addEventListener( StorageReferenceEvent.GET_DOWNLOAD_URL_ERROR, getDownloadUrl_errorHandler );
+				
+				reference.getDownloadUrl();
+			}
+			catch (e:Error)
+			{
+				log( e.message );
+			}
+		}
+		
+		private function getDownloadUrl_successHandler( event:StorageReferenceEvent ):void
+		{
+			log( "getDownloadUrl_successHandler" );
+			log( event.url );
+			
+			StorageReference(event.currentTarget).removeEventListener( StorageReferenceEvent.GET_DOWNLOAD_URL_SUCCESS, getDownloadUrl_successHandler );
+			StorageReference(event.currentTarget).removeEventListener( StorageReferenceEvent.GET_DOWNLOAD_URL_ERROR, getDownloadUrl_errorHandler );
+		}
+		
+		private function getDownloadUrl_errorHandler( event:StorageReferenceEvent ):void
+		{
+			log( "getDownloadUrl_errorHandler" );
+			
+			StorageReference(event.currentTarget).removeEventListener( StorageReferenceEvent.GET_DOWNLOAD_URL_SUCCESS, getDownloadUrl_successHandler );
+			StorageReference(event.currentTarget).removeEventListener( StorageReferenceEvent.GET_DOWNLOAD_URL_ERROR, getDownloadUrl_errorHandler );
 		}
 		
 		

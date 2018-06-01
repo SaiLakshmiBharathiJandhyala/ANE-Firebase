@@ -17,6 +17,7 @@
 package com.distriqt.test.firebase
 {
 	import com.distriqt.extension.firebase.Firebase;
+	import com.distriqt.extension.firebase.FirebaseOptions;
 	import com.distriqt.extension.firebase.analytics.EventObject;
 	import com.distriqt.extension.firebase.analytics.Params;
 	
@@ -71,6 +72,23 @@ package com.distriqt.test.firebase
 			catch (e:Error)
 			{
 				log( e.message );
+			}
+		}
+		
+		
+		public function getOptions():void
+		{
+			if (Firebase.isSupported)
+			{
+				var options:FirebaseOptions = Firebase.service.getOptions();
+				if (options != null)
+				{
+					log( options.toString() );
+				}
+				else
+				{
+					log( "APPLICATION NOT CONFIGURED" );
+				}
 			}
 		}
 		
@@ -133,6 +151,7 @@ package com.distriqt.test.firebase
 			{
 				var screenName:String = "screen_test_"+String(Math.floor(Math.random()*10));
 				
+//				var success:Boolean = Firebase.service.analytics.setCurrentScreen( screenName, "com.distriqt.test.firebase.FirebaseCoreTests" );
 				var success:Boolean = Firebase.service.analytics.setCurrentScreen( screenName );
 				log( "setCurrentScreen( " + screenName +" ) = " + success );
 			}
