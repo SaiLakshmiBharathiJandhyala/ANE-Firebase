@@ -27,8 +27,10 @@ We provide complete guides to get you up and running with Firebase as quickly an
 	- ![](Authentication|Auth - Introduction)
 	- ![](Realtime Database|Database - Introduction)
 	- ![](Storage|Storage - Introduction)
+- Quality
+	- ![](Crashlytics|Crashlytics - Introduction)
 	- ![](Performance Monitoring|Performance - Introduction)
-	- ![](Crash Reporting|Crash - Introduction)
+	- **Deprecated** ![](Crash Reporting|Crash - Introduction)
 - Grow
 	- ![](Notifications (Cloud Messaging)|FCM - Introduction)
 	- ![](Remote Config|RemoteConfig - Introduction)
@@ -38,9 +40,13 @@ We provide complete guides to get you up and running with Firebase as quickly an
 - Sample project code and ASDocs reference
 
 
-### Quick Example: 
+## Documentation
 
-```as3
+Latest documentation can be found in the [wiki](https://github.com/distriqt/ANE-Firebase/wiki)
+
+Quick Example: 
+
+```actionscript
 Firebase.initialiseApp();
 
 // Log an event to analytics
@@ -51,6 +57,18 @@ event.params[Params.PRICE] = 1.99;
 Firebase.service.analytics.logEvent( event );
 ```
 
+More information here: 
+
+[com.distriqt.Firebase](https://airnativeextensions.com/extension/com.distriqt.Firebase)
+
+
+## License
+
+You can purchase a license for using this extension:
+
+[airnativeextensions.com](https://airnativeextensions.com/)
+
+distriqt retains all copyright.
 
 
 ![](images/promo.png)
