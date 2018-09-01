@@ -17,12 +17,8 @@
  */
 package com.distriqt.test.firebase
 {
-	/**
-	 * @author 	"Michael Archbold (ma&#64;distriqt.com)"
-	 */
 	public interface ILogger
 	{
-		
 		function log( tag:String, message:String ):void;
 	}
 }

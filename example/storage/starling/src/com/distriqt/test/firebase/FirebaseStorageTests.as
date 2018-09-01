@@ -295,7 +295,7 @@ package com.distriqt.test.firebase
 		
 		private function taskEventHandler( event:UploadTaskEvent ):void 
 		{
-			log( "taskEventHandler: "+event.type );
+			log( "taskEventHandler: "+event.type + " " + event.errorMessage );
 			if (event.taskSnapshot != null) 
 				log( "["+event.taskSnapshot.bytesTransferred +"/"+event.taskSnapshot.totalByteCount+"]" );
 			

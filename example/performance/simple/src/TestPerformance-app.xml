@@ -90,7 +90,7 @@
 
 					<!-- FIREBASE CORE -->
 					<!-- common -->
-					<service android:name="com.google.firebase.components.ComponentDiscoveryService" >
+                    <service android:name="com.google.firebase.components.ComponentDiscoveryService" >
                         <meta-data
                             android:name="com.google.firebase.components:com.google.firebase.perf.component.FirebasePerfRegistrar"
                             android:value="com.google.firebase.components.ComponentRegistrar" />

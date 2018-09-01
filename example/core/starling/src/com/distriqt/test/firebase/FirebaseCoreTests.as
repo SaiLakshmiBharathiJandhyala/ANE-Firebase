@@ -21,6 +21,8 @@ package com.distriqt.test.firebase
 	import com.distriqt.extension.firebase.analytics.EventObject;
 	import com.distriqt.extension.firebase.analytics.Params;
 	
+	import flash.utils.getTimer;
+	
 	import starling.events.Event;
 	
 	/**	
@@ -118,6 +120,32 @@ package com.distriqt.test.firebase
 				log( "logEvent = " + success );
 			}
 		}
+		
+		
+		public function logEventStress():void
+		{
+			if (Firebase.isSupported)
+			{
+				var event:EventObject = new EventObject();
+				
+				event.name = EventObject.ADD_TO_CART;
+				event.params[Params.PRICE] = 1.99;
+				event.params[Params.CURRENCY] = "USD";
+				event.params[Params.VALUE] = 88;
+				
+				for (var i:int = 0; i < 100; i ++)
+				{
+					event.params["test"+i] = String(Math.floor(Math.random() * 10000 ));
+				}
+				
+				var start:Number = getTimer();
+				var success:Boolean = Firebase.service.analytics.logEvent( event );
+				
+				log( "logEvent = " + success + " time="+String((getTimer()-start)/1000) );
+			}
+		}
+		
+		
 		
 		
 		private var _userId : String = String(Math.floor(Math.random()*10000));

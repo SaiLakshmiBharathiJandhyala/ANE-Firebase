@@ -48,7 +48,7 @@ As we don't have this option there are two available avenues to setup your appli
 
 
 
-### Android: Create Resource ANE
+### Android Create Resource ANE
 
 The first is the preferred method using Android resources. 
 
@@ -81,7 +81,21 @@ it's a good idea to use this method from the start.
 > android.sdk = /Users/marchbold/work/sdks/android/android-sdk-macosx
 > ```
 
-4. Create your values file at `res/values/values.xml` by copying the example below and 
+4. Create your values file at `res/values/values.xml` [see below](#android-values-xml)
+
+6. Run `ant` in the repository directory and you will generate an ANE file in the `build` directory (the name will be based on your package name). 
+  This extension contains your configuration values resource and will be automatically loaded by the Firebase extension. 
+
+7. Add that ANE to your AIR application and ensure it's packaged with your Android application
+
+8. More information on the `google-services.json` format [here](https://developers.google.com/android/guides/google-services-plugin#processing_the_json_file)
+
+
+
+
+### Android Values XML
+
+To create your values file (`res/values/values.xml`) you can either use the conversion tool [available here](https://distriqt.github.io/ANE-Firebase/tools/google-services-json-to-xml.html) or you can create it manually by copying the example below:
 
 >
 > Complete `values.xml` example:
@@ -89,9 +103,7 @@ it's a good idea to use this method from the start.
 > ```xml
 > <?xml version="1.0" encoding="utf-8"?>
 > <resources>
-> 
 >     <string name="google_app_id" translatable="false">1:1035469437089:android:73a4fb8297b2cd4f</string>
-> 
 >     <string name="gcm_defaultSenderId" translatable="false">1035469437089</string>
 >     <string name="default_web_client_id" translatable="false">337894902146-e4uksm38sne0bqrj6uvkbo4oiu4hvigl.apps.googleusercontent.com</string>
 >     <string name="ga_trackingId" translatable="false">UA-65557217-3</string>
@@ -100,12 +112,11 @@ it's a good idea to use this method from the start.
 >     <string name="google_crash_reporting_api_key" translatable="false">AIzbSyCILMsOuUKwN3qhtxrPq7FFemDJUAXTyZ8</string>
 >     <string name="google_storage_bucket" translatable="false">XXX</string>
 >     <string name="project_id" translatable="false">mydemoapp</string>
->
 > </resources>
 > ```
 > 
 
-5. Set the values from your `google-services.json` file in your `values.xml` as per the table below:
+The values from your `google-services.json` file coincide with the values in your `values.xml` file as per the table below:
 
 >
 > | Field Name | Json value | 
@@ -122,17 +133,11 @@ it's a good idea to use this method from the start.
 >
 
 
-6. Run `ant` in the repository directory and you will generate an ANE file in the `build` directory (the name will be based on your package name). 
-  This extension contains your configuration values resource and will be automatically loaded by the Firebase extension. 
-
-7. Add that ANE to your AIR application and ensure it's packaged with your Android application
-
-8. More information on the `google-services.json` format [here](https://developers.google.com/android/guides/google-services-plugin#processing_the_json_file)
 
 
 
 
-### Android: Manual Configuration
+### Android Manual Configuration
 
 The second method is a delayed configuration method which is the same as the manual configuration in the next section however the values are read directly from the json file if you package it with your Android application.
 

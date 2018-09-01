@@ -104,6 +104,7 @@ package com.distriqt.test.firebase
 			addAction( "Get Options :Core", _tests.getOptions );
 			
 			addAction( "Log Event :Analytics", _tests.logEvent );
+			addAction( "Log Event Stress :Analytics", _tests.logEventStress );
 			addAction( "Set User ID :Analytics", _tests.setUserID );
 			addAction( "Set User Prop :Analytics", _tests.setUserProperty );
 			addAction( "Set Current Screen :Analytics", _tests.setCurrentScreen );

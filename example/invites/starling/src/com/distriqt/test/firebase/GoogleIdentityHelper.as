@@ -57,7 +57,6 @@ package com.distriqt.test.firebase
 		{
 			try
 			{
-				GoogleIdentity.init( Config.googleIdentityKey );
 				if (GoogleIdentity.isSupported)
 				{
 					GoogleIdentity.service.addEventListener( GoogleIdentityEvent.SIGN_IN, 			signInHandler );

@@ -1,5 +1,19 @@
 
 
+###### 2018.09.01 [v2.2.059]
+
+```
+Updated SDK:
+  - iOS v5.6.0
+
+Added Crashlytics implementation (resolves #60)
+
+Core: Improved performance of logEvent call (resolves #166)
+Storage: Resolved crash when uploading to unauthorised location (resolves #160) 
+
+```
+
+
 ###### 2018.06.01 [v2.1.055]
 
 ```

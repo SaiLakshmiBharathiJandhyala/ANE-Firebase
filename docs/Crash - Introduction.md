@@ -1,4 +1,10 @@
 
+>
+> **Your Crash Reporting dashboard will no longer be accessible after September 8, 2018.**
+> **Upgrade to ![](Crashlytics|Crashlytics - Introduction) today for more powerful, real-time crash analysis and new stability insights.**
+>
+
+
 Comprehensive and actionable information to help diagnose and fix problems in your app.
 
 ## About 

@@ -43,8 +43,9 @@ The following should be added to your `extensions` node in your application desc
 
 ## Android Manifest Additions
 
-No additional manifest additions are required
+There are some small additions required to the manifest for Firebase Auth.
 
+Firstly add the following activity to the application node in the manifest additions:
 
 ```xml
     <activity
@@ -55,16 +56,34 @@ No additional manifest additions are required
         android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
         android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
-
 ```
 
-`com.google.firebase.components.ComponentDiscoveryService`:
+Then locate the `ComponentDiscoveryService` service you added as part of the core Firebase manfiest additions and add the following meta data tag:
 
 ```xml
     <meta-data
         android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
         android:value="com.google.firebase.components.ComponentRegistrar" />
 ```
+
+It should now appear like:
+
+```xml
+<service android:name="com.google.firebase.components.ComponentDiscoveryService" >
+    <meta-data
+        android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+        android:value="com.google.firebase.components.ComponentRegistrar" />
+    <meta-data
+        android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+        android:value="com.google.firebase.components.ComponentRegistrar" />
+    <meta-data
+        android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+        android:value="com.google.firebase.components.ComponentRegistrar" />
+</service>
+```
+
+
+
 
 ## iOS Info Additions
 

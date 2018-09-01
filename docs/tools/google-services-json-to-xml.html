@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Convert google-services.json to values XML</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300" type="text/css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-cyan.min.css" />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        body       { font-family: Roboto, Helvetica }
+        .mdl-radio { display: inline-block; width: 75% }
+    </style>
+
+</head>
+
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">Convert google-services.json to values XML</span>
+                <div class="mdl-layout-spacer"></div>
+            </div>
+        </header>
+
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Menu</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="..">Home</a>
+            </nav>
+        </div>
+
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <div class="mdl-grid">
+                    <!-- 1st row -->
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--1-col-tablet mdl-cell--0-col-phone"></div>
+                    <div class="mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                        <div class="demo-card-wide mdl-card mdl-shadow--2dp" style="padding: 4px; width: 100%">
+                            <div>
+                                <ol>
+                                    <li>Sign in to Firebase and open your project.</li>
+                                    <li>Click <img src="//storage.googleapis.com/support-kms-prod/vMSwtm9y2uvHQAg2OfjmWpsBMtG4xwSIPWxh" height="24" width="24" alt="the Settings icon"/> and select <strong>Project settings</strong>.</li>
+                                    <li>In the <b>Your apps</b> card, select the package name of the app you need a config file for from the list.</li>
+                                    <li>Click <img src="//lh3.googleusercontent.com/F_l_k73LFMmhZzlG3uUxR85785RlZFMYIszJFNl6Xq4k_xMLdgotg_O95JGyk8bSlQ=w24" alt="" height="24" width="24"/> <strong>google-services.json</strong></li>
+                                </ol>
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                                        onclick="window.open('https://console.firebase.google.com', 'download-google-services-json')">Go To Firebase Console</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--1-col-tablet mdl-cell--0-col-phone"></div>
+
+                    <!-- 2nd row -->
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--1-col-tablet mdl-cell--0-col-phone"></div>
+                    <div class="mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                        <div class="demo-card-wide mdl-card mdl-shadow--2dp" style="padding: 4px; width: 100%">
+                            <textarea id="json-textarea" rows="10" wrap="off" style="border: 1px solid #EEEEEE; font-family: 'Roboto Mono', monospace; font-size: 8pt" readonly></textarea>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <input type="file" id="json-file" style="display: none" onchange="readGoogleServicesJson()"/>
+                                <label for="json-file" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                                    Open google-services.json
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--1-col-tablet mdl-cell--0-col-phone"></div>
+
+                    <!-- 3rd row -->
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--1-col-tablet mdl-cell--0-col-phone"></div>
+                    <div class="mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                        <div class="demo-card-wide mdl-card mdl-shadow--2dp" style="padding: 4px; width: 100%">
+                            <div class="mdl-card__menu">
+                                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect mdl-button--colored left"
+                                        onclick="window.open('https://developers.google.com/android/guides/google-services-plugin#processing_the_json_file', '_blank')">
+                                    <i class="material-icons">info_outline</i>
+                                </button>
+                            </div>
+                            <div id="xml-packages"></div>
+                            <textarea id="xml-textarea" rows="10" wrap="off" style="border: 1px solid #EEEEEE; font-family: 'Roboto Mono', monospace; font-size: 8pt" readonly></textarea>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a id="xml-download" download="google-services.xml" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                                    Save google-services.xml
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--1-col-tablet mdl-cell--0-col-phone"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script type="text/javascript">
+        /**
+         * String.format()
+         * https://stackoverflow.com/a/3492815/308836
+         */
+        String.prototype.format = function() {
+            var formatted = this;
+            for (var arg in arguments) {
+                formatted = formatted.replace("{" + arg + "}", arguments[arg]);
+            }
+            return formatted;
+        };
+
+        /**
+         * Parse google-services.json...
+         */
+        function readGoogleServicesJson() {
+            var file = $('#json-file')[0].files[0];
+            if (file) {
+                // Read google-services.json...
+                var reader = new FileReader();
+                reader.readAsText(file, "UTF-8");
+                reader.onload = function(evt) {
+                    // JSON
+                    $('#json-textarea').val(evt.target.result);
+                    var json = $.parseJSON(evt.target.result);
+
+                    // Packages...
+                    var xml_packages_div = $("#xml-packages").empty();
+                    var project_info     = json.project_info;
+                    for (var i = 0, n = json.client.length; i < n; i++) {
+                        var client  = json.client[i];
+                        var package = client.client_info.android_client_info.package_name;
+
+                        // Create MDL RADIO item...
+                        var label = $("<label>", { class: "mdl-radio mdl-js-radio mdl-js-ripple-effect", for: "option-" + i });
+                        var span  = $("<span>" , { class: "mdl-radio__label" }).text(package);
+                        label.append(span);
+                        var input = $("<input>", { type: "radio", id: "option-" + i, class: "mdl-radio__button", name: "packages", value: i });
+                        input.change({ project_info, client }, function(event) {
+                            generateXml(event.data.project_info, event.data.client);
+                        });
+                        label.append(input);
+                        xml_packages_div.append(label);
+
+                        // 1st MDL RADIO checked...
+                        if (i == 0) {
+                            input.prop('checked', true);
+                            input.change();
+                        }
+                    }
+                    componentHandler.upgradeDom();
+                }
+            }
+        }
+
+        /**
+         * Generate google-services.xml...
+         */
+        function generateXml(project_info, client) {
+            // Produce XML...
+            let xmlLines = [];
+            xmlLines.push('<?xml version="1.0" encoding="utf-8"?>');
+            xmlLines.push('<resources>');
+            xmlLines.push('    <string name="default_web_client_id"          translatable="false">{0}</string>'.format(client.oauth_client.filter(function(oauth_client) {
+                                                                                                                                                        return oauth_client.client_type === 3;
+                                                                                                                                                  })[0].client_id));
+            xmlLines.push('    <string name="firebase_database_url"          translatable="false">{0}</string>'.format(project_info.firebase_url));
+            xmlLines.push('    <string name="gcm_defaultSenderId"            translatable="false">{0}</string>'.format(project_info.project_number));
+            xmlLines.push('    <string name="google_api_key"                 translatable="false">{0}</string>'.format(client.api_key[0].current_key));
+            xmlLines.push('    <string name="google_app_id"                  translatable="false">{0}</string>'.format(client.client_info.mobilesdk_app_id));
+            xmlLines.push('    <string name="google_crash_reporting_api_key" translatable="false">{0}</string>'.format(client.api_key[0].current_key));
+            xmlLines.push('    <string name="google_storage_bucket"          translatable="false">{0}</string>'.format(project_info.storage_bucket));
+            xmlLines.push('    <string name="project_id"                     translatable="false">{0}</string>'.format(project_info.project_id));
+            xmlLines.push('</resources>');
+            let xmlText = xmlLines.join('\r\n');
+
+            // Textarea display...
+            $('#xml-textarea').val(xmlText);
+
+            // Download button...
+            let dataUri = "data:text/xml;charset=UTF-8," + encodeURIComponent(xmlText);
+            $('#xml-download').attr('href', dataUri);
+        }
+    </script>
+</body>

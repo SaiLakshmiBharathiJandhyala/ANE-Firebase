@@ -99,6 +99,8 @@ package
 				{
 					log( "CHECK YOUR CONFIGURATION" );
 				}
+				
+				log( "Performance isPerformanceCollectionEnabled: " + FirebasePerformance.service.isPerformanceCollectionEnabled() );
 			}
 			catch (e:Error)
 			{
