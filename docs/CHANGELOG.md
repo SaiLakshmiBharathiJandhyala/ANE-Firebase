@@ -1,5 +1,13 @@
 
 
+###### 2018.11.18 [v2.3.065]
+
+```
+Added Firestore implementation (resolves #111)
+Crashlytics: Added custom error report (resolves #167)
+```
+
+
 ###### 2018.09.01 [v2.2.060]
 
 ```

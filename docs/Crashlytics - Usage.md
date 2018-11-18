@@ -65,6 +65,25 @@ If you ever need to clear a user identifier after you set it, reset the value to
 
 
 
+### Log non-fatal exceptions
+
+In addition to automatically reporting your app’s crashes, Crashlytics lets you log non-fatal exceptions.
+
+You do this by calling the `recordError()` method, passing an `Error` object:
+
+```as3
+var e:Error = ...;
+
+FirebaseCrashlytics.service.recordError( e );
+```
+
+All logged exceptions appear as non-fatal issues in the Firebase console.
+
+>
+> Crashlytics only stores the most recent 8 exceptions in a given app session. If your app throws more than 8 exceptions in a session, older exceptions are lost.
+>
+
+
 
 ### Manage Crash Insights data
 

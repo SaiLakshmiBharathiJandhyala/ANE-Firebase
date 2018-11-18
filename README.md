@@ -27,6 +27,7 @@ We provide complete guides to get you up and running with Firebase as quickly an
 - [Analytics](https://github.com/distriqt/ANE-Firebase/wiki/Core---Introduction)
 - Develop
 	- [Authentication](https://github.com/distriqt/ANE-Firebase/wiki/Auth---Introduction)
+	- [Firestore](https://github.com/distriqt/ANE-Firebase/wiki/Firestore---Introduction)
 	- [Realtime Database](https://github.com/distriqt/ANE-Firebase/wiki/Database---Introduction)
 	- [Storage](https://github.com/distriqt/ANE-Firebase/wiki/Storage---Introduction)
 - Quality

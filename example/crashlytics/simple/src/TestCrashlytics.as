@@ -34,7 +34,7 @@ package
 	 */
 	public class TestCrashlytics extends Sprite
 	{
-		public static var APP_KEY : String = "c6c0b986cd54c3a6caf24587e74e97e0507a68b3T9ZshTS003Bo3pFDX33SfU70+xmrr5enNJy8ZrH/bdEcjjO+mEsSEH597KJCOD89FvLD+LV3swpDGFxpPT9vu/Z4lE2p1aQ+dmaRi5FJO14wjy9v2bRbH+3+p2VztL/wlR9+p8m7zbszWJsj1Mhc6t0QuVchIqdlnrU46980uAEoOqZ3IcOsgnbEpBzLhK36ghmCL8wc/OH+xTm5xZCOKgefNLjjuYXYrpUKWE6yWZkv8MK8A2gbZt7tG8O0DtY1WEgJaXSioU92XOOOXgqgUaqjK841B1PUopKVcVB0Weo2+8uw/R1H/L5Tqc4OqYJi7nS7YvW/gRMkNkAZVpUoCw==";
+		public static var APP_KEY : String = "d20b3572b8e415ce8f3ba8f6a4a03a12d3622733YVHDkC6PpUq5w1QCh9RQEMILgygazmRPUWj/d4J5xFDu91YQ63ypBgW+s/vfi3mkO3tCYba/SSqz+ncRePw0Nx1aw+dCqBqy3iqQr9BRwCw6GlcV5GUWZeZtmrftdDLyqS1kwE2uej1dS3kE8W93j5z/5RZ6VL0HCgsBOJlBh6SdELy2Hq4glD8fL71q8Uh28XBiG+M6N1QTte03uSh3l9vncNXlMZlBAeZbjRmRTDktRa90HNRmwdhiusQZ7PL6Y7t5zW/+W1B7KYVCZ5nE1Z8e4a1hKuCtE7S7kQkUmq/9Ph7kWrLj16zDb3SA9D8DFKa2r5KOxy5bQPhYlUCUWA==";
 		
 		
 		/**
@@ -155,10 +155,17 @@ package
 					break;
 				}
 				
+				case 3:
+				{
+					var e:Error = new Error( "Test custom error", -1001 );
+					FirebaseCrashlytics.service.recordError( e );
+					break;
+				}
+				
 				default:
 					_stage = -1;
-					FirebaseCrashlytics.service.log( "Forcing a crash" );
-					FirebaseCrashlytics.service.forceCrash();
+//					FirebaseCrashlytics.service.log( "Forcing a crash" );
+//					FirebaseCrashlytics.service.forceCrash();
 			}
 			
 			_stage ++;

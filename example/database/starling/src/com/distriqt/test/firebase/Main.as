@@ -1,18 +1,18 @@
 /**
- *        __       __               __ 
+ *        __       __               __
  *   ____/ /_ ____/ /______ _ ___  / /_
  *  / __  / / ___/ __/ ___/ / __ `/ __/
- * / /_/ / (__  ) / / /  / / /_/ / / 
- * \__,_/_/____/_/ /_/  /_/\__, /_/ 
- *                           / / 
- *                           \/ 
+ * / /_/ / (__  ) / / /  / / /_/ / /
+ * \__,_/_/____/_/ /_/  /_/\__, /_/
+ *                           / /
+ *                           \/
  * http://distriqt.com
  *
- * @file   		Main.as
- * @brief  		
- * @author 		"Michael Archbold (ma&#64;distriqt.com)"
- * @created		08/01/2016
- * @copyright	http://distriqt.com/copyright/license.txt
+ * @file        Main.as
+ * @brief
+ * @author        "Michael Archbold (ma&#64;distriqt.com)"
+ * @created        08/01/2016
+ * @copyright    http://distriqt.com/copyright/license.txt
  */
 package com.distriqt.test.firebase
 {
@@ -29,8 +29,9 @@ package com.distriqt.test.firebase
 	import starling.text.TextFormat;
 	import starling.utils.Color;
 	
-	/**	
-	 * 
+	
+	/**
+	 *
 	 */
 	public class Main extends Sprite implements ILogger
 	{
@@ -43,10 +44,10 @@ package com.distriqt.test.firebase
 		//	VARIABLES
 		//
 		
-		private var _tests		: FirebaseDatabaseTests;
+		private var _tests:FirebaseDatabaseTests;
 		
 		private var _container:ScrollContainer;
-		private var _text		: TextField;
+		private var _text:TextField;
 		
 		
 		////////////////////////////////////////////////////////
@@ -66,9 +67,9 @@ package com.distriqt.test.firebase
 		
 		public function log( tag:String, message:String ):void
 		{
-			trace( tag+"::"+message );
+			trace( tag + "::" + message );
 			if (_text)
-				_text.text = tag+"::"+message + "\n" + _text.text ;
+				_text.text = tag + "::" + message + "\n" + _text.text;
 		}
 		
 		
@@ -92,7 +93,7 @@ package com.distriqt.test.firebase
 			_container.y = 50;
 			_container.layout = layout;
 			_container.width = stage.stageWidth;
-			_container.height = stage.stageHeight-50;
+			_container.height = stage.stageHeight - 50;
 			
 			_tests = new FirebaseDatabaseTests( this );
 			
@@ -147,7 +148,7 @@ package com.distriqt.test.firebase
 		}
 		
 		
-		private function addAction( label:String, listener:Function, parent:Sprite=null ):void
+		private function addAction( label:String, listener:Function, parent:Sprite = null ):void
 		{
 			var b:Button = new Button();
 			b.label = label;
@@ -165,9 +166,9 @@ package com.distriqt.test.firebase
 		//	EVENT HANDLERS
 		//
 		
-		protected function addedToStageHandler(event:Event):void
+		protected function addedToStageHandler( event:Event ):void
 		{
-			removeEventListener(Event.ADDED_TO_STAGE, addedToStageHandler );
+			removeEventListener( Event.ADDED_TO_STAGE, addedToStageHandler );
 			new MetalWorksMobileTheme();
 			init();
 		}

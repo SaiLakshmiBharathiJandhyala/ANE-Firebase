@@ -25,6 +25,7 @@ We provide complete guides to get you up and running with Firebase as quickly an
 - ![](Analytics|Core - Introduction)
 - Develop
 	- ![](Authentication|Auth - Introduction)
+	- ![](Firestore|Firestore - Introduction)
 	- ![](Realtime Database|Database - Introduction)
 	- ![](Storage|Storage - Introduction)
 - Quality

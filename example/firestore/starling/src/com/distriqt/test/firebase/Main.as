@@ -18,15 +18,16 @@ package com.distriqt.test.firebase
 {
 	import feathers.controls.Button;
 	import feathers.controls.ScrollContainer;
+	import feathers.layout.HorizontalAlign;
+	import feathers.layout.VerticalAlign;
 	import feathers.layout.VerticalLayout;
 	import feathers.themes.MetalWorksMobileTheme;
 	
 	import starling.display.Sprite;
 	import starling.events.Event;
 	import starling.text.TextField;
+	import starling.text.TextFormat;
 	import starling.utils.Color;
-	import starling.utils.HAlign;
-	import starling.utils.VAlign;
 	
 	/**	
 	 * 
@@ -43,8 +44,8 @@ package com.distriqt.test.firebase
 		//
 		
 		private var _tests		: FirebaseFirestoreTests;
-
-		private var _buttons	: Vector.<Button>;
+		
+		private var _container:ScrollContainer;
 		private var _text		: TextField;
 		
 		
@@ -77,44 +78,57 @@ package com.distriqt.test.firebase
 		
 		private function init():void
 		{
-			_tests = new FirebaseFirestoreTests( this );
-		}
-		
-		
-		private function createUI():void
-		{
-			_text = new TextField( stage.stageWidth, stage.stageHeight, "", "_typewriter", 18, Color.WHITE );
-			_text.hAlign = HAlign.LEFT; 
-			_text.vAlign = VAlign.TOP;
+			var tf:TextFormat = new TextFormat( "_typewriter", 12, Color.WHITE, HorizontalAlign.LEFT, VerticalAlign.TOP );
+			_text = new TextField( stage.stageWidth, stage.stageHeight, "", tf );
 			_text.y = 40;
 			_text.touchable = false;
 			
 			var layout:VerticalLayout = new VerticalLayout();
-			layout.horizontalAlign = VerticalLayout.HORIZONTAL_ALIGN_RIGHT;
-			layout.verticalAlign = VerticalLayout.VERTICAL_ALIGN_MIDDLE;
+			layout.horizontalAlign = HorizontalAlign.RIGHT;
+			layout.verticalAlign = VerticalAlign.MIDDLE;
 			layout.gap = 5;
-			var container:ScrollContainer = new ScrollContainer();
-			container.y = 50;
-			container.layout = layout;
-			container.width = stage.stageWidth;
-			container.height = stage.stageHeight-50;
 			
-			_buttons = new Vector.<Button>();
+			_container = new ScrollContainer();
+			_container.y = 50;
+			_container.layout = layout;
+			_container.width = stage.stageWidth;
+			_container.height = stage.stageHeight-50;
+			
+			_tests = new FirebaseFirestoreTests( this );
+			
 			
 			addAction( "Setup :Core", _tests.setup );
 			
-			addAction( "Generate Link :DynamicLinks", _tests.generateLink );
-			addAction( "Generate Short Link :DynamicLinks", _tests.generateShortLink );
-			addAction( "Open Link :DynamicLinks", _tests.openLink );
+			addAction( "Get Settings :Firestore", _tests.getSettings );
+			addAction( "Set Settings :Firestore", _tests.setSettings );
 			
-			addAction( "Listen :Receive", _tests.listenForLinks );
+			addAction( "Get Info :Collection", _tests.collection_getInfo );
+			addAction( "Add :Collection", _tests.collection_add );
+			
+			addAction( "Query All :Collection", _tests.collection_allValues );
+			
+			addAction( "Limit :Query", _tests.query_limit );
+			addAction( "Where :Query", _tests.query_where );
+			addAction( "Start At :Query", _tests.query_startAt );
+			addAction( "Error :Query", _tests.query_error );
+			addAction( "Pagination :Query", _tests.pagination );
+			addAction( "Listen Updates :Query", _tests.query_listenUpdates );
+			addAction( "Remove Updates :Query", _tests.query_removeUpdates );
+			
+			addAction( "Data Types :Document", _tests.document_dataTypeTest );
+			addAction( "Get :Document", _tests.document_get );
+			addAction( "Set :Document", _tests.document_set );
+			addAction( "Update :Document", _tests.document_update );
+			addAction( "Create and Set :Document", _tests.document_createAndSet );
+			addAction( "Listen Updates :Document", _tests.document_listenUpdates );
+			addAction( "Remove Updates :Document", _tests.document_removeUpdates );
+			
+			addAction( "Several Step :Transaction", _tests.transaction );
+			addAction( "Count :Transaction", _tests.transaction_example );
+			addAction( "Simple :Batch", _tests.batch );
 			
 			addChild( _text );
-			for each (var button:Button in _buttons)
-			{
-				container.addChild(button);
-			}
-			addChild( container );
+			addChild( _container );
 		}
 		
 		
@@ -123,7 +137,7 @@ package com.distriqt.test.firebase
 			var b:Button = new Button();
 			b.label = label;
 			b.addEventListener( starling.events.Event.TRIGGERED, listener );
-			_buttons.push( b );
+			_container.addChild( b );
 		}
 		
 		
@@ -136,7 +150,6 @@ package com.distriqt.test.firebase
 			removeEventListener(Event.ADDED_TO_STAGE, addedToStageHandler );
 			new MetalWorksMobileTheme();
 			init();
-			createUI();
 		}
 		
 		

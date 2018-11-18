@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<application xmlns="http://ns.adobe.com/air/application/30.0">
+<application xmlns="http://ns.adobe.com/air/application/31.0">
 	<id>com.distriqt.test</id>
-	<filename>TestDynamicLinks</filename>
-	<name>TestDynamicLinks</name>
+	<filename>TestFirestore</filename>
+	<name>TestFirestore</name>
 	<versionNumber>1.0.0</versionNumber>
 	<versionLabel>1</versionLabel>
 	
@@ -182,7 +182,10 @@
         <extensionID>com.distriqt.androidsupport.V4</extensionID>
 
 		<extensionID>com.distriqt.Firebase</extensionID>
-	    <extensionID>com.distriqt.firebase.DynamicLinks</extensionID>
+	    <extensionID>com.distriqt.firebase.Database</extensionID>
+	    <extensionID>com.distriqt.firebase.Firestore</extensionID>
+
+        <extensionID>com.distriqt.square.okhttp</extensionID>
 
         <extensionID>com.distriqt.CustomResources</extensionID>
     </extensions>
