@@ -67,7 +67,6 @@ package com.distriqt.test.firebase
 				Core.init();
 				Firebase.init( Config.firebaseKey );
 				FirebaseAuth.init( Config.firebaseKey );
-				GoogleIdentity.init( Config.googleIdentityKey );
 				
 				log( "Firebase Supported: " + Firebase.isSupported );
 				

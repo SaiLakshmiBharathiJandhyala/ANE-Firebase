@@ -103,6 +103,28 @@ This intent filter should be added directly after the `<application>` tag in you
 (Note: This is not the main `<application>` tag in your AIR application descriptor but the one inside 
 your manifest additions!) 
 
+When users open a link to the scheme and host you specify, your app will start an activity to handle the link.
+
+For more details on these fields and how to handle other types of App Links you can
+read the official Android documentation on [Handling App Links](https://developer.android.com/training/app-links/index.html)
+
+
+You will also need to add the following activity:
+
+
+```xml
+<activity
+	android:name="com.google.android.gms.appinvite.PreviewActivity"
+	android:exported="true"
+	android:theme="@style/Theme.AppInvite.Preview" >
+	<intent-filter>
+		<action android:name="com.google.android.gms.appinvite.ACTION_PREVIEW" />
+
+		<category android:name="android.intent.category.DEFAULT" />
+	</intent-filter>
+</activity>
+```
+
 For example:
 
 ```xml
@@ -124,21 +146,28 @@ For example:
 	                <data android:scheme="https" android:host="airnativeextensions.com" />
                     <data android:scheme="distriqt" android:host="appinvite" />
 				</intent-filter>
+
+
+				<activity
+					android:name="com.google.android.gms.appinvite.PreviewActivity"
+					android:exported="true"
+					android:theme="@style/Theme.AppInvite.Preview" >
+					<intent-filter>
+						<action android:name="com.google.android.gms.appinvite.ACTION_PREVIEW" />
+
+						<category android:name="android.intent.category.DEFAULT" />
+					</intent-filter>
+				</activity>
 			
+
 				<!-- OTHER ADDITIONS -->
+
 
 			</application>
 		</manifest>
 	)></manifestAdditions>
 </android>
 ```
-
-
-When users open a link to the scheme and host you specify, your app will start an activity to handle the link.
-
-For more details on these fields and how to handle other types of App Links you can
-read the official Android documentation on [Handling App Links](https://developer.android.com/training/app-links/index.html)
-
 
 
 ## iOS 

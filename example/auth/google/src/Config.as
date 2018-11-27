@@ -27,7 +27,6 @@ package
 		//
 		
 		public static var firebaseKey	: String = "";
-		public static var googleIdentityKey : String = "";
 		
 		public static var scale : Number = 1;
 		

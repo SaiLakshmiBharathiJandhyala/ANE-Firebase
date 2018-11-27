@@ -112,6 +112,9 @@
                         <meta-data
                             android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
                             android:value="com.google.firebase.components.ComponentRegistrar" />
+                        <meta-data
+                            android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+                            android:value="com.google.firebase.components.ComponentRegistrar" />
                     </service>
                     <provider
                         android:authorities="air.com.distriqt.test.firebaseinitprovider"
@@ -182,6 +185,7 @@
         <extensionID>com.distriqt.androidsupport.V4</extensionID>
 
 		<extensionID>com.distriqt.Firebase</extensionID>
+	    <extensionID>com.distriqt.firebase.Auth</extensionID>
 	    <extensionID>com.distriqt.firebase.Database</extensionID>
 	    <extensionID>com.distriqt.firebase.Firestore</extensionID>
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<application xmlns="http://ns.adobe.com/air/application/30.0">
-	<id>com.distriqt.test.debug</id>
+<application xmlns="http://ns.adobe.com/air/application/31.0">
+	<id>com.distriqt.test</id>
 	<filename>TestFirebaseInvites</filename>
 	<name>TestFirebaseInvites</name>
 	<versionNumber>1.0.0</versionNumber>
@@ -41,7 +41,7 @@
 	<android>
 		<manifestAdditions><![CDATA[
 			<manifest android:installLocation="auto">
-				<uses-sdk android:minSdkVersion="15" android:targetSdkVersion="26" />
+				<uses-sdk android:minSdkVersion="15" android:targetSdkVersion="27" />
 
 				<uses-permission android:name="android.permission.INTERNET"/>
 				<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
@@ -70,6 +70,20 @@
                         <data android:scheme="distriqt" android:host="invite" />
 
                     </intent-filter>
+
+
+                    <activity
+                        android:name="com.google.android.gms.appinvite.PreviewActivity"
+                        android:exported="true"
+                        android:theme="@style/Theme.AppInvite.Preview" >
+                        <intent-filter>
+                            <action android:name="com.google.android.gms.appinvite.ACTION_PREVIEW" />
+
+                            <category android:name="android.intent.category.DEFAULT" />
+                        </intent-filter>
+                    </activity>
+
+
 
 
 					<meta-data
@@ -158,6 +172,7 @@
 		<extensionID>com.distriqt.Core</extensionID>
 		<extensionID>com.distriqt.playservices.Base</extensionID>
 		<extensionID>com.distriqt.playservices.AppInvite</extensionID>
+
 		<extensionID>com.distriqt.androidsupport.V4</extensionID>
 
 		<extensionID>com.distriqt.Firebase</extensionID>
@@ -165,7 +180,11 @@
 
         <extensionID>com.distriqt.CustomResources</extensionID>
 
+
 		<extensionID>com.distriqt.GoogleIdentity</extensionID>
+        <extensionID>com.distriqt.playservices.Auth</extensionID>
+        <extensionID>com.distriqt.playservices.Identity</extensionID>
+        <extensionID>com.distriqt.square.okhttp</extensionID>
     </extensions>
 
 </application>

@@ -9,9 +9,10 @@ Make sure you have added all the extensions required for the Firebase Core exten
 
 ### Firebase Performance Monitoring
 
-The only required additional ANE is the Performance Monitoring ANE located in this repository:
+Usage of Performance Monitoring requires adding the Performance Monitoring ANE along with the Remote Config ANE located in this repository:
 
-- `com.distriqt.firebase.Performance` : https://github.com/distriqt/ANE-Firebase
+- [`com.distriqt.firebase.Performance`](https://github.com/distriqt/ANE-Firebase/raw/master/lib/com.distriqt.firebase.Performance.ane)
+- [`com.distriqt.firebase.RemoteConfig`](https://github.com/distriqt/ANE-Firebase/raw/master/lib/com.distriqt.firebase.RemoteConfig.ane)
 
 This ANE contains all the required libraries for the main Firebase Performance Monitoring functionality.
 

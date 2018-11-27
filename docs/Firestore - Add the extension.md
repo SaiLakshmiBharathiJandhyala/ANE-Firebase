@@ -44,7 +44,33 @@ The following should be added to your `extensions` node in your application desc
 
 ## Android Manifest Additions
 
-No additional manifest additions are required
+Locate the `ComponentDiscoveryService` service you added as part of the core Firebase manfiest additions and add the following meta data tag:
+
+```xml
+<meta-data
+    android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+    android:value="com.google.firebase.components.ComponentRegistrar" />
+```
+
+It should now appear like:
+
+```xml
+<service android:name="com.google.firebase.components.ComponentDiscoveryService" >
+    <meta-data
+        android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+        android:value="com.google.firebase.components.ComponentRegistrar" />
+    <meta-data
+        android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+        android:value="com.google.firebase.components.ComponentRegistrar" />
+    <meta-data
+        android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+        android:value="com.google.firebase.components.ComponentRegistrar" />
+</service>
+```
+
+
+
+
 
 
 ---

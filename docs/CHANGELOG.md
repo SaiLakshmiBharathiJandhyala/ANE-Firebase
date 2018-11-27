@@ -1,5 +1,27 @@
 
 
+###### 2018.11.27 [v2.4.069]
+
+```
+Updated SDK:
+  - iOS v5.13.0 (#164)
+  - Android v16.0.5 (#142, #162)
+
+Updated to Google Play Services v16.0.5 
+```
+
+
+###### 2018.11.27 [v2.3.067]
+
+```
+Updated SDK:
+  - iOS v5.13.0
+  - Android v16.0.5
+
+Updated to Google Play Services v16.0.5 
+```
+
+
 ###### 2018.11.18 [v2.3.065]
 
 ```
