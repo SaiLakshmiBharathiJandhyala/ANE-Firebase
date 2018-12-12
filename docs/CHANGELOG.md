@@ -1,22 +1,18 @@
 
 
+###### 2018.12.12 [v2.4.070]
+
+```
+Firestore: Corrected issue with queries not returning document references in snapshots (resolves #179)
+```
+
+
 ###### 2018.11.27 [v2.4.069]
 
 ```
 Updated SDK:
   - iOS v5.13.0 (#164)
   - Android v16.0.5 (#142, #162)
-
-Updated to Google Play Services v16.0.5 
-```
-
-
-###### 2018.11.27 [v2.3.067]
-
-```
-Updated SDK:
-  - iOS v5.13.0
-  - Android v16.0.5
 
 Updated to Google Play Services v16.0.5 
 ```

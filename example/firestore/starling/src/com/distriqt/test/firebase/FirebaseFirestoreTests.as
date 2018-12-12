@@ -237,6 +237,7 @@ package com.distriqt.test.firebase
 						.addOnQuerySuccessHandler( function( snapshot:QuerySnapshot ):void
 						{
 							log( "addOnQuerySuccessHandler" );
+							listDocumentsInSnapshot( snapshot );
 						})
 						.addOnQueryFailureListener( function( message:String ):void
 						{
@@ -291,6 +292,7 @@ package com.distriqt.test.firebase
 					.addOnQuerySuccessHandler( function( snapshot:QuerySnapshot ):void
 					{
 						log( "addOnQuerySuccessHandler" );
+						listDocumentsInSnapshot( snapshot );
 					})
 					.addOnQueryFailureListener( function( message:String ):void
 					{
@@ -318,6 +320,7 @@ package com.distriqt.test.firebase
 					.addOnQuerySuccessHandler( function( snapshot:QuerySnapshot ):void
 					{
 						log( "addOnQuerySuccessHandler" );
+						listDocumentsInSnapshot( snapshot );
 					})
 					.addOnQueryFailureListener( function( message:String ):void
 					{
@@ -343,6 +346,7 @@ package com.distriqt.test.firebase
 					.addOnQuerySuccessHandler( function( snapshot:QuerySnapshot ):void
 					{
 						log( "addOnQuerySuccessHandler" );
+						listDocumentsInSnapshot( snapshot );
 					})
 					.addOnQueryFailureListener( function( message:String ):void
 					{
@@ -368,6 +372,7 @@ package com.distriqt.test.firebase
 					.addOnQuerySuccessHandler( function( snapshot:QuerySnapshot ):void
 					{
 						log( "addOnQuerySuccessHandler" );
+						listDocumentsInSnapshot( snapshot );
 					})
 					.addOnQueryFailureListener( function( message:String ):void
 					{
@@ -443,6 +448,24 @@ package com.distriqt.test.firebase
 					
 				}
 			}
+		}
+		
+		
+		
+		private function listDocumentsInSnapshot( snapshot:QuerySnapshot ):void
+		{
+			log( "QUERY SNAPSHOT ===================== " );
+			log( "getDocuments(): [" + snapshot.getDocuments().length + "]" );
+			
+			for each (var documentSnapshot:DocumentSnapshot in snapshot.getDocuments())
+			{
+				log( " doc: "
+						+ "[" + documentSnapshot.getReference().getId() + "] "
+						+  documentSnapshot.getReference().getPath()
+				);
+			}
+			
+			log( "QUERY SNAPSHOT ===================== " );
 		}
 		
 
