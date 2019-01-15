@@ -1,5 +1,12 @@
 
 
+###### 2019.01.15 [v2.4.072]
+
+```
+iOS: Performance: Resolved invalid bundle packaging issue (resolves #186)
+```
+
+
 ###### 2018.12.12 [v2.4.070]
 
 ```

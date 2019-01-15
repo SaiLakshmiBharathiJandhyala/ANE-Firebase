@@ -224,25 +224,39 @@ package com.distriqt.test.firebase
 		{
 			log( "collection_allValues" );
 			
-			FirebaseFirestore.service.collection("users").addEventListener( QueryEvent.SUCCESS, collection_querySuccessHandler );
+//			FirebaseFirestore.service.collection("users").addEventListener( QueryEvent.SUCCESS, collection_querySuccessHandler );
+			
+			FirebaseFirestore.service.collection("s") ////**** I guess the problem is here
+					.query()
+					
+					.addOnQuerySuccessHandler( function( snapshot:QuerySnapshot ):void
+											   {
+												   trace( "addOnQuerySuccessHandler");
+											   })
+					.addOnQueryFailureListener( function( message:String ):void
+												{
+													trace( "addOnQueryFailureListener: " + message );
+												});
 			
 			try
 			{
-				var query:Query = FirebaseFirestore.service.collection("users");
+				FirebaseFirestore.service.collection("users")
 				
-				query.addEventListener( QueryEvent.SUCCESS, querySuccessHandler );
-				query.addEventListener( QueryEvent.ERROR, queryErrorHandler );
-				
-				query.query()
-						.addOnQuerySuccessHandler( function( snapshot:QuerySnapshot ):void
-						{
-							log( "addOnQuerySuccessHandler" );
-							listDocumentsInSnapshot( snapshot );
-						})
-						.addOnQueryFailureListener( function( message:String ):void
-						{
-							log( "addOnQueryFailureListener: " + message );
-						});
+//				var query:Query = FirebaseFirestore.service.collection("users");
+//
+//				query.addEventListener( QueryEvent.SUCCESS, querySuccessHandler );
+//				query.addEventListener( QueryEvent.ERROR, queryErrorHandler );
+//
+//				query.query()
+//						.addOnQuerySuccessHandler( function( snapshot:QuerySnapshot ):void
+//						{
+//							log( "addOnQuerySuccessHandler" );
+//							listDocumentsInSnapshot( snapshot );
+//						})
+//						.addOnQueryFailureListener( function( message:String ):void
+//						{
+//							log( "addOnQueryFailureListener: " + message );
+//						});
 			}
 			catch (e:Error)
 			{

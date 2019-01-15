@@ -26,7 +26,7 @@ package
 		//	VARIABLES
 		//
 		
-		public static var firebaseKey	: String = "";
+		public static var distriqtApplicationKey	: String = "";
 		
 		public static var scale : Number = 1;
 		
