@@ -13,6 +13,41 @@ FirebaseCrashlytics.service.enableCollection();
 
 ## Customise Crash Reports
 
+### Enable opt-in reporting
+
+By default, Firebase Crashlytics automatically collects crash reports for all your app's users. To give users more control over the data they send, you can enable opt-in reporting instead.
+
+To do that, you have to disable automatic collection and initialize Crashlytics only for opt-in users.
+
+Then you can ask your user to opt-in as required only calling the crashlytics function `enableCollection()` after the user agrees:
+
+```as3
+FirebaseCrashlytics.service.enableCollection();
+```
+
+To turn off automatic collection use the following methods dependent on your platform:
+
+#### Android 
+
+Turn off automatic collection with a meta-data tag in your manifest additions, with in the `application` tag:
+
+```xml
+<meta-data
+    android:name="firebase_crashlytics_collection_enabled"
+    android:value="false" />
+```
+
+#### iOS 
+
+Turn off automatic collection with a new key to your InfoAdditions:
+
+```xml
+<key>firebase_crashlytics_collection_enabled</key>
+<false/>
+```
+
+
+
 ### Add custom logs
 
 To give yourself more context for the events leading up to a crash, you can add custom Crashlytics logs to your app. Crashlytics associates the logs with your crash data and makes them visible in the Firebase console.

@@ -1,5 +1,12 @@
 
 
+###### 2019.01.24 [v2.4.074]
+
+```
+Updated documentation for latest ANEs (resolves #193)
+```
+
+
 ###### 2019.01.15 [v2.4.072]
 
 ```
