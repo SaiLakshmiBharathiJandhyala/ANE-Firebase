@@ -1,5 +1,13 @@
 
 
+###### 2019.03.02 [v2.4.077]
+
+```
+Clearer GPS Requirement Documentation (resolves #201)
+Embedded iOS bitcode
+```
+
+
 ###### 2019.01.24 [v2.4.074]
 
 ```
